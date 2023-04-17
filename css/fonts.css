@@ -1,0 +1,147 @@
+@font-face {
+  font-family: 'Sofia Pro';
+  src: url('SofiaProRegular.eot');
+  src: local('Sofia Pro Regular'), local('SofiaProRegular'),
+    url('/fonts/SofiaProBold.eot') format('embedded-opentype'),
+    url('/fonts/SofiaProRegular.woff2') format('woff2'),
+    url('/fonts/SofiaProRegular.woff') format('woff'),
+    url('/fonts/SofiaProRegular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sofia Pro';
+  src: url('SofiaProMedium.eot');
+  src: local('Sofia Pro Medium'), local('SofiaProMedium'),
+    url('/fonts/SofiaProMedium.eot') format('embedded-opentype'),
+    url('/fonts/SofiaProMedium.woff2') format('woff2'),
+    url('/fonts/SofiaProMedium.woff') format('woff'),
+    url('/fonts/SofiaProMedium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sofia Pro';
+  src: url('SofiaProBold.eot');
+  src: local('Sofia Pro Bold'), local('SofiaProBold'),
+    url('/fonts/SofiaProBold.eot') format('embedded-opentype'),
+    url('/fonts/SofiaProBold.woff2') format('woff2'), url('/fonts/SofiaProBold.woff') format('woff'),
+    url('/fonts/SofiaProBold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sofia Pro';
+  src: local('Sofia Pro Light'), local('Sofia-Pro-Light'),
+    url('/fonts/SofiaProLight.woff2') format('woff2'),
+    url('/fonts/SofiaProLight.woff') format('woff'),
+    url('/fonts/SofiaProLight.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sora';
+  src: local('Sora Bold'), local('SoraBold'), url('/fonts/Sora-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: local('Manrope Bold'), local('Manrope Bold'),
+    url('/fonts/Manrope-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: local('Manrope Light'), local('Manrope Light'),
+    url('/fonts/Manrope-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: local('Manrope Regular'), local('Manrope Regular'),
+    url('/fonts/Manrope-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: local('Manrope Medium'), local('Manrope Medium'),
+    url('/fonts/Manrope-Medium.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: local('Inter-SemiBold'), local('Inter-SemiBold'),
+    url('/fonts/Inter-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: local('Inter-Regular'), local('Inter-Regular'),
+    url('/fonts/Inter-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: local('Inter-Medium'), local('Inter-Medium'),
+    url('/fonts/Inter-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'San Francisco Pro';
+  src: local('San Francisco Pro Display Light'), local('San-Francisco-Pro-Display-Light'),
+    url('/fonts/SFProDisplay-Light.woff2') format('woff2'),
+    url('/fonts/SFProDisplay-Light.woff') format('woff'),
+    url('/fonts/SFProDisplay-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'San Francisco Pro';
+  src: local('San Francisco Pro Display Regular'), local('San-Francisco-Pro-Display-Regular'),
+    url('/fonts/SFProDisplay-Regular.woff2') format('woff2'),
+    url('/fonts/SFProDisplay-Regular.woff') format('woff'),
+    url('/fonts/SFProDisplay-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'San Francisco Pro';
+  src: local('San Francisco Pro Display Medium'), local('San-Francisco-Pro-Display-Medium'),
+    url('/fonts/SFProDisplay-Medium.woff2') format('woff2'),
+    url('/fonts/SFProDisplay-Medium.woff') format('woff'),
+    url('/fonts/SFProDisplay-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'San Francisco Pro';
+  src: local('San Francisco Pro Display Bold'), local('San-Francisco-Pro-Display-Bold'),
+    url('/fonts/SFProDisplay-Bold.woff2') format('woff2'),
+    url('/fonts/SFProDisplay-Bold.woff') format('woff'),
+    url('/fonts/SFProDisplay-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}

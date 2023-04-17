@@ -1,0 +1,694 @@
+.main-page__presentation {
+  margin-top: 85px;
+  width: 900px;
+  min-height: 423px;
+  position: relative;
+
+  background-image: url('/img/chart.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.main-page {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-page__presentation::before {
+  content: '';
+  position: absolute;
+  top: -260px;
+  left: 396px;
+  width: 824px;
+  height: 824px;
+  z-index: -1;
+  background: radial-gradient(
+    40.45% 40.45% at 50% 46.16%,
+    rgba(1, 9, 80, 0.62) 3.12%,
+    rgba(14, 17, 32, 0) 100%
+  );
+  filter: blur(39px);
+}
+
+.presentation__motto {
+  width: 518px;
+  margin-bottom: 28px;
+
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 110%;
+
+  color: #ffff;
+}
+
+.presentation__description {
+  width: 616px;
+  margin-bottom: 0;
+  margin-top: 0;
+
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 150%;
+}
+
+.presentation__start {
+  display: inline-block;
+  padding: 15px 67px;
+  margin-top: 37px;
+
+  transition: all 0.3s;
+  background: linear-gradient(265.56deg, #246cf9 -0.27%, #3177ff -0.26%, #075af8 98.59%);
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.presentation__start:hover {
+  color: #246cf9;
+  background: #ffffff;
+}
+
+.main-page__coins {
+}
+
+.coins__column-names {
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 30px;
+
+  list-style-type: none;
+}
+
+.assets {
+  margin-right: 212px;
+}
+
+.price {
+  margin-right: 134px;
+}
+
+.change {
+  margin-right: 84px;
+}
+
+.chart {
+  margin-right: 161px;
+}
+
+.coins__list {
+  width: 900px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.coin__properties {
+  display: flex;
+  align-items: center;
+
+  list-style-type: none;
+}
+
+.coin__present {
+  display: flex;
+  align-items: center;
+}
+
+.coin {
+  margin-bottom: 35px;
+}
+
+.coin__logo {
+  margin-right: 16px;
+}
+
+.coin__name {
+  width: 67px;
+}
+
+.coin__fullname {
+  /* margin-right: 103px; */
+  width: 152px;
+  white-space: nowrap;
+
+  font-size: 16px;
+  line-height: 24px;
+  color: #b9bdea;
+}
+
+.coin__price {
+  width: 203px;
+}
+
+.coin__change {
+  margin-left: 5px;
+  width: 150px;
+}
+
+.coin__trade a {
+  margin-left: 60px;
+  padding: 13px 22px;
+
+  font-size: 14px;
+  line-height: 22px;
+
+  border-radius: 55px;
+  transition: all 0.3s;
+  border: 1px solid blue;
+}
+
+.coin__trade a:hover {
+  color: #246cf9;
+  background: #ffffff;
+}
+
+.change__value--positive {
+  color: #58bd7d;
+}
+
+.change__value--negative {
+  color: #ff2e00;
+}
+
+.header-nav__list a {
+  transition: all 0.3s;
+}
+
+.header-nav__list a:hover {
+  color: #246cf9;
+}
+
+.main-page__warranty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 160px;
+
+  background-image: url('/img/chartbg.png');
+  background-repeat: no-repeat;
+}
+
+.warranty-title {
+  width: 606px;
+  height: 108px;
+  margin-bottom: 24px;
+
+  font-weight: bold;
+  font-size: 49px;
+  line-height: 54px;
+
+  color: #ffffff;
+}
+
+.warranty-description {
+  width: 630px;
+  height: 48px;
+
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+
+  color: #e5e6ed;
+}
+
+.warranty-benefits {
+  margin-top: 64px;
+  display: flex;
+}
+
+.benefit-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 24px;
+}
+
+.benefit-item__wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 111px;
+  height: 111px;
+
+  background: #16191d;
+  border-radius: 12px;
+}
+
+.benefit-item__title {
+  margin-top: 32px;
+
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 120%;
+
+  color: #ffffff;
+}
+
+.benefit-item__description {
+  margin-top: 8px;
+  width: 258px;
+
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+
+  color: #a5adcf;
+}
+
+.main-page__instruction {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 136px;
+}
+
+.instruction-steps {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.instruction-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin-right: 60px;
+}
+
+.instruction-step:nth-child(-n + 3)::after {
+  content: '';
+  position: absolute;
+  width: 130px;
+  bottom: 140px;
+  left: 210px;
+  height: 1px;
+  border-top: 1px dashed #272b30;
+  background: transparent;
+}
+
+.instruction-title {
+  margin-bottom: 64px;
+
+  font-weight: bold;
+  font-size: 49px;
+  line-height: 110%;
+
+  color: #ffffff;
+}
+
+.instruction-step__title {
+  position: absolute;
+  bottom: 70px;
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+
+  color: #fcfcfd;
+}
+
+.instruction-step__description {
+  width: 244px;
+
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+
+  color: #a5accf;
+}
+
+.footer-wrapper {
+  margin-top: 177px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 85px;
+}
+
+.footer-top__social {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-right: 174px;
+  padding-bottom: 50px;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+}
+
+.footer-logo svg {
+  margin-right: 15px;
+}
+
+.footer-logo h1 {
+  font-family: 'Sora';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+
+  color: #ffffff;
+}
+
+.footer-logo__dot {
+  color: #075af8;
+}
+
+.footer-top__social p {
+  margin-top: 11px;
+
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 27px;
+
+  color: #ffffff;
+}
+
+.social-networks {
+  margin-top: 42px;
+}
+
+.social-networks a {
+  margin-right: 42px;
+  transition: all 0.3s;
+}
+
+.social-networks a svg:hover {
+  opacity: 0.7;
+}
+
+.social-links {
+  margin-right: 118px;
+}
+
+.links-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 120%;
+
+  color: #ffffff;
+}
+
+.links-list {
+  display: flex;
+  flex-direction: row;
+  margin-top: 24px;
+
+  list-style-type: none;
+}
+
+.links-list__column {
+  display: flex;
+  flex-direction: column;
+}
+
+.links-list__column {
+  margin-right: 118px;
+}
+
+.links-list__column a {
+  margin-bottom: 24px;
+
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  color: #a5adcf;
+
+  transition: all 0.3s;
+}
+
+.links-list__column a:hover {
+  color: #075af8;
+}
+
+.submit-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 120%;
+
+  color: #ffffff;
+}
+
+.submit-description {
+  width: 303px;
+  margin-top: 24px;
+
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+
+  color: #a5adcf;
+}
+
+.submit-input {
+  width: 354px;
+  padding: 20px 50px 20px 24px;
+  margin-top: 24px;
+  position: relative;
+
+  color: #a5adcf;
+  border: 1px solid #34384c;
+  background-color: #16191d;
+  border-radius: 100px;
+  outline: none;
+}
+
+.submit-input::placeholder {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+
+  color: #5d6588;
+}
+
+.submit-button {
+  padding: 12px 24px;
+  margin-top: 33px;
+  position: absolute;
+  right: 154px;
+
+  color: #ffffff;
+
+  background: linear-gradient(265.56deg, #246cf9 -0.27%, #3177ff -0.26%, #075af8 98.59%),
+    linear-gradient(265.56deg, #246cf9 -0.27%, #1e68f6 -0.26%, #0047d0 98.59%);
+  border-radius: 100px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.submit-button:hover {
+  opacity: 0.8;
+}
+
+.footer-bottom {
+  display: flex;
+  width: 1240px;
+  justify-content: space-between;
+  padding-bottom: 32px;
+  padding-top: 32px;
+  border-top: 1px solid #272b30;
+}
+
+.bottom-title {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+
+  color: #5d6588;
+}
+
+.bottom-links a {
+  padding-right: 20px;
+  margin-left: 20px;
+
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  transition: all 0.3s;
+
+  color: #5d6588;
+}
+
+.bottom-links a:hover {
+  color: #0047d0;
+}
+
+.bottom-links a:first-child {
+  border-right: 1px solid #272b30;
+}
+
+@media (max-width: 1250px) {
+  .footer-top__social {
+    margin-right: 30px;
+  }
+
+  .social-links {
+    margin-right: 30px;
+  }
+
+  .links-list__column {
+    margin-right: 30px;
+  }
+
+  .footer-bottom {
+    width: 80%;
+    justify-content: space-around;
+  }
+
+  .bottom-title {
+    white-space: nowrap;
+  }
+
+  .bottom-links a {
+    white-space: nowrap;
+  }
+
+  .instruction-steps {
+    flex-direction: column;
+  }
+
+  .instruction-step {
+    margin-right: 0px;
+    margin-bottom: 40px;
+  }
+
+  .instruction-step:nth-child(-n + 3)::after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    /* bottom: 140px;
+    left: 210px; */
+    height: 130px;
+    border-top: 1px dashed #272b30;
+    background: transparent;
+  }
+}
+
+@media (max-width: 950px) {
+  .main-page__presentation {
+    width: calc(100vw - 30vw - 30px);
+    margin-bottom: 50px;
+  }
+
+  .presentation__motto {
+    width: calc(100vw - 40vw - 30px);
+    font-size: 24px;
+  }
+
+  .presentation__description {
+    width: calc(100vw - 30vw - 0px);
+  }
+
+  .presentation__start {
+    text-align: center;
+  }
+  .coin__price {
+    white-space: nowrap;
+    min-width: 170px;
+  }
+
+  .change__value--negative {
+    min-width: 130px;
+  }
+
+  .change__value--positive {
+    min-width: 130px;
+  }
+
+  .warranty-title {
+    width: 300px;
+    font-size: 38px;
+    text-align: center;
+    margin-bottom: 180px;
+  }
+
+  .warranty-description {
+    width: 300px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .warranty-benefits {
+    flex-direction: column;
+  }
+
+  .benefit-item {
+    margin-bottom: 30px;
+    margin-right: 0px;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .submit-input {
+    max-width: 250px;
+  }
+
+  .submit-title {
+    text-align: center;
+  }
+
+  .links-title {
+    text-align: center;
+  }
+
+  .submit-description {
+    width: 200px;
+    margin-left: 10px;
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+
+  .bottom-links a:first-child {
+    border-right: 1px solid transparent;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bottom-links {
+    text-align: center;
+  }
+
+  .main-page__coins {
+    width: 100%;
+    overflow: scroll;
+  }
+
+  .coins__list {
+    padding-left: 140px;
+    padding-right: 40px;
+  }
+
+  .coins__column-names {
+    padding-left: 140px;
+  }
+}
