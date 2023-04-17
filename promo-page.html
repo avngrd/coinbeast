@@ -4,10 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/profile-page.css" />
+    <link rel="stylesheet" href="/css/promo-page.css" />
     <link rel="stylesheet" href="/css/fonts.css" />
     <script src="/js/jquery.js"></script>
-    <title>Profile info</title>
+    <title>Promo code</title>
   </head>
   <body>
     <div class="wrapper">
@@ -115,7 +115,7 @@
     </div>
     <main>
       <section class="routing">
-        <p class="routing-current">Profile info</p>
+        <p class="routing-current">Promo code</p>
         <div class="routing-current__path">
           <p class="last-page">Home</p>
           <svg
@@ -132,7 +132,7 @@
               fill="white"
             />
           </svg>
-          <p>Profile info</p>
+          <p>Promo code</p>
         </div>
       </section>
       <section class="main-page">
@@ -156,7 +156,7 @@
                   />
                   <path
                     d="M10.4319 2.42C11.4019 1.86 12.6019 1.86 13.5819 2.42L19.5219 5.85C20.4919 6.41 21.0919 7.45 21.0919 8.58V15.42C21.0919 16.54 20.4919 17.58 19.5219 18.15L13.5819 21.58C12.6119 22.14 11.4119 22.14 10.4319 21.58L4.49188 18.15C4.01365 17.8727 3.61681 17.4745 3.34123 16.9953C3.06564 16.5161 2.92102 15.9728 2.92188 15.42V8.58C2.92188 7.46 3.52188 6.42 4.49188 5.85L6.39188 4.75"
-                    stroke="url(#paint0_linear_76_653)"
+                    stroke="#32363A"
                     stroke-width="1.5"
                     stroke-linecap="round"
                     stroke-linejoin="round"
@@ -170,7 +170,7 @@
                   />
                   <path
                     d="M16 16.658C16 14.858 14.21 13.398 12 13.398C9.79 13.398 8 14.858 8 16.658M12.002 11C12.62 11 13.2126 10.7545 13.6496 10.3176C14.0865 9.88063 14.332 9.28798 14.332 8.67003C14.332 8.05207 14.0865 7.45943 13.6496 7.02247C13.2126 6.58551 12.62 6.34003 12.002 6.34003C11.384 6.34003 10.7914 6.58551 10.3544 7.02247C9.91748 7.45943 9.672 8.05207 9.672 8.67003C9.672 9.28798 9.91748 9.88063 10.3544 10.3176C10.7914 10.7545 11.384 11 12.002 11Z"
-                    stroke="url(#paint1_linear_76_653)"
+                    stroke="#32363A"
                     stroke-width="1.5"
                     stroke-linecap="round"
                     stroke-linejoin="round"
@@ -200,9 +200,9 @@
                     </linearGradient>
                   </defs>
                 </svg>
-                <a href="#" class="profile">Profile</a>
+                <a href="#" class="item-link">Profile</a>
               </li>
-              <li class="menu-list__item">
+              <li class="menu-list__item menu-list__item--active">
                 <svg
                   width="22"
                   height="22"
@@ -212,13 +212,13 @@
                 >
                   <path
                     d="M3.26978 5.41997C2.67978 3.51997 3.73978 2.46997 5.62978 3.08997L8.57978 4.05997C9.07978 4.21997 9.82978 4.10997 10.2498 3.79997L13.3298 1.57997C14.9998 0.37997 16.3298 1.07997 16.2898 3.12997L16.2198 6.91997C16.2098 7.43997 16.5398 8.12997 16.9598 8.43997L19.4398 10.32C21.0298 11.52 20.7698 12.99 18.8698 13.59L15.6398 14.6C15.0998 14.77 14.5298 15.36 14.3898 15.91L13.6198 18.85C13.0098 21.17 11.4898 21.4 10.2298 19.36L8.46978 16.51C8.14978 15.99 7.38978 15.6 6.78978 15.63L3.44978 15.8C1.05978 15.92 0.379782 14.54 1.93978 12.72L3.91978 10.42C4.10978 10.2 4.23978 9.89997 4.30978 9.57997M20.9098 20.999L17.8798 17.969"
-                    stroke="#32363A"
+                    stroke="url(#paint1_linear_76_653)"
                     stroke-width="1.5"
                     stroke-linecap="round"
                     stroke-linejoin="round"
                   />
                 </svg>
-                <a href="#" class="item-link">Promo code</a>
+                <a href="#" class="profile">Promo code</a>
               </li>
               <li class="menu-list__item">
                 <svg
@@ -299,29 +299,19 @@
             </ul>
           </div>
           <div class="main-page__panel">
-            <form class="panel-user__info" method="POST">
-              <div class="user-status">
-                <div class="info-block">
-                  <p class="info-username__id">User#0001</p>
-                  <p class="info-username__mail">user0001@gmail.com</p>
+            <form class="promo-user__info" method="POST">
+              <div class="promo-description">
+                <div class="promo-left">
+                  <p class="promo-title">Promo code</p>
+                  <p class="description">You’il increase your deposit and incomes.</p>
                 </div>
-                <div class="info-verif__status">Not verified</div>
-              </div>
-              <label class="name-label">Change name</label>
-              <input type="text" class="name-input" value="User#0001" />
-              <label class="name-label">Current password</label>
-              <input type="text" class="name-input__pass" placeholder="Password" />
-              <div class="new-password">
-                <div class="new-password__left">
-                  <label>New password</label>
-                  <input class="input-new__pass" placeholder="Password" />
-                </div>
-                <div class="new-password__right">
-                  <label>Confirm password</label>
-                  <input class="input-confirm__pass" placeholder="Password" />
+                <div class="promo-right">
+                  <img src="/img/promopage.png" />
                 </div>
               </div>
-              <button class="save-changes">Save changes</button>
+              <label class="promo-label">Type promo code below</label>
+              <input class="promo-input" placeholder="Enter a promo code..." />
+              <button class="activate-button">Activate a promo code</button>
             </form>
           </div>
         </div>

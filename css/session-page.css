@@ -255,6 +255,11 @@ main {
   }
 }
 
+/* clear */
+/* clear */
+/* clear */
+/* clear */
+
 .routing {
   width: 910px;
   display: flex;
@@ -341,9 +346,31 @@ main {
   color: #32363a;
 }
 
+/* clear */
+/* clear */
+/* clear */
+/* clear */
+/* clear */
+
 .main-page__panels {
   display: flex;
   flex-direction: row;
+  margin-bottom: 100px;
+}
+
+.main-page__panel {
+  margin-left: 80px;
+}
+
+.session-user__info {
+  padding: 42px 42px;
+  width: 660px;
+  height: 294px;
+  display: flex;
+  flex-direction: column;
+
+  background: linear-gradient(0deg, #0e1012, #0e1012), #d9d9d9;
+  border-radius: 25px;
 }
 
 .session {
@@ -351,40 +378,8 @@ main {
   padding-top: 30px;
 }
 
-.main-page__panel {
-  width: 660px;
-  height: 530px;
-  padding: 42px 42px;
-  margin-left: 95px;
-  margin-bottom: 200px;
-
-  background: linear-gradient(0deg, #0e1012, #0e1012), #d9d9d9;
-  border-radius: 25px;
-}
-
-.panel-user__info {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.user-status {
-  display: flex;
-  justify-content: space-between;
-}
-
-.info {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.info-block {
+.session-title {
   margin-bottom: 45px;
-}
-
-.info-username__id {
-  margin-bottom: 16px;
 
   font-family: 'Manrope';
   font-style: normal;
@@ -395,110 +390,49 @@ main {
   color: #ffffff;
 }
 
-.info-username__mail {
-  font-family: 'Manrope';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 17px;
-
-  color: #32363a;
-}
-
-.info-verif__status {
-  padding: 3px 7px;
-  height: 16px;
-
-  font-family: 'Manrope';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 16px;
-  text-align: right;
-
-  color: #ffffff;
-  border: 1px solid #ff6363;
-  border-radius: 25px;
-}
-
-.name-label {
-  margin-bottom: 13px;
-
-  font-family: 'Manrope';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 19px;
-
-  color: #ffffff;
-}
-
-.name-input {
-  padding: 13px 20px;
-  margin-bottom: 45px;
-  font-family: 'Manrope';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 19px;
-
-  color: #ffffff;
-  border: 1px solid #22282f;
-  outline: none;
-  background-color: #0e1012;
-  border-radius: 22px;
-  transition: all 0.3s;
-}
-
-.name-input__pass {
-  padding: 13px 20px;
-  margin-bottom: 25px;
-  font-family: 'Manrope';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 19px;
-
-  color: #ffffff;
-  border: 1px solid #22282f;
-  outline: none;
-  background-color: #0e1012;
-  border-radius: 22px;
-  transition: all 0.3s;
-}
-
-.name-input__pass:focus {
-  border: 1px solid #075af8;
-}
-
-.name-input:focus {
-  border: 1px solid #075af8;
-}
-
-.name-input::placeholder {
-  color: #22282f;
-}
-
-.new-password {
+.session-info {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  margin-bottom: 45px;
+  margin-bottom: 50px;
 }
 
-.new-password__left {
+.info-top {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #13171b;
 }
 
-.new-password__right {
+.info-top p {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+
+  color: #22282f;
+}
+
+.date-time {
+  width: 192px;
+}
+
+.device {
+  width: 163px;
+}
+
+.ip-address {
+  width: 263px;
+}
+
+.info-bottom {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  padding-top: 30px;
 }
 
-.new-password__left label {
-  margin-bottom: 13px;
-
+.info-bottom p {
   font-family: 'Manrope';
   font-style: normal;
   font-weight: 700;
@@ -508,65 +442,19 @@ main {
   color: #ffffff;
 }
 
-.new-password__right label {
-  margin-bottom: 13px;
-
-  font-family: 'Manrope';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 19px;
-
-  color: #ffffff;
+.bot-date {
+  width: 192px;
 }
 
-.input-new__pass {
-  width: 280px;
-  padding: 13px 20px;
-
-  font-family: 'Manrope';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 19px;
-
-  color: #22282f;
-
-  border-radius: 22px;
-  outline: none;
-  border: 1px solid #22282f;
-  background-color: #0e1012;
-  transition: all 0.3s;
+.bot-device {
+  width: 163px;
 }
 
-.input-new__pass:focus {
-  border: 1px solid #075af8;
+.bot-ip {
+  width: 209px;
 }
 
-.input-confirm__pass {
-  width: 280px;
-  padding: 13px 20px;
-
-  font-family: 'Manrope';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 19px;
-
-  color: #22282f;
-
-  border-radius: 22px;
-  outline: none;
-  border: 1px solid #22282f;
-  background-color: #0e1012;
-  transition: all 0.3s;
-}
-
-.input-confirm__pass:focus {
-  border: 1px solid #075af8;
-}
-
-.save-changes {
+.contact-button {
   padding-top: 11px;
   padding-bottom: 11px;
 
@@ -575,69 +463,104 @@ main {
   font-weight: 400;
   font-size: 14px;
   line-height: 22px;
-
   color: #ffffff;
-  background: linear-gradient(265.56deg, #246cf9 -0.27%, #3177ff -0.26%, #075af8 98.59%),
-    linear-gradient(265.56deg, #246cf9 -0.27%, #1e68f6 -0.26%, #0047d0 98.59%);
-  border-radius: 100px;
-  border: none;
-  transition: all 0.3s;
+
+  background-color: #0e1012;
+  border: 1px solid #22282f;
+  border-radius: 22px;
   cursor: pointer;
+  transition: all 0.3s;
 }
 
-.save-changes:hover {
-  opacity: 0.7;
+.contact-button:hover {
+  border: 1px solid #075af8;
 }
 
-@media (max-width: 990px) {
-  .main-page__panel {
-    width: calc(60vw - 10vw - 20px);
-    height: 600px;
-  }
-
-  .new-password {
-    flex-direction: column;
-  }
-
-  .new-password__right label {
-    margin-top: 20px;
-  }
-
+@media (max-width: 970px) {
   .routing {
     width: calc(100% - 15% - 20px);
   }
-}
 
-@media (max-width: 580px) {
-  .profile {
-    display: none;
+  .session-user__info {
+    margin-left: 20px;
+    width: calc(100% - 20% - 20px);
   }
 
+  .menu-list {
+    margin-left: 20px;
+  }
+
+  .main-page__panel {
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 822px) {
+  .session-info {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .info-top {
+    flex-direction: column;
+    padding-bottom: 0px;
+    border-bottom: none;
+  }
+
+  .info-bottom {
+    flex-direction: column;
+    padding-top: 0px;
+  }
+
+  .date-time {
+    width: 76px;
+    margin-bottom: 16px;
+  }
+
+  .device {
+    width: 76px;
+    margin-bottom: 16px;
+  }
+
+  .ip-address {
+    width: 76px;
+    margin-bottom: 16px;
+  }
+
+  .bot-date {
+    width: 97px;
+    margin-top: 10px;
+    height: 36px;
+  }
+
+  .bot-device {
+    width: 97px;
+    height: 20px;
+  }
+
+  .bot-ip {
+    width: 97px;
+    margin-top: 16px;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 510px) {
   .item-link {
     display: none;
   }
 
-  .main-page__panel {
-    margin-left: 25px;
+  .profile {
+    display: none;
   }
 
-  .input-new__pass {
-    width: calc(100% - 10%);
+  .session-user__info {
+    padding: 22px 26px;
+    margin-left: 0px;
   }
 
-  .input-confirm__pass {
-    width: calc(100% - 10%);
-  }
-}
-
-@media (max-width: 490px) {
-  .user-status {
-    flex-direction: column;
-  }
-
-  .info-verif__status {
-    width: 100px;
-    text-align: center;
-    margin-bottom: 15px;
+  .session-title {
+    font-size: 16px;
+    margin-bottom: 25px;
   }
 }
