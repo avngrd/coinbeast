@@ -58,18 +58,20 @@
   padding: 15px 67px;
   margin-top: 37px;
 
-  transition: all 0.3s;
-  background: linear-gradient(265.56deg, #246cf9 -0.27%, #3177ff -0.26%, #075af8 98.59%);
   border-radius: 100px;
   cursor: pointer;
+  transition: all 0.3s;
 }
 
-.presentation__start:hover {
+.main-page__presentation a {
+  transition: all 0.3s;
+  background: linear-gradient(265.56deg, #246cf9 -0.27%, #3177ff -0.26%, #075af8 98.59%);
+  border: 1px solid #246cf9;
+}
+
+.main-page__presentation a:hover {
   color: #246cf9;
-  background: #ffffff;
-}
-
-.main-page__coins {
+  background: transparent;
 }
 
 .coins__column-names {
@@ -272,6 +274,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin-bottom: 177px;
 }
 
 .instruction-step {
@@ -326,11 +329,13 @@
 }
 
 .footer-wrapper {
-  margin-top: 177px;
+  padding-top: 113px;
+  margin-top: 7px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #0b0d0f;
 }
 
 .footer-top {
@@ -339,6 +344,8 @@
   align-items: center;
   justify-content: center;
   padding-bottom: 85px;
+  background-color: #0b0d0f;
+  flex-wrap: wrap;
 }
 
 .footer-top__social {
@@ -389,6 +396,10 @@
 
 .social-networks a {
   margin-right: 42px;
+  transition: all 0.5s;
+}
+
+.social-networks svg {
   transition: all 0.3s;
 }
 
@@ -464,9 +475,8 @@
 
 .submit-input {
   width: 354px;
-  padding: 20px 50px 20px 24px;
+  padding: 20px 90px 20px 26px;
   margin-top: 24px;
-  position: relative;
 
   color: #a5adcf;
   border: 1px solid #34384c;
@@ -484,11 +494,15 @@
   color: #5d6588;
 }
 
+.submit-form {
+  position: relative;
+}
+
 .submit-button {
   padding: 12px 24px;
   margin-top: 33px;
   position: absolute;
-  right: 154px;
+  right: 10px;
 
   color: #ffffff;
 
@@ -511,6 +525,7 @@
   padding-bottom: 32px;
   padding-top: 32px;
   border-top: 1px solid #272b30;
+  background-color: #0b0d0f;
 }
 
 .bottom-title {
@@ -555,7 +570,7 @@
   }
 
   .footer-bottom {
-    width: 80%;
+    width: 100%;
     justify-content: space-around;
   }
 
@@ -605,10 +620,15 @@
 
   .presentation__start {
     text-align: center;
+    white-space: nowrap;
   }
   .coin__price {
     white-space: nowrap;
     min-width: 170px;
+  }
+
+  .instruction-steps {
+    margin-bottom: 77px;
   }
 
   .change__value--negative {
@@ -630,6 +650,18 @@
     width: 300px;
     text-align: center;
     margin-bottom: 50px;
+  }
+
+  .submit-input::placeholder {
+    font-size: 12px;
+  }
+
+  .submit-button {
+    padding: 8px 12px;
+  }
+
+  .submit-input {
+    padding: 16px 66px 16px 20px;
   }
 
   .warranty-benefits {
@@ -684,11 +716,11 @@
   }
 
   .coins__list {
-    padding-left: 140px;
+    padding-left: 70px;
     padding-right: 40px;
   }
 
   .coins__column-names {
-    padding-left: 140px;
+    padding-left: 70px;
   }
 }

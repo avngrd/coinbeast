@@ -17,7 +17,7 @@
         <nav class="header-nav">
           <ul class="header-nav__list">
             <div class="list-links__wrapper">
-              <li>
+              <li class="logo-link">
                 <a href="#">
                   <svg
                     width="35"
@@ -65,7 +65,7 @@
                   </svg>
                 </a>
               </li>
-              <li>
+              <li class="logo-link">
                 <a href="#" class="logo-title">CoinBeast<span>.</span></a>
               </li>
               <li><a href="#" class="links-trading header-link">Trading</a></li>
@@ -171,7 +171,7 @@
                 </svg>
                 <a href="#" class="menu-link">Balance</a>
               </li>
-              <li class="menu-list__item">
+              <li class="menu-list__item" onclick="modal(this)" data-modal-herf="#deposit">
                 <svg
                   width="24"
                   height="24"
@@ -184,11 +184,9 @@
                     fill="#32363A"
                   />
                 </svg>
-                <a href="#" class="menu-link" onclick="modal(this)" data-modal-herf="#deposit"
-                  >Deposit</a
-                >
+                <a href="#" class="menu-link">Deposit</a>
               </li>
-              <li class="menu-list__item">
+              <li class="menu-list__item" onclick="modal(this)" data-modal-herf="#withdraw">
                 <svg
                   width="24"
                   height="24"
@@ -203,7 +201,7 @@
                 </svg>
                 <a href="#" class="menu-link">Withdraw</a>
               </li>
-              <li class="menu-list__item">
+              <li class="menu-list__item" onclick="modal(this)" data-modal-herf="#transfer">
                 <svg
                   width="24"
                   height="24"
@@ -946,7 +944,7 @@
           </div>
         </div>
       </section>
-      <div class="deposit-wrapper visually-hidden" id="#deposit">
+      <div class="deposit-wrapper visually-hidden" id="deposit">
         <section class="deposit-modal">
           <form method="POST" class="deposit-form">
             <p class="deposit-title">Deposit</p>
@@ -993,7 +991,7 @@
           </form>
         </section>
       </div>
-      <div class="withdraw-wrapper visually-hidden">
+      <div class="withdraw-wrapper visually-hidden" id="withdraw">
         <section class="deposit-modal">
           <form method="POST" class="withdraw-form">
             <p class="deposit-title">Withdraw</p>
@@ -1034,7 +1032,7 @@
           </form>
         </section>
       </div>
-      <div class="transfer-wrapper visually-hidden">
+      <div class="transfer-wrapper visually-hidden" id="transfer">
         <section class="transfer-modal">
           <form method="POST" class="transfer-form">
             <p class="transfer-title">Transfer</p>

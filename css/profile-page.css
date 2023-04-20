@@ -256,7 +256,7 @@ main {
 }
 
 .routing {
-  width: 910px;
+  width: 950px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -301,6 +301,12 @@ main {
 
 .last-page {
   color: #32363a;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.last-page:hover {
+  color: #ffffff;
 }
 
 .menu-list__item {
@@ -337,8 +343,13 @@ main {
   color: #ffffff;
 }
 
+.menu-list__item svg path {
+  transition: all 0.3s;
+}
+
 .item-link {
   color: #32363a;
+  transition: all 0.3s;
 }
 
 .main-page__panels {
@@ -352,11 +363,11 @@ main {
 }
 
 .main-page__panel {
-  width: 660px;
-  height: 530px;
+  /* width: 660px;
+  height: 500px; */
   padding: 42px 42px;
   margin-left: 95px;
-  margin-bottom: 200px;
+  margin-bottom: 20px;
 
   background: linear-gradient(0deg, #0e1012, #0e1012), #d9d9d9;
   border-radius: 25px;
@@ -406,7 +417,7 @@ main {
 }
 
 .info-verif__status {
-  padding: 3px 7px;
+  padding: 6px 12px;
   height: 16px;
 
   font-family: 'Manrope';
@@ -521,8 +532,9 @@ main {
 }
 
 .input-new__pass {
-  width: 280px;
+  width: 150px;
   padding: 13px 20px;
+  margin-right: 10px;
 
   font-family: 'Manrope';
   font-style: normal;
@@ -530,7 +542,7 @@ main {
   font-size: 14px;
   line-height: 19px;
 
-  color: #22282f;
+  color: #ffffff;
 
   border-radius: 22px;
   outline: none;
@@ -544,7 +556,7 @@ main {
 }
 
 .input-confirm__pass {
-  width: 280px;
+  width: 150px;
   padding: 13px 20px;
 
   font-family: 'Manrope';
@@ -553,7 +565,7 @@ main {
   font-size: 14px;
   line-height: 19px;
 
-  color: #22282f;
+  color: #ffffff;
 
   border-radius: 22px;
   outline: none;

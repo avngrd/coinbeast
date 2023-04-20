@@ -50,12 +50,13 @@
   list-style-type: none;
 }
 
-.header-nav__list li {
+.header-nav__list a {
   margin-right: 48px;
 
   font-weight: 400;
   font-size: 14px;
   line-height: 22px;
+  transition: all 0.3s;
 }
 
 .header-nav__sign {
@@ -72,9 +73,8 @@
 }
 
 .header-nav__sign:hover {
-  color: #246cf9;
+  color: #ffffff;
   border: 1px solid #246cf9;
-  background-color: #ffffff;
 }
 
 .header-nav__start {
@@ -85,14 +85,16 @@
   line-height: 22px;
 
   border-radius: 25px;
-  cursor: pointer;
-  transition: all 0.3s;
+  border: 1px solid #246cf9;
   background: linear-gradient(265.56deg, #246cf9 -0.27%, #3177ff -0.26%, #075af8 98.59%);
+  transition: all 1s;
+  cursor: pointer;
 }
 
 .header-nav__start:hover {
-  color: #246cf9;
-  background: #ffffff;
+  color: #ffffff;
+  background: transparent;
+  border: 1px solid #246cf9;
 }
 
 .burger {
@@ -103,6 +105,7 @@
   justify-content: flex-end;
   width: 30px;
   height: 18px;
+  overflow: hidden;
 }
 
 .burger span {
@@ -145,6 +148,13 @@
 }
 
 @media (max-width: 961px) {
+  .header-nav__list li {
+    margin-right: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   .burger {
     display: flex;
     margin-right: 10px;
@@ -161,7 +171,7 @@
     left: 0;
     right: 0;
     z-index: 50;
-    overflow-y: auto;
+    overflow: hidden;
     padding: 50px 0px;
     background-color: #0b0d0f;
     animation: burgerAnimation 0.4s;

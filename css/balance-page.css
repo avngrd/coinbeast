@@ -61,6 +61,8 @@ header {
 .logo-title {
   margin-left: 13px;
 
+  font-family: 'Manrope';
+  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 22px;
@@ -70,6 +72,8 @@ header {
 
 .logo-title span {
   color: #145dea;
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .links-trading {
@@ -282,7 +286,7 @@ main {
 }
 
 .coins-columns p {
-  font-family: 'SF Pro Display';
+  font-family: 'San Francisco Pro', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -389,13 +393,6 @@ main {
 }
 
 .deposit-modal {
-  position: absolute;
-  left: 50%;
-  top: 30%;
-  height: 538px;
-  width: 474px;
-
-  transform: translate(-50%, -50%);
 }
 
 .deposit-modal img {
@@ -404,22 +401,10 @@ main {
 }
 
 .deposit-wrapper {
-  position: fixed;
-  width: 130vw;
-  height: 130vh;
-  background: rgba(11, 13, 15, 0.7);
-  backdrop-filter: blur(5px);
 }
 
 .visually-hidden {
-  position: absolute !important;
-  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-  clip: rect(1px, 1px, 1px, 1px);
-  padding: 0 !important;
-  border: 0 !important;
-  height: 1px !important;
-  width: 1px !important;
-  overflow: hidden;
+  display: none;
 }
 
 .deposit-form {
@@ -427,14 +412,12 @@ main {
   padding: 42px 42px;
   flex-direction: column;
   width: 390px;
-  height: 496px;
+  height: 466px;
   background-color: #121518;
   border-radius: 25px;
 }
 
 .deposit-img {
-  padding-left: 120px;
-  padding-right: 120px;
   margin-bottom: 15px;
 }
 
@@ -510,7 +493,6 @@ main {
 .select-coin span {
   margin-left: 5px;
   padding-right: 215px;
-
   font-family: 'Manrope';
   font-style: normal;
   font-weight: 700;
@@ -584,14 +566,6 @@ main {
   opacity: 0.7;
 }
 
-.withdraw-wrapper {
-  position: absolute;
-  width: 130vw;
-  height: 180vh;
-  background: rgba(11, 13, 15, 0.7);
-  backdrop-filter: blur(5px);
-}
-
 .available-balance {
   display: flex;
   flex-direction: row;
@@ -650,6 +624,7 @@ main {
   height: 45px;
   margin-bottom: 25px;
   padding-left: 20px;
+  padding-right: 20px;
   font-family: 'Manrope';
   font-style: normal;
   font-weight: 700;
@@ -659,26 +634,20 @@ main {
   background-color: #121518;
   border: 1px solid #22282f;
   border-radius: 22.5px;
-  color: #0047d0;
+  color: #ffffff;
   outline: #0047d0;
+  transition: all 0.3s;
+}
+
+.amount-input:focus {
+  border: 1px solid #0047d0;
 }
 
 .transfer-wrapper {
   position: absolute;
-  width: 130vw;
-  height: 180vh;
-  background: rgba(11, 13, 15, 0.7);
-  backdrop-filter: blur(5px);
 }
 
 .transfer-modal {
-  position: absolute;
-  left: 40%;
-  top: 21%;
-  height: 538px;
-  width: 474px;
-
-  transform: translate(-50%, -50%);
 }
 
 .transfer-form {
@@ -686,9 +655,10 @@ main {
   padding: 42px 42px;
   flex-direction: column;
   width: 845px;
-  height: 584px;
+  height: 554px;
   background-color: #121518;
   border-radius: 25px;
+  margin: 0 auto;
 }
 
 .transfer-coin {
@@ -721,6 +691,12 @@ main {
   line-height: 19px;
 
   color: #ffffff;
+}
+
+@media (max-width: 1540px) {
+  .menu-list {
+    margin-right: 15px;
+  }
 }
 
 .transfer-title {
@@ -810,6 +786,7 @@ main {
 
 .transfer-to__title {
   margin-bottom: 13px;
+  margin-left: 21px;
 
   font-family: 'Manrope';
   font-style: normal;
@@ -818,6 +795,18 @@ main {
   line-height: 19px;
 
   color: #ffffff;
+}
+
+.transfer-svg {
+  cursor: pointer;
+}
+
+.transfer-svg path {
+  transition: all 0.3s;
+}
+
+.transfer-svg:hover path {
+  fill: #0047d0;
 }
 
 .to-select {
@@ -1162,13 +1151,22 @@ main {
     margin-right: 10px;
   }
 
+  .balance-page__panel {
+    padding-left: 25px;
+  }
+
   .header-nav__list {
     flex-direction: column;
     align-items: center;
   }
 
+  header {
+    justify-content: flex-end;
+  }
+
   .list-links__wrapper {
     flex-direction: column;
+    margin-bottom: 30px;
   }
   .links-trading {
     margin-left: 0px;
@@ -1217,6 +1215,14 @@ main {
   .panel-balance {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .transfer-to__title {
+    margin-left: 0px;
+  }
+
+  .to-select {
+    margin-right: 21px;
   }
 
   .spot-balance {
@@ -1282,11 +1288,17 @@ main {
 
 @media (max-width: 500px) {
   .deposit-form {
-    width: calc(100vw - 30vw - 30px);
+    width: calc(100vw - 30vw);
+    margin: 0 auto;
+    padding: 40px 40px;
   }
 
-  .deposit-modal {
-    left: 70%;
+  .select-network p {
+    margin-right: 135px;
+  }
+
+  .select-coin span {
+    padding-right: 65px;
   }
 
   .deposit-img {
@@ -1307,6 +1319,7 @@ main {
 
   .withdraw-form {
     width: 200px;
+    margin: 0 auto;
   }
 
   .amount-input {
@@ -1337,7 +1350,7 @@ main {
 
 @media (max-width: 1450px) {
   .panel-balance__coins {
-    width: 20%;
+    width: 55%;
     overflow: scroll;
     overflow-y: hidden;
   }
@@ -1360,4 +1373,20 @@ main {
   .transfer-coin {
     width: 200px;
   }
+}
+
+.logo-link {
+  transition: all 0.3s;
+}
+
+.logo-link:hover {
+  opacity: 0.7;
+}
+
+.menu-list__item svg {
+  transition: all 0.3s;
+}
+
+.menu-list__item:hover svg path {
+  opacity: 0.8;
 }
