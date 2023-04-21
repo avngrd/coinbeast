@@ -25,10 +25,21 @@ a {
 }
 
 header {
+  margin: 0 auto;
+  max-width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   background-color: #0e1012;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
 }
 
 .header {
@@ -56,6 +67,7 @@ header {
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin-right: 20px;
 }
 
 .logo-title {
@@ -190,8 +202,12 @@ main {
 @media (max-width: 1020px) {
   .burger {
     display: flex;
-    margin-left: 200px;
     margin-right: 10px;
+    right: 10px;
+  }
+
+  .list-links__user {
+    margin-right: 0px;
   }
 
   .header-nav {
@@ -220,14 +236,14 @@ main {
     flex-direction: column;
     row-gap: 30px;
   }
-  .list-links__wrapper {
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-  }
 
   .list-links__wrapper {
-    justify-content: center;
+    width: 100%;
+    align-items: flex-start;
+    padding-left: 20px;
+    flex-direction: column;
+    padding-bottom: 20px;
+    padding-right: 0 auto;
   }
 
   .header-link {
@@ -492,7 +508,6 @@ main {
 
 .new-password {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   margin-bottom: 45px;
 }
@@ -532,9 +547,7 @@ main {
 }
 
 .input-new__pass {
-  width: 150px;
   padding: 13px 20px;
-  margin-right: 10px;
 
   font-family: 'Manrope';
   font-style: normal;
@@ -556,7 +569,6 @@ main {
 }
 
 .input-confirm__pass {
-  width: 150px;
   padding: 13px 20px;
 
   font-family: 'Manrope';
@@ -639,6 +651,14 @@ main {
 
   .input-confirm__pass {
     width: calc(100% - 10%);
+  }
+
+  .routing-current {
+    font-size: 18px;
+  }
+
+  .name-input {
+    margin-bottom: 20px;
   }
 }
 

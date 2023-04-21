@@ -33,20 +33,25 @@ main {
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
+
+  width: calc(100% - 32%);
+  padding: 0 15.94%;
 }
 
 .sign-page__wrapper {
   display: flex;
   justify-content: center;
-  margin-top: 172px;
+  margin-top: 20vh;
   align-items: center;
+  width: 100%;
+  margin-bottom: 20vh;
 }
 
 .sign-page__left {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 480px;
+  margin-right: auto;
 }
 
 .left-title {
@@ -61,32 +66,21 @@ main {
 
   color: #ffffff;
 }
-.left-title::after {
-  content: '';
-  position: absolute;
-  width: 824px;
-  height: 644px;
-  left: -511px;
-  top: -371px;
 
-  background: radial-gradient(
-    40.45% 40.45% at 50% 46.16%,
-    rgba(1, 9, 80, 0.62) 3.12%,
-    rgba(14, 17, 32, 0) 100%
-  );
-  filter: blur(39px);
-}
 
 .left-title span {
   color: #145dea;
 }
 
 .sign-page__right {
-  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  width: 100%;
+  max-width: 440px;
+  margin-left: 40px;
 }
 
 .right-title {
@@ -112,7 +106,7 @@ main {
 }
 
 .right-mail {
-  width: 440px;
+  width: calc(100% - 30px);
   padding: 15px 15px;
   margin-top: 40px;
 
@@ -134,7 +128,7 @@ main {
 }
 
 .right-password {
-  width: 440px;
+  width: 100%;
   padding: 15px 15px;
   margin-top: 20px;
 
@@ -142,7 +136,6 @@ main {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 19px;
 
   border-radius: 10px;
   background-color: #121518;
@@ -156,7 +149,7 @@ main {
 }
 
 .right-password__confirm {
-  width: 440px;
+  width: calc(100% - 30px);
   padding: 15px 15px;
   margin-top: 20px;
   margin-bottom: 40px;
@@ -178,8 +171,13 @@ main {
   border: 1px solid #246cf9;
 }
 
+.right-pass .right-password{
+  padding-right: 50px;
+}
+
 .right-button__confirm {
-  padding: 15px 204px;
+  padding: 15px;
+  width: 100%;
 
   font-family: 'Inter';
   font-style: normal;
@@ -196,7 +194,7 @@ main {
 }
 
 .right-button__confirm:hover {
-  opacity: 0.8;
+  opacity: 0.6;
 }
 
 .right-account {
@@ -220,10 +218,11 @@ main {
   color: #ffffff;
 }
 
-@media (max-width: 1451px) {
+@media (max-width: 1300px) {
   .sign-page__left {
-    margin-right: 100px;
+    flex-wrap: wrap;
   }
+  
 }
 
 @media (max-width: 1070px) {
@@ -235,27 +234,26 @@ main {
     margin-top: 102px;
     flex-direction: column;
   }
-
-  .right-account {
-    margin-bottom: 40px;
-  }
 }
 
 @media (max-width: 680px) {
+  .sign-page{
+    width: calc(100% - 26%);
+    padding: 0px 12.94%;
+  }
+  .sign-page__left{
+    flex-wrap: initial;
+  }
   .sign-page__left svg {
     max-width: 70px;
   }
 
   .left-title {
     font-size: 36px;
-  }
-
-  .eye-pass {
-    left: 250px;
+    margin-left: 10px;
   }
 
   .sign-page__right {
-    max-width: calc(100vw - 30vw - 30px);
     align-items: center;
     justify-content: center;
   }
@@ -268,26 +266,14 @@ main {
     margin: 0 auto;
   }
 
-  .right-mail {
-    width: calc(100% - 30px);
-  }
-
   .right-password {
     width: 100%;
   }
 
-  .right-password__confirm {
-    width: calc(100% - 30px);
-  }
-
-  .right-button__confirm {
-    padding: 15px;
-    width: 100%;
-  }
-
   .right-title {
-    width: 200px;
     text-align: center;
+    font-size: 20px;
+    line-height: 27px;
   }
 }
 
@@ -300,8 +286,8 @@ main {
 
 .eye-pass {
   position: absolute;
-  right: 10px;
-  bottom: 14px;
+  right: 15px;
+  bottom: 12px;
   z-index: 100;
   cursor: pointer;
   transition: all 0.3s;
@@ -313,10 +299,4 @@ main {
 
 .eye-pass:hover path {
   fill: #0047d0;
-}
-
-@media (max-width: 440px) {
-  .eye-pass {
-    left: 160px;
-  }
 }

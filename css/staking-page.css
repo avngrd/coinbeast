@@ -35,9 +35,12 @@ header {
   display: flex;
 }
 
+.header-nav {
+  width: 100%;
+  padding: 0 5.31%;
+}
 .header-nav__list {
   display: flex;
-  width: 1920px;
   height: 80px;
   flex-direction: row;
   align-items: center;
@@ -50,6 +53,7 @@ header {
   display: flex;
   flex-direction: row;
   align-items: center;
+  width: 100%;
 }
 
 .list-links__user {
@@ -77,9 +81,9 @@ header {
 }
 
 @media (max-width: 1919px) {
-  .header-nav__list {
+  /* .header-nav__list {
     max-width: calc(100vw - 10vw - 30px);
-  }
+  } */
   .balance-page__panels {
     max-width: calc(100vw - 10vw - 30px);
   }
@@ -124,15 +128,22 @@ main {
   justify-content: center;
 }
 
+.balance-page {
+  width: 100%;
+  padding: 0 5.31%;
+}
+
 .balance-page__panels {
   display: flex;
-  width: 1920px;
 }
 
 .balance-page__menu {
-  width: 186px;
   min-height: 89vh;
+  width: calc(9.53vw - 20px);
+  min-width: 100px;
+  padding-right: 20px;
   border-right: 1px solid #13171b;
+  padding-bottom: 30px;
 }
 
 .menu-list {
@@ -140,6 +151,63 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.mobile-dop_menu {
+  background: #1a1b1d;
+  width: 40px;
+  height: 40px;
+  z-index: 1;
+  position: fixed;
+  border-radius: 0px 5px 5px 0;
+  cursor: pointer;
+  left: 0px;
+  display: none;
+  transition: all 0.4s;
+}
+
+.mobile-dop_menu svg {
+  padding-left: 16px;
+  padding-top: 16px;
+}
+
+.balance-page__menu.activ ~ .mobile-dop_menu {
+  left: calc(50% + 20px);
+}
+
+@media (max-width: 600px) {
+  .balance-page__menu {
+    min-width: 200px;
+    position: absolute;
+    transform: translateX(-100vw);
+    z-index: 1;
+    background: #0b0d0f94;
+    left: 0;
+    padding: 0;
+    width: 100%;
+
+    transition: all 0.4s;
+  }
+
+  .mobile-dop_menu {
+    display: block;
+  }
+
+  .balance-page__menu.activ {
+    transform: translateX(0);
+  }
+
+  .menu-list {
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-right: 1px solid #13171b;
+    width: 50%;
+    background: #0b0d0f;
+    padding-left: 20px;
+    padding-bottom: 20px;
+  }
 }
 
 .menu-list__item {
@@ -609,6 +677,10 @@ main {
 }
 
 @media (max-width: 1020px) {
+  header {
+    justify-content: flex-end;
+  }
+
   .burger {
     display: flex;
     margin-left: 200px;

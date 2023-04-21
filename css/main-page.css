@@ -1,6 +1,6 @@
 .main-page__presentation {
   margin-top: 85px;
-  width: 900px;
+  width: calc(100% - 27%);
   min-height: 423px;
   position: relative;
 
@@ -32,8 +32,15 @@
   filter: blur(39px);
 }
 
+.main-page__coins {
+  width: calc(100% - 27%);
+  display: flex;
+  justify-content: center;
+}
+
 .presentation__motto {
-  width: 518px;
+  width: 100%;
+  max-width: 518px;
   margin-bottom: 28px;
 
   font-weight: bold;
@@ -44,7 +51,8 @@
 }
 
 .presentation__description {
-  width: 616px;
+  width: 100%;
+  max-width: 616px;
   margin-bottom: 0;
   margin-top: 0;
 
@@ -70,8 +78,7 @@
 }
 
 .main-page__presentation a:hover {
-  color: #246cf9;
-  background: transparent;
+  opacity: 0.5;
 }
 
 .coins__column-names {
@@ -80,22 +87,6 @@
   margin-bottom: 30px;
 
   list-style-type: none;
-}
-
-.assets {
-  margin-right: 212px;
-}
-
-.price {
-  margin-right: 134px;
-}
-
-.change {
-  margin-right: 84px;
-}
-
-.chart {
-  margin-right: 161px;
 }
 
 .coins__list {
@@ -126,12 +117,10 @@
 }
 
 .coin__name {
-  width: 67px;
+  padding-right: 20px;
 }
 
 .coin__fullname {
-  /* margin-right: 103px; */
-  width: 152px;
   white-space: nowrap;
 
   font-size: 16px;
@@ -149,7 +138,6 @@
 }
 
 .coin__trade a {
-  margin-left: 60px;
   padding: 13px 22px;
 
   font-size: 14px;
@@ -157,12 +145,11 @@
 
   border-radius: 55px;
   transition: all 0.3s;
-  border: 1px solid blue;
+  border: 1px solid #246cf9;
 }
 
 .coin__trade a:hover {
-  color: #246cf9;
-  background: #ffffff;
+  background: #246cf9;
 }
 
 .change__value--positive {
@@ -193,8 +180,9 @@
 }
 
 .warranty-title {
-  width: 606px;
-  height: 108px;
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
   margin-bottom: 24px;
 
   font-weight: bold;
@@ -205,7 +193,8 @@
 }
 
 .warranty-description {
-  width: 630px;
+  width: 100%;
+  max-width: 600px;
   height: 48px;
 
   font-weight: 300;
@@ -329,7 +318,6 @@
 }
 
 .footer-wrapper {
-  padding-top: 113px;
   margin-top: 7px;
   display: flex;
   flex-direction: column;
@@ -341,11 +329,14 @@
 .footer-top {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   padding-bottom: 85px;
   background-color: #0b0d0f;
   flex-wrap: wrap;
+
+  width: calc(100% - 17%);
+  margin: 0 auto;
 }
 
 .footer-top__social {
@@ -353,7 +344,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  margin-right: 174px;
+  margin-right: auto;
   padding-bottom: 50px;
 }
 
@@ -405,10 +396,6 @@
 
 .social-networks a svg:hover {
   opacity: 0.7;
-}
-
-.social-links {
-  margin-right: 118px;
 }
 
 .links-title {
@@ -474,7 +461,7 @@
 }
 
 .submit-input {
-  width: 354px;
+  width: calc(100% - 116px);
   padding: 20px 90px 20px 26px;
   margin-top: 24px;
 
@@ -503,6 +490,7 @@
   margin-top: 33px;
   position: absolute;
   right: 10px;
+  top: 0;
 
   color: #ffffff;
 
@@ -515,17 +503,22 @@
 }
 
 .submit-button:hover {
-  opacity: 0.8;
+  opacity: 0.6;
 }
 
 .footer-bottom {
   display: flex;
-  width: 1240px;
+  width: calc(100% - 17%);
+  margin: 0 auto;
   justify-content: space-between;
   padding-bottom: 32px;
   padding-top: 32px;
   border-top: 1px solid #272b30;
   background-color: #0b0d0f;
+}
+
+.social-submit {
+  margin-left: auto;
 }
 
 .bottom-title {
@@ -569,11 +562,6 @@
     margin-right: 30px;
   }
 
-  .footer-bottom {
-    width: 100%;
-    justify-content: space-around;
-  }
-
   .bottom-title {
     white-space: nowrap;
   }
@@ -583,7 +571,8 @@
   }
 
   .instruction-steps {
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .instruction-step {
@@ -604,18 +593,20 @@
 }
 
 @media (max-width: 950px) {
+  .submit-input {
+    width: auto;
+  }
+
   .main-page__presentation {
-    width: calc(100vw - 30vw - 30px);
     margin-bottom: 50px;
+    min-height: auto;
   }
 
   .presentation__motto {
-    width: calc(100vw - 40vw - 30px);
     font-size: 24px;
   }
 
   .presentation__description {
-    width: calc(100vw - 30vw - 0px);
   }
 
   .presentation__start {
@@ -640,16 +631,17 @@
   }
 
   .warranty-title {
-    width: 300px;
     font-size: 38px;
-    text-align: center;
-    margin-bottom: 180px;
+    line-height: 42px;
+    margin-bottom: 6px;
   }
 
   .warranty-description {
-    width: 300px;
-    text-align: center;
     margin-bottom: 50px;
+  }
+
+  .social-submit {
+    margin-left: 0;
   }
 
   .submit-input::placeholder {
@@ -665,7 +657,9 @@
   }
 
   .warranty-benefits {
-    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .benefit-item {
@@ -673,27 +667,12 @@
     margin-right: 0px;
   }
 
-  .footer-top {
-    flex-direction: column;
-    align-items: center;
-  }
-
   .submit-input {
     max-width: 250px;
   }
 
-  .submit-title {
-    text-align: center;
-  }
-
-  .links-title {
-    text-align: center;
-  }
-
   .submit-description {
-    width: 200px;
-    margin-left: 10px;
-    margin-right: 0px;
+    max-width: 200px;
     margin-bottom: 20px;
   }
 
@@ -702,8 +681,7 @@
   }
 
   .footer-bottom {
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
   }
 
   .bottom-links {
@@ -723,4 +701,104 @@
   .coins__column-names {
     padding-left: 70px;
   }
+}
+
+@media (max-width: 600px) {
+  .footer-top {
+    justify-content: flex-start;
+  }
+
+  .submit-description {
+    max-width: initial;
+  }
+
+  .warranty-title {
+    font-size: 21px;
+    line-height: 22px;
+  }
+
+  .social-submit {
+    width: 100%;
+  }
+
+  .submit-input {
+    width: calc(100% - 83px);
+    max-width: none;
+  }
+
+  .submit-button {
+    right: 0px;
+  }
+
+  .footer-bottom {
+    justify-content: center;
+  }
+
+  .instruction-title {
+    font-size: 40px;
+  }
+
+  .main-page__warranty {
+    width: calc(100% - 27%);
+  }
+}
+
+table {
+  border: none;
+  margin: 0 auto;
+  width: 100%;
+}
+
+table tr th {
+  border: none;
+  align-items: center;
+}
+
+.column-name {
+  font-family: 'Sofia Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+
+  color: #e4e6ed;
+}
+
+.column-names {
+  padding-bottom: 44px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.coin-name {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-width: 100%;
+}
+
+.assets {
+  /* padding-right: 212px; */
+  white-space: nowrap;
+}
+
+.price {
+  white-space: nowrap;
+}
+
+.change {
+  /* padding-right: 84px; */
+  white-space: nowrap;
+}
+
+.chart {
+  /* padding-right: 161px; */
+  white-space: nowrap;
+}
+
+.coin-info {
+  display: flex;
+  margin: 0 auto;
+  padding-bottom: 55px;
+  justify-content: space-between;
 }
