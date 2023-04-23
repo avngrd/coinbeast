@@ -26,7 +26,7 @@ a {
 
 header {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   background-color: #0e1012;
 }
@@ -56,6 +56,7 @@ header {
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin-right: 20px;
 }
 
 .logo-title {
@@ -94,6 +95,14 @@ header {
 
   transition: all 0.3s;
   color: #32363a;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  margin-left: 20px;
 }
 
 .header-link:hover {
@@ -190,8 +199,11 @@ main {
 @media (max-width: 1020px) {
   .burger {
     display: flex;
-    margin-left: 200px;
     margin-right: 10px;
+  }
+
+  .list-links__user {
+    margin-right: 0px;
   }
 
   .header-nav {
@@ -221,9 +233,11 @@ main {
     row-gap: 30px;
   }
   .list-links__wrapper {
+    width: 100%;
+    align-items: flex-start;
+    padding-left: 20px;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+    padding-bottom: 20px;
   }
 
   .list-links__wrapper {
@@ -794,7 +808,7 @@ main {
   }
 
   .kyc-user__info input {
-    width: calc(100% - 10% - 20px);
+    width: 180px;
   }
 }
 

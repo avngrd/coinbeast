@@ -367,7 +367,7 @@ main {
 }
 
 .column-wallet {
-  padding-left: 110px;
+  padding-left: 250px;
   font-family: 'SF Pro Display';
   font-style: normal;
   font-weight: 500;
@@ -434,6 +434,7 @@ main {
 
 .table-operations {
   display: flex;
+  margin-left: auto;
   flex-direction: row;
   align-items: center;
 }
@@ -471,7 +472,7 @@ main {
 }
 
 .column-equ {
-  padding-right: 140px;
+  padding-left: 180px;
   font-family: 'SF Pro Display';
   font-style: normal;
   font-weight: 500;
@@ -1235,13 +1236,31 @@ main {
   transform: rotate(45deg) translate(0, 50%);
 }
 
+.header__menu {
+  display: flex;
+  margin-left: 3.07vw;
+  width: 100%;
+  max-width: 429px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 @media (max-width: 1020px) {
   .burger {
-    position: fixed;
     display: flex;
     overflow-y: hidden;
     margin-right: 10px;
     right: 10px;
+  }
+
+  .header__menu {
+    padding-bottom: 20px;
+    display: flex;
+    margin-left: 3.07vw;
+    width: 100%;
+    max-width: 429px;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
   .balance-page__panel {
@@ -1303,6 +1322,16 @@ main {
   }
   to {
     opacity: 1;
+  }
+}
+
+.panel-balance__coins {
+  overflow: auto;
+}
+
+@media (max-width: 1340px) {
+  .table-operations {
+    margin-left: 100px;
   }
 }
 
@@ -1443,16 +1472,6 @@ main {
   margin-bottom: 20px;
   margin-left: 15px;
   margin-top: 20px;
-}
-
-.header__menu {
-  padding-bottom: 20px;
-  display: flex;
-  margin-left: 3.07vw;
-  width: 100%;
-  max-width: 429px;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
 .logo-link-wrapper:hover {

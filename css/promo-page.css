@@ -202,7 +202,6 @@ main {
 @media (max-width: 1020px) {
   .burger {
     display: flex;
-    margin-left: 200px;
     margin-right: 10px;
   }
 
@@ -513,6 +512,10 @@ main {
 
   .profile {
     display: none;
+  }
+
+  .routing-current {
+    font-size: 16px;
   }
 }
 
