@@ -240,242 +240,6 @@ ul {
   opacity: 0.7;
 }
 
-/* clear */
-/* clear */
-/* clear */
-
-.promo-panel {
-  padding-top: 50px;
-  padding-left: 50px;
-}
-
-.promo-form {
-  padding: 25px 30px;
-
-  border-radius: 10px;
-  background-color: #0e1012;
-}
-
-.promo-title {
-  margin-bottom: 24px;
-}
-
-.promo-blocks {
-  display: flex;
-}
-
-.promo-left {
-  display: flex;
-  flex-direction: column;
-  margin-right: 20px;
-  position: relative;
-}
-
-.random-promo {
-  padding: 12px 19px;
-  position: absolute;
-  right: 0px;
-
-  font-family: 'SF Pro Display';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 92.5%;
-  color: #ffffff;
-
-  border: none;
-  background: linear-gradient(117.67deg, #3077ff 17.49%, #085bf8 105.01%);
-  border-radius: 5px;
-  cursor: pointer;
-  transition: all 0.3s;
-}
-
-.random-promo:hover {
-  opacity: 0.7;
-}
-
-.promo-input {
-  padding-top: 10px;
-  padding-left: 10px;
-  padding-bottom: 10px;
-  padding-right: 90px;
-  margin-bottom: 15px;
-  width: 26vw;
-
-  font-family: 'Manrope';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 16px;
-  outline: none;
-
-  background-color: #0e1012;
-  border: 1px solid #1b1d1f;
-  border-radius: 5px;
-  color: #ffffff;
-}
-
-.promo-input::placeholder {
-  color: #3c4043;
-}
-
-.promo-text {
-  padding-top: 10px;
-  padding-left: 10px;
-  padding-bottom: 10px;
-  padding-right: 30px;
-  margin-bottom: 15px;
-  width: 33vw;
-  height: 85%;
-
-  font-family: 'Manrope';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 16px;
-
-  outline: none;
-  resize: none;
-  background-color: #0e1012;
-  border: 1px solid #1b1d1f;
-  border-radius: 5px;
-  color: #ffffff;
-}
-
-.promo-select {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 8px 14px;
-  justify-content: space-between;
-
-  border: 1px solid #1b1d1f;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.select-left {
-  display: flex;
-  align-items: center;
-}
-
-.select-coin__name {
-  margin-left: 8px;
-  font-family: 'Manrope';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 157%;
-
-  color: #ffffff;
-}
-
-.select-coin__fullname {
-  margin-left: 8px;
-  font-family: 'Manrope';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 157%;
-
-  color: #6a737b;
-}
-
-.promo-bottom {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 26px;
-}
-
-.create-promo {
-  padding: 12px 19px;
-
-  font-family: 'SF Pro Display';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 11px;
-  border: none;
-
-  color: #747e8a;
-  background: #3c4043;
-  border-radius: 5px;
-  cursor: not-allowed;
-}
-
-.promo-withdraw__block {
-  display: flex;
-  align-items: center;
-}
-
-.promo-withdraw__block p {
-  margin-left: 8px;
-
-  font-family: 'Manrope';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 157%;
-
-  color: #ffffff;
-}
-
-.promocodes-table {
-  margin-top: 30px;
-  padding: 25px 30px;
-  width: 70vw;
-  overflow: auto;
-
-  background: #0e1012;
-  border-radius: 10px;
-}
-
-.table-title {
-  margin-bottom: 30px;
-
-  font-family: 'Manrope';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #ffffff;
-}
-
-.column-item {
-  font-family: 'Manrope';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 19px;
-
-  color: #3c4043;
-}
-
-.table-columns {
-  display: flex;
-  margin-bottom: 30px;
-}
-
-table {
-  display: flex;
-  flex-direction: column;
-}
-
-.table-item {
-  display: flex;
-  padding: 11px 5px;
-  /* justify-content: space-between; */
-}
-
-.table-item:nth-child(odd) {
-  background-color: #131618;
-}
-
-.coinwork-logo {
-  transition: all 0.3s;
-}
-
 .coinwork-logo.active {
   display: none;
 }
@@ -493,63 +257,153 @@ table {
   margin-right: 30px;
 }
 
-.table-item li {
+.promo-panel {
+  padding-top: 50px;
+  padding-left: 50px;
+  max-width: 780px;
+  display: flex;
+  flex-direction: row;
+}
+
+.users-stats {
+  padding: 25px 30px;
+  background-color: #0e1012;
+  border-radius: 10px;
+}
+
+.chart-header {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 39px;
+}
+
+.chart-header div {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.chart-periods__list {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.chart-title {
   font-family: 'Manrope';
   font-style: normal;
-  font-weight: 600;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+  margin-right: 20px;
+}
+
+.chart-count {
+  padding-left: 20px;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
   font-size: 14px;
-  line-height: 19px;
-  white-space: nowrap;
+  line-height: 24px;
+  color: #3c4043;
+
+  border-left: 1px solid #13171b;
+}
+
+.chart-count span {
   color: #ffffff;
 }
 
-.promo {
-  min-width: 176px;
+.chart-periods__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
-.activate {
-  min-width: 118px;
-}
+.chart-periods__list li {
+  padding: 2px 8px;
+  margin-right: 11px;
 
-.amount {
-  min-width: 141px;
-}
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #ffffff;
 
-.text {
-  min-width: 250px;
-}
-
-.date {
-  min-width: 250px;
-}
-
-.delete {
-  margin-left: 30px;
-  transition: all 0.3s;
+  background: #1b1d1f;
+  border-radius: 8px;
   cursor: pointer;
-  margin-right: 10px;
+  transition: all 0.3s;
 }
 
-.delete:hover {
-  opacity: 0.7;
+.chart-periods__list li:hover {
+  background-color: #2471eb;
 }
 
-@media (max-width: 835px) {
-  .promo-blocks {
+.user-total__count {
+  margin-top: 20px;
+  padding: 18px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background-color: #0e1012;
+  border-radius: 10px;
+}
+
+.total-left {
+  display: flex;
+  align-items: center;
+}
+
+.total-text {
+  margin-left: 16px;
+
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.total-count {
+  padding: 2px 8px;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #ffffff;
+
+  background: linear-gradient(159.3deg, #2f76ff 7.8%, #085bf8 106.69%), #1b1d1f;
+  border-radius: 8px;
+}
+
+.money-stats-block {
+  margin-left: 20px;
+}
+
+@media (max-width: 1905px) {
+  .promo-panel {
     flex-direction: column;
   }
-
-  .promo-text {
-    margin-top: 10px;
+  .user-total__count {
+    margin-bottom: 20px;
   }
 
-  .random-promo {
-    width: 80px;
-    left: 240px;
+  .money-stats-block {
+    margin-left: 0px;
   }
 }
 
-@media (max-width: 655px) {
+@media (max-width: 925px) {
   .prev-route {
     font-size: 12px;
   }
@@ -560,40 +414,61 @@ table {
 
   .worker-profile {
     font-size: 12px;
+    white-space: nowrap;
   }
 
   .logout-button {
     font-size: 12px;
+    white-space: nowrap;
+    margin-right: 40px;
+  }
+
+  .user-total__count {
+    width: calc(100vw - 30vw - 10px);
   }
 }
 
-@media (max-width: 510px) {
+@media (max-width: 540px) {
   .panel-header {
     flex-direction: column;
+    align-items: flex-start;
   }
 
-  .promo-panel {
-    padding-left: 15px;
+  .header-right {
+    margin-top: 10px;
   }
 
-  .promo-input {
-    padding-right: 50px;
+  .total-text {
+    white-space: nowrap;
   }
 
-  .random-promo {
-    left: 120px;
+  .user-total__count {
+    flex-direction: column;
+    max-width: 200px;
+    justify-content: center;
+    align-items: center;
   }
 
-  .promo-select {
-    width: 132px;
+  .total-left {
+    justify-content: space-between;
   }
 
-  .promo-bottom {
+  .chart-count {
+    white-space: nowrap;
+    margin-right: 10px;
+  }
+
+  .chart-title {
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 400px) {
+  .header-right {
     flex-direction: column;
   }
 
-  .create-promo {
-    width: 160px;
+  .worker-header__select {
     margin-top: 10px;
   }
 }

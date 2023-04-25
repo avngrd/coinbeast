@@ -100,8 +100,8 @@ ul {
 .menu-list__item {
   display: flex;
   align-items: center;
-  padding-top: 6px;
-  padding-bottom: 6px;
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 
 .menu-list__item a {
@@ -218,6 +218,7 @@ ul {
 
 .logout-button {
   margin-left: 36px;
+  white-space: nowrap;
 }
 
 .logout-button {
@@ -268,9 +269,17 @@ ul {
 
 .users-info {
   padding: 25px 30px;
+  min-width: 90%;
+  overflow: auto;
 
   background-color: #0e1012;
   border-radius: 10px;
+}
+
+@media (max-width: 1100px) {
+  .panel-header {
+    width: 68%;
+  }
 }
 
 .users-title {
@@ -303,7 +312,6 @@ ul {
   display: flex;
   flex-direction: row;
   margin-bottom: 30px;
-  justify-content: space-between;
 }
 
 .table-columns li {
@@ -314,28 +322,11 @@ ul {
 
   color: #3c4043;
 }
-/* 
-.mail {
-  min-width: 220px;
-}
-.country {
-  min-width: 130px;
-}
-.ip {
-  min-width: 195px;
-}
-.promo-code {
-  min-width: 205px;
-}
-.domain {
-  min-width: 230px;
-} */
 
 .item {
   display: flex;
   padding-top: 11px;
   padding-bottom: 11px;
-  justify-content: space-between;
 }
 
 .item li {
@@ -375,10 +366,64 @@ ul {
   }
 
   .panel-header {
+    width: 50%;
     flex-direction: column;
   }
 
   .header-left {
     margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 405px) {
+  .header-right {
+    flex-direction: column;
+  }
+
+  .worker-header__select {
+    margin-top: 10px;
+  }
+
+  .logout-button {
+    margin-left: 10px;
+  }
+}
+
+.mail {
+  min-width: 263px;
+}
+
+.country {
+  min-width: 184px;
+}
+
+.ip {
+  min-width: 97px;
+}
+
+.promo-code {
+  min-width: 226px;
+}
+
+.domain {
+  min-width: 187px;
+}
+
+/* сдыфв */
+
+@media (max-width: 1470px) {
+  .mail,
+  .country,
+  .promo-code,
+  .domain {
+    min-width: calc(283px - 100px);
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 1290px) {
+  .users-info {
+    max-width: 100%;
+    overflow: auto;
   }
 }

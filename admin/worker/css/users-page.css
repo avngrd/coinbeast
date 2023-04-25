@@ -100,8 +100,8 @@ ul {
 .menu-list__item {
   display: flex;
   align-items: center;
-  padding-top: 6px;
-  padding-bottom: 6px;
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 
 .menu-list__item a {
@@ -268,6 +268,7 @@ ul {
 
 .users-info {
   padding: 25px 30px;
+  width: 90%;
 
   background-color: #0e1012;
   border-radius: 10px;
@@ -303,7 +304,6 @@ ul {
   display: flex;
   flex-direction: row;
   margin-bottom: 30px;
-  justify-content: space-between;
 }
 
 .table-columns li {
@@ -335,7 +335,6 @@ ul {
   display: flex;
   padding-top: 11px;
   padding-bottom: 11px;
-  justify-content: space-between;
 }
 
 .item li {
@@ -380,5 +379,38 @@ ul {
 
   .header-left {
     margin-bottom: 10px;
+  }
+}
+
+.mail {
+  min-width: 208px;
+}
+
+.country {
+  min-width: 140px;
+}
+
+.ip {
+  min-width: 276px;
+}
+
+.promo-code {
+  min-width: 208px;
+}
+
+.domain {
+  min-width: 208px;
+}
+
+/* сдыфв */
+
+@media (max-width: 1470px) {
+  .mail,
+  .country,
+  .ip,
+  .promo-code,
+  .domain {
+    min-width: calc(283px - 100px);
+    margin-right: 10px;
   }
 }
