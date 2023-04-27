@@ -633,6 +633,10 @@ ul {
   }
 }
 
+.clzlc {
+  stroke-dasharray: none;
+}
+
 @media (max-width: 390px) {
   .header-right {
     flex-direction: column;
