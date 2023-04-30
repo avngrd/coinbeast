@@ -689,8 +689,10 @@
   }
 
   .main-page__coins {
-    width: 100%;
-    overflow: scroll;
+    width: calc(100% - 40px);
+    padding: 0 20px;
+    overflow: auto;
+    display: block;
   }
 
   .coins__list {
@@ -766,15 +768,12 @@ table tr th {
 
 .column-names {
   padding-bottom: 44px;
-  display: flex;
-  justify-content: space-between;
 }
 
 .coin-name {
   display: flex;
   flex-direction: row;
   align-items: center;
-  max-width: 100%;
 }
 
 .assets {
@@ -796,9 +795,29 @@ table tr th {
   white-space: nowrap;
 }
 
-.coin-info {
-  display: flex;
-  margin: 0 auto;
-  padding-bottom: 55px;
-  justify-content: space-between;
+.coins-table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.coins-table th {
+  text-align: left;
+}
+
+.column-name {
+  padding-bottom: 44px;
+}
+
+tbody tr td {
+  padding-bottom: 44px;
+}
+
+.coin-price {
+  white-space: nowrap;
+}
+
+@media (max-width: 950px) {
+  .coins-table {
+    overflow: auto;
+  }
 }
