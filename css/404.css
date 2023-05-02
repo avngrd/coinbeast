@@ -73,6 +73,7 @@ main {
 .error-back {
   padding: 15px 20px;
   margin-top: 52px;
+  font-family: inter;
 
   background: #246cf9;
   border-radius: 10px;

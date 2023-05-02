@@ -14,7 +14,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  transition: all 0.4s;
+  cursor: pointer;
 }
+
+.header__logo:hover{
+  opacity: 0.6;
+}
+
+
 .header__logo h1 {
   position: relative;
   margin-left: 15px;
@@ -218,8 +227,8 @@
     align-items: center;
   }
 
-  .header__logo {
-    margin-left: 20px;
+  .header{
+    width: calc(100% - 40px);
   }
 }
 

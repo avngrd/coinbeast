@@ -4,5 +4,8 @@ function modal(obj)
 {
 	obj = $(obj);
 	var modalHref = obj.data('modal-herf');
-	$(modalHref).bPopup();
+	$(modalHref).bPopup({
+		'positionStyle': "fixed"
+		
+	});
 }

@@ -254,7 +254,13 @@
           <div class="balance-page__panel">
             <div class="panel-title">
               <p>Assets Overview</p>
-              <svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 18 18"
+                class="hide-balance"
+                xmlns="http://www.w3.org/2000/svg"
+              >
                 <path
                   d="M17.8856 8.64989C17.7248 8.42992 13.8934 3.26373 8.99991 3.26373C4.10647 3.26373 0.274852 8.42992 0.114223 8.64968C-0.0380743 8.85837 -0.0380743 9.14141 0.114223 9.3501C0.274852 9.57007 4.10647 14.7363 8.99991 14.7363C13.8934 14.7363 17.7248 9.57004 17.8856 9.35028C18.0381 9.14162 18.0381 8.85837 17.8856 8.64989ZM8.99991 13.5495C5.39537 13.5495 2.27345 10.1206 1.3493 8.99959C2.27226 7.87765 5.38764 4.45054 8.99991 4.45054C12.6043 4.45054 15.726 7.87884 16.6505 9.0004C15.7276 10.1223 12.6122 13.5495 8.99991 13.5495Z"
                 />
@@ -307,620 +313,205 @@
                 <p class="trading-btc">≈ 0.000000 BTC</p>
               </div>
             </div>
-
-            <!-- <div class="all-coins">
-              <table class="all-coins__table">
-                <tr class="table-columns">
-                  <th class="column-coin">Coin</th>
-                  <th class="column-wallet">Wallet Balance</th>
-                  <th class="column-equ">Equivalent</th>
-                </tr>
-                <tr class="coin-info">
-                  <td class="coin-name">
-                    <img src="/img/btc.png" />
-                    <div class="coin-name">Bitcoin</div>
-                    <div>BTC</div>
-                  </td>
-                  <td>100000000</td>
-                  <td>$20 762.81</td>
-                  <td>
-                    <button>Deposit</button>
-                    <button>Withdraw</button>
-                    <button>Transfer</button>
-                  </td>
-                </tr>
-              </table>
-            </div> -->
-            <div class="panel-balance__coins">
-              <div class="coins-columns">
-                <p class="column-coin">Coin</p>
-                <p class="column-wallet">Wallet Balance</p>
-                <p class="column-equ">Equivalent</p>
-              </div>
-              <div class="coins-table">
-                <ul class="coins-list">
-                  <li>
-                    <ul class="coin-chars">
-                      <li class="table-coin">
+            <div class="table-wrapper">
+              <table class="panel-balance__coins">
+                <thead>
+                  <tr class="coins-columns">
+                    <th class="column-coin">Coin</th>
+                    <th class="column-wallet">Wallet Balance</th>
+                    <th class="column-equ">Equivalent</th>
+                    <th class="column-equ"></th>
+                  </tr>
+                </thead>
+                <tbody class="coins-table">
+                  <tr class="coin-chars">
+                    <td class="table-coin">
+                      <div>
                         <img src="/img/btc.png" />
                         <p>Bitcoin</p>
                         <span>BTC</span>
-                      </li>
-                      <li class="table-wallet">
-                        <p>100000000</p>
-                      </li>
-                      <li class="table-equ">
-                        <p>$20 762.81</p>
-                      </li>
-                      <li class="table-operations">
-                        <button>Deposit</button>
-                        <button>Withdraw</button>
-                        <button>Transfer</button>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <ul class="coin-chars">
-                      <li class="table-coin">
-                        <img src="/img/eth.png" />
-                        <p>Ethereum</p>
-                        <span>ETH</span>
-                      </li>
-                      <li class="table-wallet">
-                        <p>0.00000000</p>
-                      </li>
-                      <li class="table-equ">
-                        <p>$20 762.81</p>
-                      </li>
-                      <li class="table-operations">
-                        <button>Deposit</button>
-                        <button>Withdraw</button>
-                        <button>Transfer</button>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <ul class="coin-chars">
-                      <li class="table-coin">
-                        <img src="/img/ltc.png" />
-                        <p>Litecoin</p>
-                        <span>LTC</span>
-                      </li>
-                      <li class="table-wallet">
-                        <p>0.00000000</p>
-                      </li>
-                      <li class="table-equ">
-                        <p>$20 762.81</p>
-                      </li>
-                      <li class="table-operations">
-                        <button>Deposit</button>
-                        <button>Withdraw</button>
-                        <button>Transfer</button>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <ul class="coin-chars">
-                      <li class="table-coin">
-                        <img src="/img/btch.png" />
-                        <p>Bitcoin Cash</p>
-                        <span>BCH</span>
-                      </li>
-                      <li class="table-wallet">
-                        <p>0.00000000</p>
-                      </li>
-                      <li class="table-equ">
-                        <p>$20 762.81</p>
-                      </li>
-                      <li class="table-operations">
-                        <button>Deposit</button>
-                        <button>Withdraw</button>
-                        <button>Transfer</button>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <ul class="coin-chars">
-                      <li class="table-coin">
-                        <img src="/img/erc-20.png" />
-                        <p>Tether</p>
-                        <span>ERC-20</span>
-                      </li>
-                      <li class="table-wallet">
-                        <p>0.00000000</p>
-                      </li>
-                      <li class="table-equ">
-                        <p>$20 762.81</p>
-                      </li>
-                      <li class="table-operations">
-                        <button>Deposit</button>
-                        <button>Withdraw</button>
-                        <button>Transfer</button>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <ul class="coin-chars">
-                      <li class="table-coin">
-                        <img src="/img/erc-20.png" />
-                        <p>Tether</p>
-                        <span>TRC-20</span>
-                      </li>
-                      <li class="table-wallet">
-                        <p>0.00000000</p>
-                      </li>
-                      <li class="table-equ">
-                        <p>$20 762.81</p>
-                      </li>
-                      <li class="table-operations">
-                        <button>Deposit</button>
-                        <button>Withdraw</button>
-                        <button>Transfer</button>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <ul class="coin-chars">
-                      <li class="table-coin">
-                        <img src="/img/sol.png" />
-                        <p>Solana</p>
-                        <span>SOL</span>
-                      </li>
-                      <li class="table-wallet">
-                        <p>0.00000000</p>
-                      </li>
-                      <li class="table-equ">
-                        <p>$20 762.81</p>
-                      </li>
-                      <li class="table-operations">
-                        <button>Deposit</button>
-                        <button>Withdraw</button>
-                        <button>Transfer</button>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <ul class="coin-chars">
-                      <li class="table-coin">
-                        <img src="/img/uni.png" />
-                        <p>Uniswap</p>
-                        <span>UNI</span>
-                      </li>
-                      <li class="table-wallet">
-                        <p>0.00000000</p>
-                      </li>
-                      <li class="table-equ">
-                        <p>$20 762.81</p>
-                      </li>
-                      <li class="table-operations">
-                        <button>Deposit</button>
-                        <button>Withdraw</button>
-                        <button>Transfer</button>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <ul class="coin-chars">
-                      <li class="table-coin">
-                        <img src="/img/trx.png" />
-                        <p>Tron</p>
-                        <span>TRX</span>
-                      </li>
-                      <li class="table-wallet">
-                        <p>0.00000000</p>
-                      </li>
-                      <li class="table-equ">
-                        <p>$20 762.81</p>
-                      </li>
-                      <li class="table-operations">
-                        <button>Deposit</button>
-                        <button>Withdraw</button>
-                        <button>Transfer</button>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <ul class="coin-chars">
-                      <li class="table-coin">
-                        <img src="/img/xrp.png" />
-                        <p>Ripple</p>
-                        <span>XRP</span>
-                      </li>
-                      <li class="table-wallet">
-                        <p>0.00000000</p>
-                      </li>
-                      <li class="table-equ">
-                        <p>$20 762.81</p>
-                      </li>
-                      <li class="table-operations">
-                        <button>Deposit</button>
-                        <button>Withdraw</button>
-                        <button>Transfer</button>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <ul class="coin-chars">
-                      <li class="table-coin">
-                        <img src="/img/etc.png" />
-                        <p>Ethereum Classic</p>
-                        <span>ETC</span>
-                      </li>
-                      <li class="table-wallet">
-                        <p>0.00000000</p>
-                      </li>
-                      <li class="table-equ">
-                        <p>$20 762.81</p>
-                      </li>
-                      <li class="table-operations">
-                        <button>Deposit</button>
-                        <button>Withdraw</button>
-                        <button>Transfer</button>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <ul class="coin-chars">
-                      <li class="table-coin">
-                        <img src="/img/doge.png" />
-                        <p>DogeCoin</p>
-                        <span>DOGE</span>
-                      </li>
-                      <li class="table-wallet">
-                        <p>0.00000000</p>
-                      </li>
-                      <li class="table-equ">
-                        <p>$20 762.81</p>
-                      </li>
-                      <li class="table-operations">
-                        <button>Deposit</button>
-                        <button>Withdraw</button>
-                        <button>Transfer</button>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <ul class="coin-chars">
-                      <li class="table-coin">
-                        <img src="/img/ada.png" />
-                        <p>Cardano</p>
-                        <span>ADA</span>
-                      </li>
-                      <li class="table-wallet">
-                        <p>0.00000000</p>
-                      </li>
-                      <li class="table-equ">
-                        <p>$20 762.81</p>
-                      </li>
-                      <li class="table-operations">
-                        <button>Deposit</button>
-                        <button>Withdraw</button>
-                        <button>Transfer</button>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <ul class="coin-chars">
-                      <li class="table-coin">
-                        <img src="/img/busd.png" />
-                        <p>Binance USD</p>
-                        <span>BUSD</span>
-                      </li>
-                      <li class="table-wallet">
-                        <p>0.00000000</p>
-                      </li>
-                      <li class="table-equ">
-                        <p>$20 762.81</p>
-                      </li>
-                      <li class="table-operations">
-                        <button>Deposit</button>
-                        <button>Withdraw</button>
-                        <button>Transfer</button>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <ul class="coin-chars">
-                      <li class="table-coin">
-                        <img src="/img/dash.png" />
-                        <p>Dash</p>
-                        <span>DASH</span>
-                      </li>
-                      <li class="table-wallet">
-                        <p>0.00000000</p>
-                      </li>
-                      <li class="table-equ">
-                        <p>$20 762.81</p>
-                      </li>
-                      <li class="table-operations">
-                        <button>Deposit</button>
-                        <button>Withdraw</button>
-                        <button>Transfer</button>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <ul class="coin-chars">
-                      <li class="table-coin">
-                        <img src="/img/usdc.png" />
-                        <p>USD Coin</p>
-                        <span>USDC</span>
-                      </li>
-                      <li class="table-wallet">
-                        <p>0.00000000</p>
-                      </li>
-                      <li class="table-equ">
-                        <p>$20 762.81</p>
-                      </li>
-                      <li class="table-operations">
-                        <button>Deposit</button>
-                        <button>Withdraw</button>
-                        <button>Transfer</button>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <ul class="coin-chars">
-                      <li class="table-coin">
-                        <img src="/img/xmr.png" />
-                        <p>Monero</p>
-                        <span>XMR</span>
-                      </li>
-                      <li class="table-wallet">
-                        <p>0.00000000</p>
-                      </li>
-                      <li class="table-equ">
-                        <p>$20 762.81</p>
-                      </li>
-                      <li class="table-operations">
-                        <button>Deposit</button>
-                        <button>Withdraw</button>
-                        <button>Transfer</button>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <ul class="coin-chars">
-                      <li class="table-coin">
-                        <img src="/img/bnb.png" />
-                        <p>Binance Coin</p>
-                        <span>BNB</span>
-                      </li>
-                      <li class="table-wallet">
-                        <p>0.00000000</p>
-                      </li>
-                      <li class="table-equ">
-                        <p>$20 762.81</p>
-                      </li>
-                      <li class="table-operations">
-                        <button>Deposit</button>
-                        <button>Withdraw</button>
-                        <button>Transfer</button>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <ul class="coin-chars">
-                      <li class="table-coin">
-                        <img src="/img/eos.png" />
-                        <p>Eos</p>
-                        <span>EOS</span>
-                      </li>
-                      <li class="table-wallet">
-                        <p>0.00000000</p>
-                      </li>
-                      <li class="table-equ">
-                        <p>$20 762.81</p>
-                      </li>
-                      <li class="table-operations">
-                        <button>Deposit</button>
-                        <button>Withdraw</button>
-                        <button>Transfer</button>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <ul class="coin-chars">
-                      <li class="table-coin">
-                        <img src="/img/ont.png" />
-                        <p>Ontology</p>
-                        <span>ONT</span>
-                      </li>
-                      <li class="table-wallet">
-                        <p>0.00000000</p>
-                      </li>
-                      <li class="table-equ">
-                        <p>$20 762.81</p>
-                      </li>
-                      <li class="table-operations">
-                        <button>Deposit</button>
-                        <button>Withdraw</button>
-                        <button>Transfer</button>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <ul class="coin-chars">
-                      <li class="table-coin">
-                        <img src="/img/neo.png" />
-                        <p>Neo Smart Economy</p>
-                        <span>NEO</span>
-                      </li>
-                      <li class="table-wallet">
-                        <p>0.00000000</p>
-                      </li>
-                      <li class="table-equ">
-                        <p>$20 762.81</p>
-                      </li>
-                      <li class="table-operations">
-                        <button>Deposit</button>
-                        <button>Withdraw</button>
-                        <button>Transfer</button>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <ul class="coin-chars">
-                      <li class="table-coin">
-                        <img src="/img/link.png" />
-                        <p>Chainlink</p>
-                        <span>LINK</span>
-                      </li>
-                      <li class="table-wallet">
-                        <p>0.00000000</p>
-                      </li>
-                      <li class="table-equ">
-                        <p>$20 762.81</p>
-                      </li>
-                      <li class="table-operations">
-                        <button>Deposit</button>
-                        <button>Withdraw</button>
-                        <button>Transfer</button>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <ul class="coin-chars">
-                      <li class="table-coin">
-                        <img src="/img/qtum.png" />
-                        <p>Qtum</p>
-                        <span>QTUM</span>
-                      </li>
-                      <li class="table-wallet">
-                        <p>0.00000000</p>
-                      </li>
-                      <li class="table-equ">
-                        <p>$20 762.81</p>
-                      </li>
-                      <li class="table-operations">
-                        <button>Deposit</button>
-                        <button>Withdraw</button>
-                        <button>Transfer</button>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <ul class="coin-chars">
-                      <li class="table-coin">
-                        <img src="/img/kava.png" />
-                        <p>Kava</p>
-                        <span>KAVA</span>
-                      </li>
-                      <li class="table-wallet">
-                        <p>0.00000000</p>
-                      </li>
-                      <li class="table-equ">
-                        <p>$20 762.81</p>
-                      </li>
-                      <li class="table-operations">
-                        <button>Deposit</button>
-                        <button>Withdraw</button>
-                        <button>Transfer</button>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <ul class="coin-chars">
-                      <li class="table-coin">
-                        <img src="/img/fil.png" />
-                        <p>Filecoin</p>
-                        <span>FIL</span>
-                      </li>
-                      <li class="table-wallet">
-                        <p>0.00000000</p>
-                      </li>
-                      <li class="table-equ">
-                        <p>$20 762.81</p>
-                      </li>
-                      <li class="table-operations">
-                        <button>Deposit</button>
-                        <button>Withdraw</button>
-                        <button>Transfer</button>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <ul class="coin-chars">
-                      <li class="table-coin">
-                        <img src="/img/atm.png" />
-                        <p>ATM Fan Coin</p>
-                        <span>ATM</span>
-                      </li>
-                      <li class="table-wallet">
-                        <p>0.00000000</p>
-                      </li>
-                      <li class="table-equ">
-                        <p>$20 762.81</p>
-                      </li>
-                      <li class="table-operations">
-                        <button>Deposit</button>
-                        <button>Withdraw</button>
-                        <button>Transfer</button>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <ul class="coin-chars">
-                      <li class="table-coin">
-                        <img src="/img/ava.png" />
-                        <p>Travala</p>
-                        <span>AVA</span>
-                      </li>
-                      <li class="table-wallet">
-                        <p>0.00000000</p>
-                      </li>
-                      <li class="table-equ">
-                        <p>$20 762.81</p>
-                      </li>
-                      <li class="table-operations">
-                        <button>Deposit</button>
-                        <button>Withdraw</button>
-                        <button>Transfer</button>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <ul class="coin-chars">
-                      <li class="table-coin">
-                        <img src="/img/chz.png" />
-                        <p>Chiliz</p>
-                        <span>CHZ</span>
-                      </li>
-                      <li class="table-wallet">
-                        <p>0.00000000</p>
-                      </li>
-                      <li class="table-equ">
-                        <p>$20 762.81</p>
-                      </li>
-                      <li class="table-operations">
-                        <button>Deposit</button>
-                        <button>Withdraw</button>
-                        <button>Transfer</button>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <ul class="coin-chars">
-                      <li class="table-coin">
-                        <img src="/img/coti.png" />
-                        <p>COTI</p>
-                        <span>COTI</span>
-                      </li>
-                      <li class="table-wallet">
-                        <p>0.00000000</p>
-                      </li>
-                      <li class="table-equ">
-                        <p>$20 762.81</p>
-                      </li>
-                      <li class="table-operations">
-                        <button>Deposit</button>
-                        <button>Withdraw</button>
-                        <button>Transfer</button>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
+                      </div>
+                    </td>
+                    <td class="table-wallet">
+                      <p>100000000</p>
+                    </td>
+                    <td class="table-equ">
+                      <p>$20 762.81</p>
+                    </td>
+                    <td class="table-operations">
+                      <button>Deposit</button>
+                      <button>Withdraw</button>
+                      <button>Transfer</button>
+                    </td>
+                  </tr>
+                  <tr class="coin-chars">
+                    <td class="table-coin">
+                      <div>
+                        <img src="/img/btc.png" />
+                        <p>Bitcoin</p>
+                        <span>BTC</span>
+                      </div>
+                    </td>
+                    <td class="table-wallet">
+                      <p>100000000</p>
+                    </td>
+                    <td class="table-equ">
+                      <p>$20 762.81</p>
+                    </td>
+                    <td class="table-operations">
+                      <button>Deposit</button>
+                      <button>Withdraw</button>
+                      <button>Transfer</button>
+                    </td>
+                  </tr>
+
+                  <tr class="coin-chars">
+                    <td class="table-coin">
+                      <div>
+                        <img src="/img/btc.png" />
+                        <p>Bitcoin</p>
+                        <span>BTC</span>
+                      </div>
+                    </td>
+                    <td class="table-wallet">
+                      <p>100000000</p>
+                    </td>
+                    <td class="table-equ">
+                      <p>$20 762.81</p>
+                    </td>
+                    <td class="table-operations">
+                      <button>Deposit</button>
+                      <button>Withdraw</button>
+                      <button>Transfer</button>
+                    </td>
+                  </tr>
+
+                  <tr class="coin-chars">
+                    <td class="table-coin">
+                      <div>
+                        <img src="/img/btc.png" />
+                        <p>Bitcoin</p>
+                        <span>BTC</span>
+                      </div>
+                    </td>
+                    <td class="table-wallet">
+                      <p>100000000</p>
+                    </td>
+                    <td class="table-equ">
+                      <p>$20 762.81</p>
+                    </td>
+                    <td class="table-operations">
+                      <button>Deposit</button>
+                      <button>Withdraw</button>
+                      <button>Transfer</button>
+                    </td>
+                  </tr>
+
+                  <tr class="coin-chars">
+                    <td class="table-coin">
+                      <div>
+                        <img src="/img/btc.png" />
+                        <p>Bitcoin</p>
+                        <span>BTC</span>
+                      </div>
+                    </td>
+                    <td class="table-wallet">
+                      <p>100000000</p>
+                    </td>
+                    <td class="table-equ">
+                      <p>$20 762.81</p>
+                    </td>
+                    <td class="table-operations">
+                      <button>Deposit</button>
+                      <button>Withdraw</button>
+                      <button>Transfer</button>
+                    </td>
+                  </tr>
+
+                  <tr class="coin-chars">
+                    <td class="table-coin">
+                      <div>
+                        <img src="/img/btc.png" />
+                        <p>Bitcoin</p>
+                        <span>BTC</span>
+                      </div>
+                    </td>
+                    <td class="table-wallet">
+                      <p>100000000</p>
+                    </td>
+                    <td class="table-equ">
+                      <p>$20 762.81</p>
+                    </td>
+                    <td class="table-operations">
+                      <button>Deposit</button>
+                      <button>Withdraw</button>
+                      <button>Transfer</button>
+                    </td>
+                  </tr>
+
+                  <tr class="coin-chars">
+                    <td class="table-coin">
+                      <div>
+                        <img src="/img/btc.png" />
+                        <p>Bitcoin</p>
+                        <span>BTC</span>
+                      </div>
+                    </td>
+                    <td class="table-wallet">
+                      <p>100000000</p>
+                    </td>
+                    <td class="table-equ">
+                      <p>$20 762.81</p>
+                    </td>
+                    <td class="table-operations">
+                      <button>Deposit</button>
+                      <button>Withdraw</button>
+                      <button>Transfer</button>
+                    </td>
+                  </tr>
+
+                  <tr class="coin-chars">
+                    <td class="table-coin">
+                      <div>
+                        <img src="/img/btc.png" />
+                        <p>Bitcoin</p>
+                        <span>BTC</span>
+                      </div>
+                    </td>
+                    <td class="table-wallet">
+                      <p>100000000</p>
+                    </td>
+                    <td class="table-equ">
+                      <p>$20 762.81</p>
+                    </td>
+                    <td class="table-operations">
+                      <button>Deposit</button>
+                      <button>Withdraw</button>
+                      <button>Transfer</button>
+                    </td>
+                  </tr>
+                  <tr class="coin-chars">
+                    <td class="table-coin">
+                      <div>
+                        <img src="/img/btc.png" />
+                        <p>Bitcoin</p>
+                        <span>BTC</span>
+                      </div>
+                    </td>
+                    <td class="table-wallet">
+                      <p>100000000</p>
+                    </td>
+                    <td class="table-equ">
+                      <p>$20 762.81</p>
+                    </td>
+                    <td class="table-operations">
+                      <button>Deposit</button>
+                      <button>Withdraw</button>
+                      <button>Transfer</button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
         </div>
@@ -928,27 +519,75 @@
       <div class="deposit-wrapper visually-hidden" id="deposit">
         <section class="deposit-modal">
           <form method="POST" class="deposit-form">
-            <p class="deposit-title">Deposit</p>
-            <img class="deposit-img" src="/img/depositimg.png" />
-            <label class="deposit-coin__label"> Select coin </label>
-            <div class="select-coin">
-              <img src="/img/btcform.png" />
-              <p>Bitcoin</p>
-              <span>BTC</span>
+            <div class="form-header">
+              <p class="deposit-title">Deposit</p>
               <svg
-                width="7"
-                height="5"
-                viewBox="0 0 7 5"
-                fill="none"
+                class="cross-close modal_close"
                 xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 384 512"
+                width="26"
+                height="26"
+                fill="#ffffff"
               >
                 <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M0.551343 1.86928C0.240698 1.55863 0.240698 1.05498 0.551343 0.744336C0.861987 0.433691 1.36564 0.433691 1.67628 0.744336L3.50018 2.56823L5.32407 0.744336C5.63471 0.433691 6.13837 0.433691 6.44901 0.744336C6.75966 1.05498 6.75966 1.55863 6.44901 1.86928L4.06265 4.25564C3.752 4.56629 3.24835 4.56629 2.93771 4.25564L0.551343 1.86928Z"
-                  fill="#22282F"
+                  d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
                 />
               </svg>
+            </div>
+            <img class="deposit-img" src="/img/depositimg.png" />
+            <label class="deposit-coin__label"> Select coin </label>
+            <div class="select-coin__block">
+              <div class="select-coin">
+                <img src="/img/btcform.png" />
+                <p>Bitcoin</p>
+                <span>BTC</span>
+                <svg
+                  width="7"
+                  height="5"
+                  viewBox="0 0 7 5"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M0.551343 1.86928C0.240698 1.55863 0.240698 1.05498 0.551343 0.744336C0.861987 0.433691 1.36564 0.433691 1.67628 0.744336L3.50018 2.56823L5.32407 0.744336C5.63471 0.433691 6.13837 0.433691 6.44901 0.744336C6.75966 1.05498 6.75966 1.55863 6.44901 1.86928L4.06265 4.25564C3.752 4.56629 3.24835 4.56629 2.93771 4.25564L0.551343 1.86928Z"
+                    fill="#22282F"
+                  />
+                </svg>
+              </div>
+              <div class="select-coin__menu">
+                <ul class="coin-select__list">
+                  <li class="select-list__item">
+                    <div class="сhoose-coin">
+                      <img src="/img/btcform.png" class="choose-coin__photo" />
+                      <p>Bitcoin</p>
+                      <span>BTC</span>
+                    </div>
+                  </li>
+                  <li class="select-list__item">
+                    <div class="сhoose-coin">
+                      <img src="/img/btcform.png" class="choose-coin__photo" />
+                      <p>Bitcoin</p>
+                      <span>BTC</span>
+                    </div>
+                  </li>
+                  <li class="select-list__item">
+                    <div class="сhoose-coin">
+                      <img src="/img/btcform.png" class="choose-coin__photo" />
+                      <p>Bitcoin</p>
+                      <span>BTC</span>
+                    </div>
+                  </li>
+                  <li class="select-list__item">
+                    <div class="сhoose-coin">
+                      <img src="/img/btcform.png" class="choose-coin__photo" />
+                      <p>Bitcoin</p>
+                      <span>BTC</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
             </div>
             <label class="deposit-network__label">Select a network</label>
             <div class="select-network">
@@ -975,7 +614,21 @@
       <div class="withdraw-wrapper visually-hidden" id="withdraw">
         <section class="deposit-modal">
           <form method="POST" class="withdraw-form">
-            <p class="deposit-title">Withdraw</p>
+            <div class="form-header">
+              <p class="deposit-title">Withdraw</p>
+              <svg
+                class="cross-close modal_close"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 384 512"
+                width="26"
+                height="26"
+                fill="#ffffff"
+              >
+                <path
+                  d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
+                />
+              </svg>
+            </div>
             <img class="deposit-img" src="/img/withdrawimg.png" />
             <label class="deposit-coin__label"> Select coin </label>
             <div class="select-coin">
@@ -1000,10 +653,8 @@
             <label class="deposit-network__label">Available for withdrawal</label>
             <div class="available-balance">
               <img src="/img/btcform.png" />
-              <p>59.3293220</p>
-              <span class="withdraw-btc">BTC</span>
-              <p>≈ 1132074,66</p>
-              <span>USD</span>
+              <p>59.3293220 <span class="withdraw-btc">BTC</span></p>
+              <p>≈ 1132074,66 <span>USD</span></p>
             </div>
             <label class="deposit-network__label">Enter amount</label>
             <input class="amount-input" />
@@ -1016,7 +667,21 @@
       <div class="transfer-wrapper visually-hidden" id="transfer">
         <section class="transfer-modal">
           <form method="POST" class="transfer-form">
-            <p class="transfer-title">Transfer</p>
+            <div class="form-header__transfer">
+              <p class="transfer-title">Transfer</p>
+              <svg
+                class="cross-close modal_close"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 384 512"
+                width="26"
+                height="26"
+                fill="#ffffff"
+              >
+                <path
+                  d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
+                />
+              </svg>
+            </div>
             <label class="transfer-coin__label"> Select coin </label>
             <div class="transfer-coin">
               <img src="/img/btcform.png" />
@@ -1100,18 +765,34 @@
             </div>
             <label class="transfer-coin__label">Amount to transfer</label>
             <div class="amount-transfer">
-              <p>0</p>
+              <input type="text" value="0" class="amount-transfer__input" placeholder="0" />
               <div class="max-amount">Max amount</div>
             </div>
             <div class="transfer-button">Transfer</div>
           </form>
         </section>
       </div>
-      <div class="bitcoin-deposit__wrapper visually-hidden" id="#bitcoin-dep">
+      <div class="bitcoin-deposit__wrapper visually-hidden" id="bitcoin-dep">
         <section class="bitcoin-deposit__modal">
           <form method="POST" class="bitcoin-form">
-            <p class="bitcoin-title">Deposit BTC</p>
-            <p class="bitcoin-description">on Bitcoin network</p>
+            <div class="form-header__transfer">
+              <div>
+                <p class="bitcoin-title">Deposit BTC</p>
+                <p class="bitcoin-description">on Bitcoin network</p>
+              </div>
+              <svg
+                class="cross-close modal_close"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 384 512"
+                width="26"
+                height="26"
+                fill="#ffffff"
+              >
+                <path
+                  d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
+                />
+              </svg>
+            </div>
             <div class="bitcoin-payment__about">
               <img src="/img/depositimg.png" />
               <p class="bitcoin-payment__title">Make a payment to the specified address</p>
@@ -1149,5 +830,9 @@
     <script src="/js/script.js"></script>
     <script src="/js/modalscript.js"></script>
     <script src="/js/__copyInput.js"></script>
+
+    <div>
+      <a onclick="modal(this)" data-modal-herf="#bitcoin-dep">bitcoin-dep</a>
+    </div>
   </body>
 </html>
