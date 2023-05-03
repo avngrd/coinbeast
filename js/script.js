@@ -23,3 +23,16 @@ $('.balance-page__menu').on('click', function (e) {
     mobile_menu.removeClass('activ');
   }
 });
+
+
+$(".select-coin").on('click', function (e) {
+  var item = $(this).closest(".select-coin__block").find(".coin-select__list");
+  console.log(item.css("display"));
+  if(item.css("display") == "block")
+  {
+    item.slideUp();
+  } else 
+  {
+    item.slideDown();
+  }
+});

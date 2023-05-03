@@ -590,23 +590,21 @@
               </div>
             </div>
             <label class="deposit-network__label">Select a network</label>
-            <div class="select-network">
-              <p>Bitcoin</p>
-              <svg
-                width="7"
-                height="5"
-                viewBox="0 0 7 5"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M0.551343 1.86928C0.240698 1.55863 0.240698 1.05498 0.551343 0.744336C0.861987 0.433691 1.36564 0.433691 1.67628 0.744336L3.50018 2.56823L5.32407 0.744336C5.63471 0.433691 6.13837 0.433691 6.44901 0.744336C6.75966 1.05498 6.75966 1.55863 6.44901 1.86928L4.06265 4.25564C3.752 4.56629 3.24835 4.56629 2.93771 4.25564L0.551343 1.86928Z"
-                  fill="#22282F"
-                />
-              </svg>
-            </div>
+            <select
+              class="select2 select2-hidden-accessible"
+              name="new"
+              data-minimum-results-for-search="5"
+              aria-hidden="true"
+            >
+              <option value="null" selected>Bitcoin</option>
+              <option value="off">Bitcoin</option>
+              <option value="on">Bitcoin</option>
+              <option value="off">Bitcoin</option>
+              <option value="on">ETH</option>
+              <option value="off">XRP</option>
+              <option value="on">USDT</option>
+              <option value="off">BNB</option>
+            </select>
             <button type="submit" class="deposit-button">Deposit</button>
           </form>
         </section>
@@ -631,24 +629,58 @@
             </div>
             <img class="deposit-img" src="/img/withdrawimg.png" />
             <label class="deposit-coin__label"> Select coin </label>
-            <div class="select-coin">
-              <img src="/img/btcform.png" />
-              <p>Bitcoin</p>
-              <span>BTC</span>
-              <svg
-                width="7"
-                height="5"
-                viewBox="0 0 7 5"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M0.551343 1.86928C0.240698 1.55863 0.240698 1.05498 0.551343 0.744336C0.861987 0.433691 1.36564 0.433691 1.67628 0.744336L3.50018 2.56823L5.32407 0.744336C5.63471 0.433691 6.13837 0.433691 6.44901 0.744336C6.75966 1.05498 6.75966 1.55863 6.44901 1.86928L4.06265 4.25564C3.752 4.56629 3.24835 4.56629 2.93771 4.25564L0.551343 1.86928Z"
-                  fill="#22282F"
-                />
-              </svg>
+            <div class="select-coin__block">
+              <div class="select-coin">
+                <img src="/img/btcform.png" />
+                <p>Bitcoin</p>
+                <span>BTC</span>
+                <svg
+                  width="7"
+                  height="5"
+                  viewBox="0 0 7 5"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M0.551343 1.86928C0.240698 1.55863 0.240698 1.05498 0.551343 0.744336C0.861987 0.433691 1.36564 0.433691 1.67628 0.744336L3.50018 2.56823L5.32407 0.744336C5.63471 0.433691 6.13837 0.433691 6.44901 0.744336C6.75966 1.05498 6.75966 1.55863 6.44901 1.86928L4.06265 4.25564C3.752 4.56629 3.24835 4.56629 2.93771 4.25564L0.551343 1.86928Z"
+                    fill="#22282F"
+                  ></path>
+                </svg>
+              </div>
+              <div class="select-coin__menu">
+                <ul class="coin-select__list">
+                  <li class="select-list__item">
+                    <div class="сhoose-coin">
+                      <img src="/img/btcform.png" class="choose-coin__photo" />
+                      <p>Bitcoin</p>
+                      <span>BTC</span>
+                    </div>
+                  </li>
+                  <li class="select-list__item">
+                    <div class="сhoose-coin">
+                      <img src="/img/btcform.png" class="choose-coin__photo" />
+                      <p>Bitcoin</p>
+                      <span>BTC</span>
+                    </div>
+                  </li>
+                  <li class="select-list__item">
+                    <div class="сhoose-coin">
+                      <img src="/img/btcform.png" class="choose-coin__photo" />
+                      <p>Bitcoin</p>
+                      <span>BTC</span>
+                    </div>
+                  </li>
+                  <li class="select-list__item">
+                    <div class="сhoose-coin">
+                      <img src="/img/btcform.png" class="choose-coin__photo" />
+                      <p>Bitcoin</p>
+                      <span>BTC</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
             </div>
             <label class="deposit-network__label">Available for withdrawal</label>
             <div class="available-balance">
@@ -683,24 +715,58 @@
               </svg>
             </div>
             <label class="transfer-coin__label"> Select coin </label>
-            <div class="transfer-coin">
-              <img src="/img/btcform.png" />
-              <p>Bitcoin</p>
-              <span>BTC</span>
-              <svg
-                width="7"
-                height="5"
-                viewBox="0 0 7 5"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M0.551343 1.86928C0.240698 1.55863 0.240698 1.05498 0.551343 0.744336C0.861987 0.433691 1.36564 0.433691 1.67628 0.744336L3.50018 2.56823L5.32407 0.744336C5.63471 0.433691 6.13837 0.433691 6.44901 0.744336C6.75966 1.05498 6.75966 1.55863 6.44901 1.86928L4.06265 4.25564C3.752 4.56629 3.24835 4.56629 2.93771 4.25564L0.551343 1.86928Z"
-                  fill="#22282F"
-                />
-              </svg>
+            <div class="select-coin__block">
+              <div class="select-coin">
+                <img src="/img/btcform.png" />
+                <p>Bitcoin</p>
+                <span>BTC</span>
+                <svg
+                  width="7"
+                  height="5"
+                  viewBox="0 0 7 5"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M0.551343 1.86928C0.240698 1.55863 0.240698 1.05498 0.551343 0.744336C0.861987 0.433691 1.36564 0.433691 1.67628 0.744336L3.50018 2.56823L5.32407 0.744336C5.63471 0.433691 6.13837 0.433691 6.44901 0.744336C6.75966 1.05498 6.75966 1.55863 6.44901 1.86928L4.06265 4.25564C3.752 4.56629 3.24835 4.56629 2.93771 4.25564L0.551343 1.86928Z"
+                    fill="#22282F"
+                  ></path>
+                </svg>
+              </div>
+              <div class="select-coin__menu">
+                <ul class="coin-select__list">
+                  <li class="select-list__item">
+                    <div class="сhoose-coin">
+                      <img src="/img/btcform.png" class="choose-coin__photo" />
+                      <p>Bitcoin</p>
+                      <span>BTC</span>
+                    </div>
+                  </li>
+                  <li class="select-list__item">
+                    <div class="сhoose-coin">
+                      <img src="/img/btcform.png" class="choose-coin__photo" />
+                      <p>Bitcoin</p>
+                      <span>BTC</span>
+                    </div>
+                  </li>
+                  <li class="select-list__item">
+                    <div class="сhoose-coin">
+                      <img src="/img/btcform.png" class="choose-coin__photo" />
+                      <p>Bitcoin</p>
+                      <span>BTC</span>
+                    </div>
+                  </li>
+                  <li class="select-list__item">
+                    <div class="сhoose-coin">
+                      <img src="/img/btcform.png" class="choose-coin__photo" />
+                      <p>Bitcoin</p>
+                      <span>BTC</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
             </div>
             <div class="transfer-choose">
               <div class="transfer-from">
@@ -834,5 +900,17 @@
     <div>
       <a onclick="modal(this)" data-modal-herf="#bitcoin-dep">bitcoin-dep</a>
     </div>
+
+    <script src="/js/select2/select2.full.min.js"></script>
+    <link rel="stylesheet" href="/js/select2/select2.min.css" />
+    <link rel="stylesheet" href="/js/select2/select2_salesman.css" />
+    <script>
+      $(document).ready(function () {
+        $('.select2').select2({
+          dropdownAutoWidth: !0,
+          width: '100%',
+        });
+      });
+    </script>
   </body>
 </html>

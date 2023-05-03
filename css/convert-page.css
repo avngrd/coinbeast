@@ -294,6 +294,7 @@ main {
 .balance-page__panel {
   padding-top: 75px;
   padding-left: 75px;
+  width: 100%;
 }
 
 .panel-title {
@@ -406,7 +407,6 @@ main {
 
 .convert {
   display: flex;
-  flex-direction: row;
 }
 
 .convert-button {
@@ -441,9 +441,6 @@ main {
 }
 
 @media (max-width: 1838px) {
-  .convert {
-    flex-direction: column;
-  }
   .convert-from {
     margin-top: 20px;
   }

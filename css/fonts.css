@@ -107,7 +107,7 @@
 }
 
 @font-face {
-  font-family: 'San Francisco Pro';
+  font-family: 'San Francisco Pro Light';
   src: local('San Francisco Pro Display Light'), local('San-Francisco-Pro-Display-Light'),
     url('/fonts/SFProDisplay-Light.woff2') format('woff2'),
     url('/fonts/SFProDisplay-Light.woff') format('woff'),
@@ -117,7 +117,7 @@
 }
 
 @font-face {
-  font-family: 'San Francisco Pro';
+  font-family: 'San Francisco Pro Regular';
   src: local('San Francisco Pro Display Regular'), local('San-Francisco-Pro-Display-Regular'),
     url('/fonts/SFProDisplay-Regular.woff2') format('woff2'),
     url('/fonts/SFProDisplay-Regular.woff') format('woff'),
@@ -127,7 +127,7 @@
 }
 
 @font-face {
-  font-family: 'San Francisco Pro';
+  font-family: 'San Francisco Pro Medium';
   src: local('San Francisco Pro Display Medium'), local('San-Francisco-Pro-Display-Medium'),
     url('/fonts/SFProDisplay-Medium.woff2') format('woff2'),
     url('/fonts/SFProDisplay-Medium.woff') format('woff'),
@@ -137,7 +137,7 @@
 }
 
 @font-face {
-  font-family: 'San Francisco Pro';
+  font-family: 'San Francisco Pro Bold';
   src: local('San Francisco Pro Display Bold'), local('San-Francisco-Pro-Display-Bold'),
     url('/fonts/SFProDisplay-Bold.woff2') format('woff2'),
     url('/fonts/SFProDisplay-Bold.woff') format('woff'),

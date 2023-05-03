@@ -365,7 +365,7 @@ thead {
 }
 
 .column-coin {
-  font-family: 'SF Pro Display';
+  font-family: 'San Francisco Pro Light';
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -385,12 +385,12 @@ thead {
 }
 
 .coins-columns th {
-  font-family: 'SF Pro Display', sans-serif;
+  font-family: 'San Francisco Pro Light', sans-serif;
   text-align: left;
 }
 
 .column-wallet {
-  font-family: 'SF Pro Display', sans-serif;
+  font-family: 'San Francisco Pro Light', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -486,7 +486,7 @@ tbody tr td {
 }
 
 .column-equ {
-  font-family: 'SF Pro Display';
+  font-family: 'San Francisco Pro Light';
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -544,6 +544,7 @@ tbody tr td {
 .deposit-button {
   width: 389px;
   height: 45px;
+  margin-top: 30px;
 }
 
 .deposit-title {
@@ -590,7 +591,7 @@ tbody tr td {
   padding-top: 1px;
   padding-bottom: 1px;
   padding-right: 24px;
-  margin-bottom: 230px;
+  margin-bottom: 25px;
   height: 45px;
 
   color: #ffffff;
@@ -638,7 +639,7 @@ tbody tr td {
   padding-bottom: 18px;
   z-index: -1;
   top: 10px;
-  width: 80%;
+  width: 100%;
   border: 1px solid #22282f;
   border-radius: 25px;
   background-color: #121518;
@@ -661,7 +662,7 @@ tbody tr td {
 .сhoose-coin span {
   margin-left: 8px;
 
-  font-family: 'SF Pro Display';
+  font-family: 'San Francisco Pro Light';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -715,7 +716,7 @@ tbody tr td {
   padding-right: 24px;
   margin-bottom: 30px;
   height: 45px;
-  width: 349px;
+  width: calc(100% - 32px);
 
   color: #ffffff;
 
@@ -802,6 +803,10 @@ tbody tr td {
   margin-right: 70px;
 }
 
+.coin-select__list {
+  display: none;
+}
+
 .withdraw-form {
   display: flex;
   padding: 42px 42px;
@@ -818,6 +823,12 @@ tbody tr td {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 50px;
+
+  position: relative;
+}
+
+.transfer-form .select-coin__block {
+  margin-top: 13px;
 }
 
 .form-header {
@@ -826,11 +837,17 @@ tbody tr td {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 14px;
+
+  position: relative;
 }
 
 .cross-close {
   transition: all 0.3s;
   cursor: pointer;
+
+  position: absolute;
+  top: -15px;
+  right: -15px;
 }
 
 .cross-close:hover {
@@ -943,6 +960,7 @@ tbody tr td {
   display: flex;
   align-items: center;
   margin-bottom: 30px;
+  justify-content: space-evenly;
   /* justify-content: space-between; */
 }
 
@@ -1042,7 +1060,7 @@ tbody tr td {
 }
 
 .available-btc {
-  width: 830px;
+  width: calc(100% - 6px);
   margin-top: 13px;
   display: flex;
   align-items: center;
@@ -1092,7 +1110,7 @@ tbody tr td {
   align-items: center;
   justify-content: space-between;
   height: 33px;
-  padding-left: 10px;
+  padding-left: 15px;
   width: 100%;
   padding-bottom: 6px;
   padding-right: 110px;
@@ -1241,7 +1259,7 @@ tbody tr td {
 .bitcoin-address__label {
   margin-bottom: 13px;
 
-  font-family: 'SF Pro Display';
+  font-family: 'San Francisco Pro Light';
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -1250,7 +1268,8 @@ tbody tr td {
 }
 
 .input-address {
-  width: 418px;
+  padding-right: 40px;
+  width: calc(100% - 55px);
   padding-left: 15px;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -1273,7 +1292,7 @@ tbody tr td {
 .copy-address {
   position: absolute;
   bottom: 46px;
-  right: 8px;
+  right: 17px;
 
   cursor: pointer;
   transition: all 0.3s;
@@ -1438,6 +1457,10 @@ tbody tr td {
   display: flex;
 }
 
+#withdraw .select-coin {
+  margin-bottom: 25px;
+}
+
 @keyframes burgerAnimation {
   from {
     opacity: 0;
@@ -1503,7 +1526,7 @@ tbody tr td {
   }
 
   .available-btc {
-    width: 100%;
+    width: calc(100% - 6px);
   }
 
   .transfer-button {
@@ -1528,10 +1551,6 @@ tbody tr td {
   }
 
   .select-coin {
-    width: calc(100% - 32px);
-  }
-
-  .select-network {
     width: calc(100% - 32px);
   }
 
@@ -1565,10 +1584,6 @@ tbody tr td {
   .bitcoin-form {
     width: calc(100vw - 30vw);
     height: 800px;
-  }
-
-  .input-address {
-    width: 200px;
   }
 }
 

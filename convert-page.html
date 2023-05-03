@@ -318,23 +318,21 @@
                 <p class="count-from">0.00</p>
                 <div class="balance-from">
                   <p class="balance-from-p">Balance: 0.000000</p>
-                  <div class="balance-select">
-                    <p>From</p>
-                    <svg
-                      width="7"
-                      height="5"
-                      viewBox="0 0 7 5"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M0.551343 1.86928C0.240698 1.55863 0.240698 1.05498 0.551343 0.744336C0.861987 0.433691 1.36564 0.433691 1.67628 0.744336L3.50018 2.56823L5.32407 0.744336C5.63471 0.433691 6.13837 0.433691 6.44901 0.744336C6.75966 1.05498 6.75966 1.55863 6.44901 1.86928L4.06265 4.25564C3.752 4.56629 3.24835 4.56629 2.93771 4.25564L0.551343 1.86928Z"
-                        fill="#22282F"
-                      />
-                    </svg>
-                  </div>
+                  <select
+                    class="select2 select2-hidden-accessible"
+                    name="new"
+                    data-minimum-results-for-search="5"
+                    aria-hidden="true"
+                  >
+                    <option value="null" selected>From</option>
+                    <option value="off">Bitcoin</option>
+                    <option value="on">Bitcoin</option>
+                    <option value="off">Bitcoin</option>
+                    <option value="on">ETH</option>
+                    <option value="off">XRP</option>
+                    <option value="on">USDT</option>
+                    <option value="off">BNB</option>
+                  </select>
                 </div>
               </div>
               <div class="convert-from">
@@ -342,23 +340,21 @@
                 <p class="count-from">0.00</p>
                 <div class="balance-from">
                   <p class="balance-from-p">Balance: 0.000000</p>
-                  <div class="balance-select">
-                    <p>From</p>
-                    <svg
-                      width="7"
-                      height="5"
-                      viewBox="0 0 7 5"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M0.551343 1.86928C0.240698 1.55863 0.240698 1.05498 0.551343 0.744336C0.861987 0.433691 1.36564 0.433691 1.67628 0.744336L3.50018 2.56823L5.32407 0.744336C5.63471 0.433691 6.13837 0.433691 6.44901 0.744336C6.75966 1.05498 6.75966 1.55863 6.44901 1.86928L4.06265 4.25564C3.752 4.56629 3.24835 4.56629 2.93771 4.25564L0.551343 1.86928Z"
-                        fill="#22282F"
-                      />
-                    </svg>
-                  </div>
+                  <select
+                    class="select2 select2-hidden-accessible"
+                    name="new"
+                    data-minimum-results-for-search="5"
+                    aria-hidden="true"
+                  >
+                    <option value="null" selected>From</option>
+                    <option value="off">Bitcoin</option>
+                    <option value="on">Bitcoin</option>
+                    <option value="off">Bitcoin</option>
+                    <option value="on">ETH</option>
+                    <option value="off">XRP</option>
+                    <option value="on">USDT</option>
+                    <option value="off">BNB</option>
+                  </select>
                 </div>
               </div>
             </div>
@@ -370,5 +366,16 @@
     <script src="/js/modalscript.js"></script>
     <script src="/js/__copyInput.js"></script>
     <script src="/js/script.js"></script>
+    <script src="/js/select3/select2.full.min.js"></script>
+    <link rel="stylesheet" href="/js/select3/select2.min.css" />
+    <link rel="stylesheet" href="/js/select3/select2_salesman.css" />
+    <script>
+      $(document).ready(function () {
+        $('.select2').select2({
+          dropdownAutoWidth: !0,
+          width: '100%',
+        });
+      });
+    </script>
   </body>
 </html>
