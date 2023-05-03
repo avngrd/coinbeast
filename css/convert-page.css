@@ -57,6 +57,12 @@ ul {
   margin-top: 20px;
 }
 
+.logo-link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 .header-nav {
   width: 100%;
   padding-right: 5.31%;
@@ -86,11 +92,11 @@ ul {
 
 .logo-title {
   margin-left: 13px;
-
+  font-family: 'Manrope';
+  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 22px;
-
   color: #ffffff;
 }
 
@@ -98,9 +104,9 @@ ul {
   color: #145dea;
 }
 
-.links-trading {
+/* .links-trading {
   margin-left: 113px;
-}
+} */
 
 .header-link {
   /* margin-right: 50px; */
@@ -210,14 +216,14 @@ main {
 }
 
 .balance-page__menu.activ ~ .mobile-dop_menu {
-  left: calc(50% + 20px);
+  left: calc(50% + 8px);
 }
 
 @media (max-width: 600px) {
   .balance-page__menu {
     min-width: 200px;
     position: absolute;
-    transform: translateX(-100vw);
+    transform: translateX(-150vw);
     z-index: 1;
     background: #0b0d0f94;
     left: 0;
@@ -225,6 +231,12 @@ main {
     width: 100%;
 
     transition: all 0.4s;
+  }
+
+  header {
+    width: 100%;
+    position: fixed;
+    z-index: 111;
   }
 
   .mobile-dop_menu {
@@ -238,13 +250,14 @@ main {
   .menu-list {
     padding-top: 0;
     display: flex;
+    height: 72vh;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     border-right: 1px solid #13171b;
     width: 50%;
     background: #0b0d0f;
-    padding-left: 20px;
     padding-bottom: 20px;
+    overflow: auto;
   }
 }
 
@@ -324,7 +337,7 @@ main {
   margin-right: 13px;
   padding: 15px 20px;
   background-color: #0e1012;
-  width: 722px;
+  width: 100%;
   border-radius: 10px;
 }
 
@@ -400,7 +413,7 @@ main {
   margin-top: 30px;
   padding-top: 11px;
   padding-bottom: 11px;
-  width: 75vw;
+  width: 100%;
 
   font-family: 'Sofia Pro';
   font-style: normal;
@@ -433,10 +446,6 @@ main {
   }
   .convert-from {
     margin-top: 20px;
-  }
-
-  .convert-button {
-    width: 42vw;
   }
 }
 
@@ -491,10 +500,19 @@ main {
   transform: rotate(45deg) translate(0, 50%);
 }
 
+.header__end-left {
+  background: #13171b;
+  width: 1px;
+  height: 35px;
+  margin-left: 36px;
+}
+
 @media (max-width: 1020px) {
   .burger {
     display: flex;
+    overflow-y: hidden;
     margin-right: 10px;
+    right: 10px;
   }
 
   .header-nav {
@@ -540,10 +558,6 @@ main {
   .header-link {
     margin-left: 0px;
   }
-
-  .convert-from {
-    width: calc(70vw - 30vw - 30px);
-  }
 }
 
 /* burger-styles */
@@ -572,5 +586,11 @@ main {
 
   .balance-select {
     margin-top: 10px;
+  }
+}
+
+@media (max-width: 350px) {
+  .balance-page__panel {
+    padding-left: 45px;
   }
 }
