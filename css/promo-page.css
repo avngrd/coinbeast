@@ -491,7 +491,7 @@ main {
 
 @media (max-width: 970px) {
   .promo-user__info {
-    margin-left: 40px;
+    margin-left: 20px;
     width: calc(100% - 20% - 20px);
   }
 
@@ -501,17 +501,9 @@ main {
 }
 
 @media (max-width: 620px) {
-  .item-link {
-    display: none;
-  }
-
   .promo-right {
     display: flex;
     justify-content: center;
-  }
-
-  .profile {
-    display: none;
   }
 
   .routing-current {
@@ -531,6 +523,15 @@ main {
   }
 
   .menu-list {
-    margin-left: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .menu-list.menu-list {
+    bottom: 177px;
+  }
+
+  .main-page__menu.activ ~ .mobile-dop_menu.mobile-dop_menu {
+    left: calc(50% + 20px);
   }
 }

@@ -331,3 +331,10 @@ main {
     width: calc(100% - 10vw - 20px);
   }
 }
+.submit-input.submit-input{
+  width: calc(100%);
+}
+@media (max-width: 600px)
+{.submit-button.submit-button {
+    right: 5px;
+}}

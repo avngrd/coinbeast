@@ -551,21 +551,9 @@ main {
     margin-left: 20px;
     width: calc(100% - 20% - 20px);
   }
-
-  .menu-list {
-    margin-left: 20px;
-  }
 }
 
 @media (max-width: 650px) {
-  .item-link {
-    display: none;
-  }
-
-  .profile {
-    display: none;
-  }
-
   .main-page__panel {
     margin-left: 20px;
   }
@@ -589,5 +577,15 @@ main {
 
   .fa-app__code {
     margin-top: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .menu-list.menu-list {
+    bottom: 177px;
+  }
+
+  .main-page__menu.activ ~ .mobile-dop_menu.mobile-dop_menu {
+    left: calc(50% + 1px);
   }
 }

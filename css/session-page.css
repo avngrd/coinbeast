@@ -498,11 +498,6 @@ main {
     margin-left: 20px;
     width: calc(100% - 20% - 20px);
   }
-
-  .menu-list {
-    margin-left: 20px;
-  }
-
   .main-page__panel {
     margin-left: 20px;
   }
@@ -510,63 +505,49 @@ main {
 
 @media (max-width: 822px) {
   .session-info {
-    flex-direction: row;
-    align-items: center;
   }
 
   .info-top {
-    flex-direction: column;
-    padding-bottom: 0px;
     border-bottom: none;
   }
 
   .info-bottom {
-    flex-direction: column;
-    padding-top: 0px;
   }
 
   .date-time {
     width: 76px;
-    margin-bottom: 16px;
+    /* margin-bottom: 16px; */
   }
 
   .device {
     width: 76px;
-    margin-bottom: 16px;
+    /* margin-bottom: 16px; */
   }
 
   .ip-address {
     width: 76px;
-    margin-bottom: 16px;
+    /* margin-bottom: 16px; */
   }
 
   .bot-date {
     width: 97px;
-    margin-top: 10px;
-    height: 36px;
+    /* margin-top: 10px; */
+    /* height: 36px; */
   }
 
   .bot-device {
     width: 97px;
-    height: 20px;
+    /* height: 20px; */
   }
 
   .bot-ip {
     width: 97px;
-    margin-top: 16px;
-    margin-bottom: 10px;
+    /* margin-top: 16px; */
+    /* margin-bottom: 10px; */
   }
 }
 
 @media (max-width: 510px) {
-  .item-link {
-    display: none;
-  }
-
-  .profile {
-    display: none;
-  }
-
   .session-user__info {
     padding: 22px 26px;
     margin-left: 0px;
@@ -575,5 +556,11 @@ main {
   .session-title {
     font-size: 16px;
     margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 600px) {
+  .menu-list.menu-list {
+    bottom: 177px;
   }
 }

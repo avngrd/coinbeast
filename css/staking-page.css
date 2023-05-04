@@ -198,10 +198,20 @@ main {
 }
 
 .balance-page__menu.activ ~ .mobile-dop_menu {
-  left: calc(50% + 8px);
+  left: calc(50% + 17px);
+}
+
+.menu-list__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
 }
 
 @media (max-width: 600px) {
+  .menu-list__item {
+    margin: 15px 0;
+  }
+
   .balance-page__menu {
     min-width: 200px;
     position: absolute;
@@ -233,12 +243,6 @@ main {
     background: #0b0d0f;
     padding-bottom: 20px;
   }
-}
-
-.menu-list__item {
-  display: flex;
-  align-items: center;
-  margin-bottom: 30px;
 }
 
 .transaction {

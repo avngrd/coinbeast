@@ -318,6 +318,7 @@
                 <p class="count-from">0.00</p>
                 <div class="balance-from">
                   <p class="balance-from-p">Balance: 0.000000</p>
+                  <div class="wrapper_select2">
                   <select
                     class="select2 select2-hidden-accessible"
                     name="new"
@@ -334,27 +335,30 @@
                     <option value="off">BNB</option>
                   </select>
                 </div>
+                </div>
               </div>
               <div class="convert-from">
                 <p class="ct-from">To</p>
                 <p class="count-from">0.00</p>
                 <div class="balance-from">
                   <p class="balance-from-p">Balance: 0.000000</p>
-                  <select
-                    class="select2 select2-hidden-accessible"
-                    name="new"
-                    data-minimum-results-for-search="5"
-                    aria-hidden="true"
-                  >
-                    <option value="null" selected>From</option>
-                    <option value="off">Bitcoin</option>
-                    <option value="on">Bitcoin</option>
-                    <option value="off">Bitcoin</option>
-                    <option value="on">ETH</option>
-                    <option value="off">XRP</option>
-                    <option value="on">USDT</option>
-                    <option value="off">BNB</option>
-                  </select>
+                  <div class="wrapper_select2">
+                    <select
+                      class="select2 select2-hidden-accessible"
+                      name="new"
+                      data-minimum-results-for-search="5"
+                      aria-hidden="true"
+                    >
+                      <option value="null" selected>From</option>
+                      <option value="off">Bitcoin</option>
+                      <option value="on">Bitcoin</option>
+                      <option value="off">Bitcoin</option>
+                      <option value="on">ETH</option>
+                      <option value="off">XRP</option>
+                      <option value="on">USDT</option>
+                      <option value="off">BNB</option>
+                    </select>
+                  </div>
                 </div>
               </div>
             </div>
@@ -366,9 +370,9 @@
     <script src="/js/modalscript.js"></script>
     <script src="/js/__copyInput.js"></script>
     <script src="/js/script.js"></script>
-    <script src="/js/select3/select2.full.min.js"></script>
-    <link rel="stylesheet" href="/js/select3/select2.min.css" />
-    <link rel="stylesheet" href="/js/select3/select2_salesman.css" />
+    <script src="/js/select2/select2.full.min.js"></script>
+    <link rel="stylesheet" href="/js/select2/convert/select2.min.css" />
+    <link rel="stylesheet" href="/js/select2/convert/select2_salesman.css" />
     <script>
       $(document).ready(function () {
         $('.select2').select2({

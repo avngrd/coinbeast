@@ -1,11 +1,15 @@
 // jquery.bpopup.min.js
+var bPopup = null;
+function modal(obj) {
+  obj = $(obj);
+  var modalHref = obj.data("modal-herf");
+  if (bPopup != null) {
+    bPopup.close();
+  }
 
-function modal(obj)
-{
-	obj = $(obj);
-	var modalHref = obj.data('modal-herf');
-	$(modalHref).bPopup({
-		'positionStyle': "fixed"
-		
-	});
+  bPopup = $(modalHref).bPopup({
+    // follow: [true,true],
+	'positionStyle': "fixed",
+    escClose: true,
+  });
 }

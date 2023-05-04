@@ -305,10 +305,18 @@ main {
   font-style: normal;
   font-weight: 600;
   font-size: 21px;
-  line-height: 19px;
+  line-height: 22px;
 
   color: #ffffff;
 }
+
+.submit-input.submit-input{
+  width: calc(100%);
+}
+@media (max-width: 600px)
+{.submit-button.submit-button {
+    right: 5px;
+}}
 
 .list-item__description {
   margin-bottom: 50px;

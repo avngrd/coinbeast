@@ -8,7 +8,7 @@ function burgerAnimation() {
 
 burger.addEventListener('click', burgerAnimation);
 
-var mobile_menu = $('.balance-page__menu');
+var mobile_menu = $('.main-page__menu');
 $('.mobile-dop_menu').on('click', function (e) {
   if (mobile_menu.hasClass('activ')) {
     mobile_menu.removeClass('activ');
@@ -17,19 +17,9 @@ $('.mobile-dop_menu').on('click', function (e) {
   }
 });
 
-$('.balance-page__menu').on('click', function (e) {
+$('.main-page__menu').on('click', function (e) {
   console.log(1);
-  if ($(e.target).hasClass('balance-page__menu')) {
+  if ($(e.target).hasClass('main-page__menu')) {
     mobile_menu.removeClass('activ');
-  }
-});
-
-$('.select-coin').on('click', function (e) {
-  var item = $(this).closest('.select-coin__block').find('.coin-select__list');
-  console.log(item.css('display'));
-  if (item.css('display') == 'block') {
-    item.slideUp();
-  } else {
-    item.slideDown();
   }
 });
