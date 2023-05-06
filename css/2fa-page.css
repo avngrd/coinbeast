@@ -62,9 +62,10 @@ header {
 .logo {
   display: flex;
   align-items: center;
-  margin-top: 15px;
+  margin-left: 15px;
+  margin-top: 20px;
   margin-bottom: 20px;
-  margin-left: 20px;
+  cursor: pointer;
 }
 
 .logo-title {
@@ -353,25 +354,34 @@ main {
 
 .item-link {
   color: #32363a;
+  white-space: nowrap;
 }
-
+.main-page {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
 .main-page__panels {
   display: flex;
   flex-direction: row;
+  max-width: 901px;
+  margin: 0 auto;
   margin-bottom: 100px;
 }
 
 .main-page__panel {
-  margin-left: 80px;
+  width: 100%;
 }
 
 .fa-user__info {
   padding: 42px 42px;
-  width: 660px;
-  height: 571px;
-
+  display: flex;
+  flex-direction: column;
   background: linear-gradient(0deg, #0e1012, #0e1012), #d9d9d9;
   border-radius: 25px;
+  margin: 0;
+  width: calc(100% - 84px - 50px);
+  margin-left: 50px;
 }
 
 .fa-title {
@@ -545,34 +555,43 @@ main {
 @media (max-width: 970px) {
   .routing {
     width: calc(100% - 15% - 20px);
+    margin-bottom: 20px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .main-page {
+    width: calc(100% - 15% - 20px);
   }
 
   .fa-user__info {
-    margin-left: 20px;
-    width: calc(100% - 20% - 20px);
+    padding: 22px 22px;
+    width: calc(100% - 44px - 50px);
+  }
+
+  .main-page__panel {
+    margin-left: 0px;
   }
 }
 
 @media (max-width: 650px) {
   .main-page__panel {
-    margin-left: 20px;
+    margin-left: 0px;
   }
 }
 
 @media (max-width: 520px) {
-  .fa-user__info {
-    margin-left: 20px;
-    padding: 22px 22px;
-    width: calc(100% - 30% - 20px);
-    height: 750px;
-  }
-
   .fa-app__block {
     flex-direction: column;
   }
 
   .fa-app__download {
     align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 0px;
+    flex-direction: column;
   }
 
   .fa-app__code {
@@ -581,11 +600,20 @@ main {
 }
 
 @media (max-width: 600px) {
-  .menu-list.menu-list {
-    bottom: 177px;
-  }
-
   .main-page__menu.activ ~ .mobile-dop_menu.mobile-dop_menu {
     left: calc(50% + 1px);
+  }
+
+  .fa-user__info {
+    width: calc(100% - 44px);
+    margin: 0;
+  }
+
+  .routing-current {
+    font-size: 16px;
+  }
+
+  .menu-list {
+    margin-left: 0px;
   }
 }

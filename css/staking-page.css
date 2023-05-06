@@ -109,9 +109,6 @@ header {
 }
 
 @media (max-width: 1919px) {
-  /* .header-nav__list {
-    max-width: calc(100vw - 10vw - 30px);
-  } */
   .balance-page__panels {
     max-width: calc(100vw - 10vw - 30px);
   }
@@ -299,6 +296,7 @@ main {
 .balance-page__panel {
   padding-top: 75px;
   padding-left: 75px;
+  width: calc(100% - 75px);
 }
 
 .panel-title {
@@ -393,15 +391,18 @@ main {
 
 .staking-input {
   padding: 15px 20px;
-  margin-right: 10px;
   margin-bottom: 20px;
-  width: 100%;
+  width: calc(100% - 40px);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 
   background: #0e1012;
   border-radius: 10px;
+}
+
+.staking-input:first-child {
+  margin-right: 10px;
 }
 
 .staking-top {
@@ -455,6 +456,8 @@ main {
   padding: 5px 5px;
   width: 150px;
   height: 20px;
+  z-index: 99;
+  position: relative;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
@@ -462,6 +465,7 @@ main {
   border: 1px solid #22282f;
   border-radius: 22.5px;
   cursor: pointer;
+  background-color: #0e1012;
 }
 
 .staking-select svg {
@@ -520,7 +524,7 @@ main {
 }
 
 .staking-time {
-  width: 100%;
+  width: calc(100% - 40px);
   padding: 15px 20px;
   display: flex;
   flex-direction: row;
@@ -624,9 +628,9 @@ main {
 }
 
 @media (max-width: 1838px) {
-  .convert {
+  /* .convert {
     flex-direction: column;
-  }
+  } */
   .convert-from {
     margin-top: 20px;
   }
@@ -685,13 +689,6 @@ main {
 .burger.active::after {
   bottom: 50%;
   transform: rotate(45deg) translate(0, 50%);
-}
-
-@media (max-width: 1895px) {
-  .staking__sum {
-    flex-direction: column;
-    width: 750px;
-  }
 }
 
 @media (max-width: 1020px) {
@@ -758,13 +755,16 @@ main {
   .convert-from {
     width: calc(70vw - 30vw - 30px);
   }
+}
 
+.time-warning svg {
+  min-width: 24px;
+  min-height: 24px;
+}
+
+@media (max-width: 940px) {
   .staking__sum {
-    width: calc(100vw - 40vw - 50px);
-  }
-
-  .staking-input {
-    width: calc(100vw - 50vw - 10px);
+    flex-direction: column;
   }
 }
 
@@ -847,4 +847,44 @@ main {
     padding-bottom: 20px;
     overflow: auto;
   }
+
+  .time-warning p {
+    text-align: center;
+  }
+}
+
+.staking-select__menu {
+  position: relative;
+}
+
+.staking-menu__dropdown {
+  position: absolute;
+  background-color: #0e1012;
+  padding-top: 25px;
+  width: 160px;
+  top: 4px;
+  left: 0px;
+  z-index: 4;
+  border-radius: 16px;
+  border: 1px solid #22282f;
+}
+
+.drop-down__list {
+}
+
+.drop-down__list li {
+  cursor: pointer;
+  padding: 10px 4px;
+  transition: all 0.3s;
+  border-right: 1px solid transparent;
+}
+
+.drop-down__list li:last-child {
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+
+.drop-down__list li:hover {
+  border-right: 1px solid #0047d0;
+  background-color: #22282f;
 }

@@ -203,7 +203,6 @@ main {
   .burger {
     display: flex;
     margin-right: 10px;
-    right: 10px;
   }
 
   .list-links__user {
@@ -369,11 +368,17 @@ main {
   color: #32363a;
   transition: all 0.3s;
 }
-
+.main-page {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
 .main-page__panels {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  max-width: 901px;
+  margin: 0 auto;
+  margin-bottom: 100px;
 }
 
 .session {
@@ -382,19 +387,18 @@ main {
 }
 
 .main-page__panel {
-  width: calc(702px - 84px);
-  padding: 42px 42px;
-  margin-left: 95px;
-  margin-bottom: 20px;
-
-  background: linear-gradient(0deg, #0e1012, #0e1012), #d9d9d9;
-  border-radius: 25px;
+  width: 100%;
 }
 
 .panel-user__info {
+  padding: 42px 42px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  background: linear-gradient(0deg, #0e1012, #0e1012), #d9d9d9;
+  border-radius: 25px;
+  margin: 0;
+  width: calc(100% - 84px - 50px);
+  margin-left: 50px;
 }
 
 .user-status {
@@ -617,10 +621,18 @@ main {
   opacity: 0.7;
 }
 
-@media (max-width: 990px) {
+@media (max-width: 970px) {
   .main-page__panel {
-    margin-left: 25px;
-    width: calc(100% - 84px);
+    margin-left: 0px;
+  }
+
+  .panel-user__info {
+    padding: 22px 22px;
+    width: calc(100% - 44px - 50px);
+  }
+
+  .main-page {
+    width: calc(100% - 15% - 20px);
   }
 
   .name-input__pass {
@@ -647,7 +659,9 @@ main {
 
   .routing {
     width: calc(100% - 15% - 20px);
-    margin-bottom: 25px;
+    margin-bottom: 20px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .name-input {
@@ -656,10 +670,6 @@ main {
 }
 
 @media (max-width: 580px) {
-  .main-page__panel {
-    margin-left: 20px;
-  }
-
   /* .input-new__pass {
     width: calc(100% - 10%);
   }
@@ -669,7 +679,7 @@ main {
   } */
 
   .routing-current {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 
@@ -679,8 +689,12 @@ main {
     margin-bottom: 15px;
   }
 
+  .info-block {
+    margin-bottom: 25px;
+  }
+
   .info-username__mail {
-    font-size: 12px;
+    font-size: 10px;
   }
 
   .info-username__id {
@@ -697,6 +711,7 @@ main {
   border-radius: 0px 5px 5px 0;
   cursor: pointer;
   left: 0;
+  top: 100px;
   display: none;
   transition: all 0.4s;
 }
@@ -751,6 +766,7 @@ main {
     position: relative;
     bottom: 117px;
     padding-top: 0;
+    margin-left: 0px;
     display: flex;
     height: calc(100vh - 97px);
     flex-direction: column;
@@ -760,5 +776,10 @@ main {
     background: #0b0d0f;
     padding-bottom: 20px;
     overflow: auto;
+  }
+
+  .panel-user__info {
+    width: calc(100% - 44px);
+    margin: 0;
   }
 }

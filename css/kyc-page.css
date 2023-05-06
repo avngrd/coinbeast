@@ -25,6 +25,8 @@ a {
 }
 
 header {
+  margin: 0 auto;
+  max-width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -100,9 +102,10 @@ header {
 .logo {
   display: flex;
   align-items: center;
-  margin-top: 15px;
+  margin-left: 15px;
+  margin-top: 20px;
   margin-bottom: 20px;
-  margin-left: 20px;
+  cursor: pointer;
 }
 
 .header-link:hover {
@@ -365,31 +368,37 @@ main {
   padding-top: 30px;
 }
 
-/* clear */
-/* clear */
-/* clear */
-/* clear */
-/* clear */
+.main-page {
+  width: 100%;
+
+  margin: 0;
+  padding: 0;
+}
 
 .main-page__panels {
   display: flex;
   flex-direction: row;
+  max-width: 901px;
+  margin: 0 auto;
   margin-bottom: 100px;
 }
 
 .main-page__panel {
-  margin-left: 80px;
+  width: 100%;
 }
 
 .kyc-user__info {
   padding: 42px 42px;
-  width: 660px;
-  height: 621px;
+
   display: flex;
   flex-direction: column;
 
   background: linear-gradient(0deg, #0e1012, #0e1012), #d9d9d9;
   border-radius: 25px;
+
+  margin: 0;
+  width: calc(100% - 84px - 50px);
+  margin-left: 50px;
 }
 
 .kyc-title {
@@ -751,8 +760,12 @@ main {
 }
 
 @media (max-width: 970px) {
+  .first-name__left {
+    margin-right: 0;
+  }
   .routing {
     width: calc(100% - 15% - 20px);
+    margin-bottom: 20px;
   }
 
   .first-name {
@@ -768,13 +781,21 @@ main {
   }
 
   .kyc-user__info {
-    margin-left: 20px;
-    width: calc(100% - 20% - 20px);
-    height: 860px;
+    padding: 22px 22px;
+    width: calc(100% - 44px - 50px);
+  }
+
+  .main-page {
+    width: calc(100% - 15% - 20px);
+  }
+
+  .routing.routing {
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .main-page__panel {
-    margin-left: 10px;
+    margin-left: 0px;
   }
 
   .post-block {
@@ -788,41 +809,51 @@ main {
   .city-block {
     margin-top: 13px;
   }
-}
 
-@media (max-width: 580px) {
-  /* .menu-list {
-    margin-left: 20px;
-  } */
-
-  .kyc-user__info {
-    padding: 22px 22px;
+  .first-name__input {
+    width: calc(100% - 40px);
   }
 
-  .kyc-user__info input {
-    width: 180px;
+  .middle-name__input {
+    width: calc(100% - 40px);
+  }
+
+  .last-name__input {
+    width: calc(100% - 40px);
+  }
+
+  .last-name__left {
+    margin-right: 0px;
+  }
+
+  .birth-input {
+    width: calc(100% - 40px);
+  }
+
+  .post-code__input {
+    width: calc(100% - 40px);
+  }
+
+  .post-left {
+    margin-right: 0px;
+  }
+
+  .city-input {
+    width: calc(100% - 40px);
   }
 }
 
 .document-type__form {
   background-color: #121518;
-  width: 555px;
-  height: 391px;
+  width: 482px;
   border-radius: 25px;
   padding: 42px 42px;
 }
 
-.document-modal__wrapper {
-  /* position: absolute; */
-  /* width: 100vw;
-  height: 250vh;
-  background: rgba(11, 13, 15, 0.7);
-  backdrop-filter: blur(5px);
-  overflow-x: hidden; */
-}
-
 .document-modal {
   overflow: auto;
+  max-height: 100vh;
+  display: none;
 }
 .document-type__label {
   font-family: 'Manrope';
@@ -906,21 +937,19 @@ main {
 @media (max-width: 680px) {
   .document-type__form {
     width: calc(100% - 10% - 20px);
-    height: 450px;
   }
 }
 
-.photo-modal__wrapper {
-  /* position: absolute; */
-}
-
 .photo-modal {
+  max-height: 100vh;
+  display: none;
+  overflow: auto;
 }
 
 .photo-type__form {
+  margin: 0 auto;
   background-color: #121518;
-  width: 482px;
-  height: 725px;
+  width: calc(100% - 84px);
   border-radius: 25px;
   padding: 42px 42px;
 }
@@ -1090,7 +1119,6 @@ main {
 
   .photo-type__form {
     width: calc(100vw - 30vw - 20px);
-    height: 1000px;
   }
 
   .condition-list__item p {
@@ -1114,12 +1142,14 @@ main {
 }
 
 .submit-modal {
+  max-height: 100vh;
+  overflow: auto;
+  display: none;
 }
 
 .submit-type__form {
   background-color: #121518;
   width: 482px;
-  height: 540px;
   border-radius: 25px;
   padding: 42px 42px;
   display: flex;
@@ -1131,7 +1161,7 @@ main {
 .submit-applicate {
   margin-top: 55px;
 
-  font-family: 'SF Pro Display';
+  font-family: 'San Francisco Pro';
   font-style: normal;
   font-weight: 700;
   font-size: 21px;
@@ -1143,7 +1173,7 @@ main {
   margin-top: 20px;
   width: 384px;
 
-  font-family: 'SF Pro Display';
+  font-family: 'San Francisco Pro';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1171,9 +1201,10 @@ main {
 }
 
 .contact {
+  text-align: center;
   margin-top: 50px;
 
-  font-family: 'SF Pro Display';
+  font-family: 'San Francisco Pro';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1234,16 +1265,105 @@ main {
 }
 
 @media (max-width: 600px) {
-  .menu-list.menu-list {
-    bottom: 177px;
+  .routing-current {
+    font-size: 16px;
   }
 
-  /* .main-page__menu.activ ~ .mobile-dop_menu.mobile-dop_menu {
-    left: calc(50% + 1px);
-  } */
+  .kyc-user__info {
+    width: calc(100% - 44px);
+    margin: 0;
+  }
+
+  .main-page__panels {
+    justify-content: center;
+  }
+
+  .kyc-title {
+    margin-bottom: 30px;
+    font-size: 17px;
+  }
 }
 
 .condition-list__item svg {
   min-width: 27px;
   min-height: 27px;
+}
+
+@media (max-width: 500px) {
+  .document-type__form {
+    width: calc(100% - 10% - 84px);
+    margin: 0 auto;
+    padding: 32px 32px;
+  }
+
+  .photo-upload__button {
+    margin-bottom: 15px;
+  }
+
+  .continue-button {
+    margin-top: 0px;
+  }
+
+  .document-all__types {
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+  .document-type__label {
+    font-size: 18px;
+  }
+}
+
+.form-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cross-close {
+  transition: all 0.3s;
+  cursor: pointer;
+
+  /* position: absolute;
+  top: -15px;
+  right: -15px; */
+}
+
+.cross-close:hover {
+  opacity: 0.7;
+}
+
+.form-submit__close {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media (max-width: 400px) {
+  .kyc-user__info {
+  }
+}
+
+.item-link {
+  white-space: nowrap;
+}
+
+@media (max-width: 500px) {
+  .document-type__form {
+    width: calc(100vw - 20vw - 20px);
+    margin: 0 auto;
+    padding: 22px 22px;
+  }
+
+  .photo-type__form {
+    width: calc(100vw - 20vw - 20px);
+    margin: 0 auto;
+    padding: 22px 22px;
+  }
+
+  .submit-type__form {
+    width: calc(100vw - 20vw - 20px);
+    margin: 0 auto;
+    padding: 22px 22px;
+  }
 }
