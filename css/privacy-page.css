@@ -2,7 +2,7 @@ body,
 html {
   background-color: #0b0d0f;
   color: #ffff;
-  font-family: 'San Francisco Pro', Helvetica, sans-serif;
+  font-family: 'San Francisco Pro Regular', Helvetica, sans-serif;
   font-style: normal;
   margin: auto;
   padding: 0;
@@ -21,7 +21,7 @@ a {
 * {
   padding: 0;
   margin: 0;
-  font-family: 'San Francisco Pro', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'San Francisco Pro Regular';
 }
 
 header {
@@ -60,7 +60,7 @@ header {
 
 .logo-title {
   margin-left: 13px;
-
+  font-family: 'Manrope Regular';
   font-weight: 700;
   font-size: 16px;
   line-height: 22px;
@@ -87,7 +87,7 @@ header {
 
 .header-link {
   margin-right: 50px;
-
+  font-family: 'Manrope Regular';
   font-weight: 500;
   font-size: 14px;
   line-height: 19px;
@@ -103,7 +103,7 @@ header {
 .list-links__wallet {
   padding: 12px 24px;
   margin-right: 20px;
-
+  font-family: 'Sofia Pro Regular';
   font-weight: 400;
   font-size: 14px;
   line-height: 22px;
@@ -190,9 +190,9 @@ main {
 .logo {
   display: flex;
   align-items: center;
-  margin-top: 15px;
+  margin-top: 20px;
   margin-bottom: 20px;
-  margin-left: 20px;
+  margin-left: 15px;
 }
 
 .list-links__user {
@@ -285,7 +285,7 @@ main {
 
 .terms-title p {
   white-space: nowrap;
-  font-family: 'Manrope';
+  font-family: 'Manrope Regular';
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -301,7 +301,7 @@ main {
 .list-item__title {
   margin-bottom: 20px;
 
-  font-family: 'Manrope';
+  font-family: 'Manrope Regular';
   font-style: normal;
   font-weight: 600;
   font-size: 21px;
@@ -312,7 +312,7 @@ main {
 .list-item__description {
   margin-bottom: 50px;
 
-  font-family: 'Manrope';
+  font-family: 'Manrope Regular';
   font-style: normal;
   font-weight: 500;
   font-size: 14px;

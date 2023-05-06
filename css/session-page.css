@@ -2,7 +2,7 @@ body,
 html {
   background-color: #0b0d0f;
   color: #ffff;
-  font-family: 'San Francisco Pro', Helvetica, sans-serif;
+  font-family: 'San Francisco Pro Regular', Helvetica, sans-serif;
   font-style: normal;
   margin: auto;
   padding: 0;
@@ -21,7 +21,7 @@ a {
 * {
   padding: 0;
   margin: 0;
-  font-family: 'San Francisco Pro', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'San Francisco Pro Regular';
 }
 
 header {
@@ -60,7 +60,7 @@ header {
 
 .logo-title {
   margin-left: 13px;
-
+  font-family: 'Manrope Regular';
   font-weight: 700;
   font-size: 16px;
   line-height: 22px;
@@ -96,7 +96,7 @@ header {
 
 .header-link {
   margin-right: 50px;
-
+  font-family: 'Manrope Regular';
   font-weight: 500;
   font-size: 14px;
   line-height: 19px;
@@ -112,7 +112,7 @@ header {
 .list-links__wallet {
   padding: 12px 24px;
   margin-right: 20px;
-
+  font-family: 'Sofia Pro Regular';
   font-weight: 400;
   font-size: 14px;
   line-height: 22px;
@@ -290,7 +290,7 @@ main {
 }
 
 .routing-current {
-  font-family: 'Manrope';
+  font-family: 'Manrope Regular';
   font-style: normal;
   font-weight: 600;
   font-size: 21px;
@@ -311,7 +311,7 @@ main {
 }
 
 .routing-current__path p {
-  font-family: 'Manrope';
+  font-family: 'Manrope Regular';
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -345,7 +345,7 @@ main {
 .menu-list__item a {
   margin-left: 12px;
 
-  font-family: 'Manrope';
+  font-family: 'Manrope Regular';
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -396,7 +396,7 @@ main {
 .session-title {
   margin-bottom: 45px;
 
-  font-family: 'Manrope';
+  font-family: 'Manrope Regular';
   font-style: normal;
   font-weight: 700;
   font-size: 21px;
@@ -413,7 +413,7 @@ main {
 }
 
 .info-top p {
-  font-family: 'Manrope';
+  font-family: 'Manrope Regular';
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -441,7 +441,7 @@ main {
 }
 
 .info-bottom p {
-  font-family: 'Manrope';
+  font-family: 'Manrope Regular';
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -466,7 +466,7 @@ main {
   padding-top: 11px;
   padding-bottom: 11px;
 
-  font-family: 'Sofia Pro';
+  font-family: 'Sofia Pro Regular';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -553,7 +553,7 @@ table tr th {
   padding-bottom: 30px;
   text-align: left;
   border-bottom: 1px solid #13171b;
-  font-family: 'Manrope';
+  font-family: 'Manrope Regular';
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -566,7 +566,7 @@ table tr td {
   padding-top: 30px;
   padding-right: 10px;
   white-space: nowrap;
-  font-family: 'Manrope';
+  font-family: 'Manrope Regular';
   font-style: normal;
   font-weight: 700;
   font-size: 14px;

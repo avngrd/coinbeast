@@ -46,7 +46,7 @@
   font-weight: bold;
   font-size: 42px;
   line-height: 110%;
-
+  font-family: 'Sofia Pro Regular';
   color: #ffff;
 }
 
@@ -55,7 +55,7 @@
   max-width: 616px;
   margin-bottom: 0;
   margin-top: 0;
-
+  font-family: 'Sofia Pro Regular';
   font-weight: 300;
   font-size: 18px;
   line-height: 150%;
@@ -75,6 +75,7 @@
   transition: all 0.3s;
   background: linear-gradient(265.56deg, #246cf9 -0.27%, #3177ff -0.26%, #075af8 98.59%);
   border: 1px solid #246cf9;
+  font-family: 'Sofia Pro Regular';
 }
 
 .main-page__presentation a:hover {
@@ -117,12 +118,12 @@
 }
 
 .coin__name {
-  padding-right: 20px;
+  padding-right: 20px;font-family: 'Sofia Pro Regular';
 }
 
 .coin__fullname {
   white-space: nowrap;
-
+  font-family: 'Sofia Pro Regular';
   font-size: 16px;
   line-height: 24px;
   color: #b9bdea;
@@ -142,7 +143,7 @@
 
   font-size: 14px;
   line-height: 22px;
-
+  font-family: 'Sofia Pro Regular';
   border-radius: 55px;
   transition: all 0.3s;
   border: 1px solid #246cf9;
@@ -184,7 +185,7 @@
   max-width: 600px;
   text-align: center;
   margin-bottom: 24px;
-
+  font-family: 'Sofia Pro Regular';
   font-weight: bold;
   font-size: 49px;
   line-height: 54px;
@@ -196,7 +197,7 @@
   width: 100%;
   max-width: 600px;
   height: 48px;
-
+  font-family: 'Sofia Pro Regular';
   font-weight: 300;
   font-size: 16px;
   line-height: 24px;
@@ -231,7 +232,7 @@
 
 .benefit-item__title {
   margin-top: 32px;
-
+  font-family: 'Sofia Pro Regular';
   font-weight: bold;
   font-size: 25px;
   line-height: 120%;
@@ -242,7 +243,7 @@
 .benefit-item__description {
   margin-top: 8px;
   width: 258px;
-
+  font-family: 'Sofia Pro Regular';
   font-weight: 300;
   font-size: 16px;
   line-height: 24px;
@@ -288,7 +289,7 @@
 
 .instruction-title {
   margin-bottom: 64px;
-
+  font-family: 'Sofia Pro Regular';
   font-weight: bold;
   font-size: 49px;
   line-height: 110%;
@@ -299,7 +300,7 @@
 .instruction-step__title {
   position: absolute;
   bottom: 70px;
-
+  font-family: 'Sofia Pro Regular';
   font-weight: bold;
   font-size: 16px;
   line-height: 24px;
@@ -309,7 +310,7 @@
 
 .instruction-step__description {
   width: 244px;
-
+  font-family: 'Sofia Pro Regular';
   font-weight: 300;
   font-size: 14px;
   line-height: 24px;
@@ -359,7 +360,7 @@
 }
 
 .footer-logo h1 {
-  font-family: 'Sora';
+  font-family: 'Manrope Regular';
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -374,7 +375,7 @@
 
 .footer-top__social p {
   margin-top: 11px;
-
+  font-family: 'Sofia Pro Regular';
   font-weight: 300;
   font-size: 18px;
   line-height: 27px;
@@ -405,7 +406,7 @@
   font-size: 20px;
   line-height: 120%;
 
-  color: #ffffff;
+  color: #ffffff;font-family: 'Sofia Pro Regular';
 }
 
 .links-list {
@@ -432,7 +433,7 @@
   font-size: 16px;
   line-height: 24px;
   color: #a5adcf;
-
+  font-family: 'Sofia Pro Regular';
   transition: all 0.3s;
 }
 
@@ -445,7 +446,7 @@
   font-weight: bold;
   font-size: 20px;
   line-height: 120%;
-
+  font-family: 'Sofia Pro Regular';
   color: #ffffff;
 }
 
@@ -457,7 +458,7 @@
   font-weight: 300;
   font-size: 16px;
   line-height: 24px;
-
+  font-family: 'Sofia Pro Regular';
   color: #a5adcf;
 }
 
@@ -471,6 +472,8 @@
   background-color: #16191d;
   border-radius: 100px;
   outline: none;
+
+  font-family: 'Sofia Pro Regular';
 }
 
 .submit-input::placeholder {
@@ -501,6 +504,8 @@
   border: none;
   cursor: pointer;
   transition: all 0.3s;
+
+  font-family: 'Sofia Pro Regular';
 }
 
 .submit-button:hover {
@@ -526,7 +531,7 @@
   font-weight: 300;
   font-size: 16px;
   line-height: 24px;
-
+  font-family: 'Sofia Pro Regular';
   color: #5d6588;
 }
 
@@ -770,7 +775,7 @@ table tr th {
 }
 
 .column-name {
-  font-family: 'Sofia Pro';
+  font-family: 'Sofia Pro Regular';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -847,7 +852,11 @@ tbody tr td {
 }
 
 .coin-price {
-  white-space: nowrap;
+  white-space: nowrap;    font-family: 'Sofia Pro Regular';
+}
+
+.coins-table tbody tr{
+  font-family: 'Sofia Pro Regular';
 }
 
 @media (max-width: 950px) {

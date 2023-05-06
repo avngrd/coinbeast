@@ -13,7 +13,7 @@ a {
 * {
   padding: 0;
   margin: 0;
-  font-family: 'Sofia Pro', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'San Francisco Pro Regular';
 }
 
 html {
@@ -58,7 +58,7 @@ main {
   margin-left: 45px;
   position: relative;
 
-  font-family: 'Manrope';
+  font-family: 'Manrope Regular';
   font-style: normal;
   font-weight: 700;
   font-size: 56px;
@@ -84,7 +84,7 @@ main {
 }
 
 .right-title {
-  font-family: 'Inter';
+  font-family: 'Inter Regular';
   font-style: normal;
   font-weight: 600;
   font-size: 32px;
@@ -96,7 +96,7 @@ main {
 .right-descrtiption {
   margin-top: 10px;
 
-  font-family: 'Inter';
+  font-family: 'Inter Regular';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -110,7 +110,7 @@ main {
   padding: 15px 15px;
   margin-top: 40px;
 
-  font-family: 'Inter';
+  font-family: 'Inter Regular';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -132,7 +132,7 @@ main {
   padding: 15px 15px;
   margin-top: 20px;
 
-  font-family: 'Inter';
+  font-family: 'Inter Regular';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -154,7 +154,7 @@ main {
   margin-top: 20px;
   margin-bottom: 40px;
 
-  font-family: 'Inter';
+  font-family: 'Inter Regular';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -179,7 +179,7 @@ main {
   padding: 15px;
   width: 100%;
 
-  font-family: 'Inter';
+  font-family: 'Inter Regular';
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -200,7 +200,7 @@ main {
 .right-account {
   margin-top: 30px;
 
-  font-family: 'Inter';
+  font-family: 'Inter Regular';
   font-style: normal;
   font-weight: 500;
   font-size: 14px;

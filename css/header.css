@@ -30,7 +30,7 @@
 
   font-size: 18px;
   font-weight: 700;
-  font-family: 'Sora', Helvetica, sans-serif;
+  font-family: 'Manrope Regular';
 }
 
 .header__logo h1::after {
@@ -40,7 +40,8 @@
   height: 3px;
   background-color: #155dea;
   top: 16px;
-  left: 98px;
+  right: -6px;
+  bottom: 5px;
 }
 
 .header-nav {
@@ -66,6 +67,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 22px;
+  font-family: 'Sofia Pro Regular';
   transition: all 0.3s;
 }
 
@@ -81,6 +83,7 @@
   border-radius: 25px;
   cursor: pointer;
   transition: all 0.3s;
+  font-family: 'Sofia Pro Regular';
 }
 
 .header-nav__sign:hover {
@@ -101,6 +104,7 @@
   background: linear-gradient(265.56deg, #246cf9 -0.27%, #3177ff -0.26%, #075af8 98.59%);
   transition: all 0.3s;
   cursor: pointer;
+  font-family: 'Sofia Pro Regular';
 }
 
 .header-nav__start:hover {

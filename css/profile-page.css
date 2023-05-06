@@ -2,7 +2,7 @@ body,
 html {
   background-color: #0b0d0f;
   color: #ffff;
-  font-family: 'San Francisco Pro', Helvetica, sans-serif;
+  font-family: 'San Francisco Pro Regular', Helvetica, sans-serif;
   font-style: normal;
   margin: auto;
   padding: 0;
@@ -21,7 +21,7 @@ a {
 * {
   padding: 0;
   margin: 0;
-  font-family: 'San Francisco Pro', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'San Francisco Pro Regular';
 }
 
 header {
@@ -72,7 +72,7 @@ header {
 
 .logo-title {
   margin-left: 13px;
-
+  font-family: 'Manrope Regular';
   font-weight: 700;
   font-size: 16px;
   line-height: 22px;
@@ -99,7 +99,7 @@ header {
 
 .header-link {
   margin-right: 50px;
-
+  font-family: 'Manrope Regular';
   font-weight: 500;
   font-size: 14px;
   line-height: 19px;
@@ -115,7 +115,7 @@ header {
 .list-links__wallet {
   padding: 12px 24px;
   margin-right: 20px;
-
+  font-family: 'Sofia Pro Regular';
   font-weight: 400;
   font-size: 14px;
   line-height: 22px;
@@ -287,7 +287,7 @@ main {
 
 .routing-current {
   white-space: nowrap;
-  font-family: 'Manrope';
+  font-family: 'Manrope Regular';
   font-style: normal;
   font-weight: 600;
   font-size: 21px;
@@ -308,7 +308,7 @@ main {
 }
 
 .routing-current__path p {
-  font-family: 'Manrope';
+  font-family: 'Manrope Regular';
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -348,7 +348,7 @@ main {
 .menu-list__item a {
   margin-left: 12px;
 
-  font-family: 'Manrope';
+  font-family: 'Manrope Regular';
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -419,7 +419,7 @@ main {
 .info-username__id {
   margin-bottom: 16px;
 
-  font-family: 'Manrope';
+  font-family: 'Manrope Regular';
   font-style: normal;
   font-weight: 700;
   font-size: 21px;
@@ -429,7 +429,7 @@ main {
 }
 
 .info-username__mail {
-  font-family: 'Manrope';
+  font-family: 'Manrope Regular';
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -442,7 +442,7 @@ main {
   padding: 6px 12px;
   height: 16px;
 
-  font-family: 'Manrope';
+  font-family: 'Manrope Regular';
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -457,7 +457,7 @@ main {
 .name-label {
   margin-bottom: 13px;
 
-  font-family: 'Manrope';
+  font-family: 'Manrope Regular';
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -469,7 +469,7 @@ main {
 .name-input {
   padding: 13px 20px;
   margin-bottom: 45px;
-  font-family: 'Manrope';
+  font-family: 'Manrope Regular';
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -486,7 +486,7 @@ main {
 .name-input__pass {
   padding: 13px 20px;
   margin-bottom: 25px;
-  font-family: 'Manrope';
+  font-family: 'Manrope Regular';
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -529,7 +529,7 @@ main {
 .new-password__left label {
   margin-bottom: 13px;
 
-  font-family: 'Manrope';
+  font-family: 'Manrope Regular';
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -541,7 +541,7 @@ main {
 .new-password__right label {
   margin-bottom: 13px;
 
-  font-family: 'Manrope';
+  font-family: 'Manrope Regular';
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -555,7 +555,7 @@ main {
   width: calc(100% - 43px);
   margin-top: 13px;
 
-  font-family: 'Manrope';
+  font-family: 'Manrope Regular';
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -579,7 +579,7 @@ main {
   width: calc(100% - 42px);
   margin-top: 13px;
 
-  font-family: 'Manrope';
+  font-family: 'Manrope Regular';
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -602,7 +602,7 @@ main {
   padding-top: 11px;
   padding-bottom: 11px;
 
-  font-family: 'Sofia Pro';
+  font-family: 'Sofia Pro Regular';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -706,7 +706,7 @@ main {
   background: #1a1b1d;
   width: 40px;
   height: 40px;
-  z-index: 1;
+  z-index: 99;
   position: fixed;
   border-radius: 0px 5px 5px 0;
   cursor: pointer;

@@ -2,7 +2,7 @@ body,
 html {
   background-color: #0b0d0f;
   color: #ffff;
-  font-family: 'San Francisco Pro', Helvetica, sans-serif;
+  font-family: 'San Francisco Pro Regular', Helvetica, sans-serif;
   font-style: normal;
   margin: auto;
   padding: 0;
@@ -21,7 +21,7 @@ a {
 * {
   padding: 0;
   margin: 0;
-  font-family: 'San Francisco Pro', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'San Francisco Pro Regular';
 }
 
 header {
@@ -37,14 +37,14 @@ header {
 
 .header-nav {
   width: 100%;
-  padding-right: 5.31%;
+  padding-right: 5.31vw;
 }
 
 .header__end-left {
   background: #13171b;
   width: 1px;
   height: 35px;
-  margin-left: 36px;
+  margin-left: 40px;
 }
 
 .header-nav__list {
@@ -74,7 +74,7 @@ header {
 .logo-title {
   margin-left: 13px;
 
-  font-family: 'Manrope';
+  font-family: 'Manrope Regular';
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -93,7 +93,7 @@ header {
   font-weight: 500;
   font-size: 14px;
   line-height: 19px;
-
+  font-family: 'Manrope Regular';
   transition: all 0.3s;
   color: #32363a;
 }
@@ -105,7 +105,7 @@ header {
 .list-links__wallet {
   padding: 12px 24px;
   margin-right: 20px;
-
+  font-family: 'Sofia Pro Regular';
   font-weight: 400;
   font-size: 14px;
   line-height: 22px;
@@ -128,9 +128,9 @@ main {
 
 .balance-page {
   /* width: 100%; */
-  min-width: calc(100% - 5.31%);
+  min-width: calc(100% - 5.31vw);
   /* padding: 0 5.31%; */
-  padding-right: 5.31%;
+  padding-right: 5.31vw;
 }
 
 .balance-page__panels {
@@ -191,7 +191,7 @@ main {
   background: #1a1b1d;
   width: 40px;
   height: 40px;
-  z-index: 1;
+  z-index: 99;
   position: fixed;
   border-radius: 0px 5px 5px 0;
   cursor: pointer;
@@ -237,16 +237,11 @@ main {
     margin-top: -2px;
   }
 
-  .menu-list__item {
-    margin: 15px 0;
-  }
-
   .balance-page__menu.activ {
     transform: translateX(0);
   }
 
   .menu-list {
-    padding-top: 0;
     display: flex;
     height: calc(100vh - 97px);
     flex-direction: column;
@@ -276,7 +271,7 @@ main {
 .balance-page__panel {
   margin-left: 3.07vw;
   margin-top: 47px;
-  width: calc(100% - 50px - 170px);
+  width: calc(100% - 185px - 3.07vw);
 }
 
 .panel-title {
@@ -287,7 +282,7 @@ main {
 
 .panel-title p {
   margin-right: 15px;
-
+  font-family: 'Manrope Regular';
   font-weight: 500;
   font-size: 18px;
   line-height: 92.5%;
@@ -312,7 +307,7 @@ main {
 .trading-title {
   margin-bottom: 15px;
 
-  font-family: 'Manrope';
+  font-family: 'Manrope Regular';
   font-weight: 500;
   font-size: 14px;
   line-height: 17px;
@@ -321,7 +316,7 @@ main {
 }
 
 .trading-usd {
-  font-family: 'Manrope';
+  font-family: 'Manrope Regular';
   font-weight: 700;
   font-size: 14px;
   line-height: 19px;
@@ -330,7 +325,7 @@ main {
 }
 
 .trading-usd span {
-  font-family: 'Manrope';
+  font-family: 'Manrope Regular';
   font-size: 42px;
   line-height: 57px;
 }
@@ -338,7 +333,7 @@ main {
 .trading-btc {
   margin-top: 1px;
 
-  font-family: 'Manrope';
+  font-family: 'Manrope Regular';
   font-weight: 400;
   font-size: 16px;
   line-height: 15px;
@@ -356,7 +351,7 @@ thead {
 }
 
 .coins-columns p {
-  font-family: 'San Francisco Pro', sans-serif;
+  font-family: 'San Francisco Pro Regular', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -455,6 +450,7 @@ tbody tr td {
 }
 
 .table-operations button {
+  font-family: 'San Francisco Pro Regular';
   padding: 5px 11px;
   margin-right: 10px;
 
@@ -549,7 +545,7 @@ tbody tr td {
 }
 
 .deposit-title {
-  font-family: 'Manrope';
+  font-family: 'Manrope Regular';
   font-style: normal;
   font-weight: 700;
   font-size: 21px;
@@ -561,7 +557,7 @@ tbody tr td {
 .deposit-coin__label {
   margin-bottom: 13px;
 
-  font-family: 'Manrope';
+  font-family: 'Manrope Regular';
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -621,7 +617,7 @@ tbody tr td {
 .select-coin span {
   margin-left: 5px;
   margin-right: auto;
-  font-family: 'Manrope';
+  font-family: 'Manrope Regular';
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -698,7 +694,7 @@ tbody tr td {
 .deposit-network__label {
   margin-bottom: 13px;
 
-  font-family: 'Manrope';
+  font-family: 'Manrope Regular';
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -731,7 +727,7 @@ tbody tr td {
   padding-left: 6px;
   margin-right: auto;
 
-  font-family: 'Manrope';
+  font-family: 'Manrope Regular';
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -741,7 +737,7 @@ tbody tr td {
 }
 
 .deposit-button {
-  font-family: 'Sofia Pro';
+  font-family: 'Sofia Pro Regular';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -780,7 +776,7 @@ tbody tr td {
 
 .available-balance p {
   margin-left: 10px;
-  font-family: 'Manrope';
+  font-family: 'Manrope Regular';
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -791,7 +787,7 @@ tbody tr td {
 
 .available-balance span {
   margin-left: 10px;
-  font-family: 'Manrope';
+  font-family: 'Manrope Regular';
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -860,7 +856,7 @@ tbody tr td {
   margin-bottom: 25px;
   padding-left: 20px;
   padding-right: 20px;
-  font-family: 'Manrope';
+  font-family: 'Manrope Regular';
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -912,7 +908,7 @@ tbody tr td {
 .transfer-coin__label {
   margin-bottom: 13px;
 
-  font-family: 'Manrope';
+  font-family: 'Manrope Regular';
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -921,7 +917,7 @@ tbody tr td {
   color: #ffffff;
 }
 .transfer-title {
-  font-family: 'Manrope';
+  font-family: 'Manrope Regular';
   font-style: normal;
   font-weight: 700;
   font-size: 21px;
@@ -937,7 +933,7 @@ tbody tr td {
 
 .transfer-coin p {
   margin-right: 5px;
-  font-family: 'Manrope';
+  font-family: 'Manrope Regular';
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -948,7 +944,7 @@ tbody tr td {
 
 .transfer-coin span {
   margin-right: 665px;
-  font-family: 'Manrope';
+  font-family: 'Manrope Regular';
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -968,7 +964,7 @@ tbody tr td {
 .transfer-from__title {
   margin-bottom: 13px;
 
-  font-family: 'Manrope';
+  font-family: 'Manrope Regular';
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -995,7 +991,7 @@ tbody tr td {
 .from-select p {
   margin-right: 280px;
 
-  font-family: 'Manrope';
+  font-family: 'Manrope Regular';
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -1008,7 +1004,7 @@ tbody tr td {
   margin-bottom: 13px;
   margin-left: 21px;
 
-  font-family: 'Manrope';
+  font-family: 'Manrope Regular';
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -1051,7 +1047,7 @@ tbody tr td {
 .to-select p {
   margin-right: 280px;
 
-  font-family: 'Manrope';
+  font-family: 'Manrope Regular';
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -1080,7 +1076,7 @@ tbody tr td {
 }
 
 .available-btc p {
-  font-family: 'Manrope';
+  font-family: 'Manrope Regular';
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -1091,7 +1087,7 @@ tbody tr td {
 
 .available-btc span {
   margin-left: 5px;
-  font-family: 'Manrope';
+  font-family: 'Manrope Regular';
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -1120,7 +1116,7 @@ tbody tr td {
   border: 1px solid #22282f;
   background-color: #121518;
   border-radius: 22.5px;
-  font-family: 'Manrope';
+  font-family: 'Manrope Regular';
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -1177,7 +1173,7 @@ tbody tr td {
 .bitcoin-title {
   margin-bottom: 16px;
 
-  font-family: 'Manrope';
+  font-family: 'Manrope Regular';
   font-style: normal;
   font-weight: 700;
   font-size: 21px;
@@ -1187,7 +1183,7 @@ tbody tr td {
 }
 
 .bitcoin-description {
-  font-family: 'Manrope';
+  font-family: 'Manrope Regular';
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -1211,7 +1207,7 @@ tbody tr td {
 
 .bitcoin-payment__title {
   margin-bottom: 15px;
-  font-family: 'Manrope';
+  font-family: 'Manrope Regular';
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -1223,7 +1219,7 @@ tbody tr td {
 .bitcoin-payment__description {
   margin-bottom: 15px;
 
-  font-family: 'Manrope';
+  font-family: 'Manrope Regular';
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -1234,7 +1230,7 @@ tbody tr td {
 }
 
 .bitcoin-payment__minimal {
-  font-family: 'Manrope';
+  font-family: 'Manrope Regular';
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -1294,7 +1290,7 @@ tbody tr td {
   padding-top: 11px;
   padding-bottom: 11px;
 
-  font-family: 'Sofia Pro';
+  font-family: 'Sofia Pro Regular';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -1389,11 +1385,6 @@ tbody tr td {
     max-width: 429px;
     flex-direction: column;
     justify-content: space-between;
-  }
-
-  .balance-page__panel {
-    padding-left: 25px;
-    padding-right: 25px;
   }
 
   .header-nav__list {
@@ -1571,7 +1562,6 @@ tbody tr td {
 
   .bitcoin-form {
     width: calc(100vw - 30vw);
-    height: 800px;
   }
 }
 
@@ -1639,6 +1629,6 @@ tbody tr td {
 
 @media (max-width: 600px) {
   .balance-page__panel {
-    width: calc(100% - 50px);
+    width: 100%;
   }
 }

@@ -2,7 +2,7 @@ body,
 html {
   background-color: #0b0d0f;
   color: #ffff;
-  font-family: 'San Francisco Pro', Helvetica, sans-serif;
+  font-family: 'San Francisco Pro Regular', Helvetica, sans-serif;
   font-style: normal;
   margin: auto;
   padding: 0;
@@ -21,7 +21,7 @@ a {
 * {
   padding: 0;
   margin: 0;
-  font-family: 'San Francisco Pro', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'San Francisco Pro Regular';
 }
 
 header {
@@ -37,7 +37,7 @@ header {
 
 .header-nav {
   width: 100%;
-  padding-right: 5.31%;
+  padding-right: 5.31vw;
 }
 
 .header-nav__list {
@@ -67,7 +67,7 @@ header {
   background: #13171b;
   width: 1px;
   height: 35px;
-  margin-left: 36px;
+  margin-left: 40px;
 }
 
 .logo-link {
@@ -96,7 +96,7 @@ header {
 
 .logo-title {
   margin-left: 13px;
-  font-family: 'Manrope';
+  font-family: 'Manrope Regular';
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -108,17 +108,11 @@ header {
   color: #145dea;
 }
 
-@media (max-width: 1919px) {
-  .balance-page__panels {
-    max-width: calc(100vw - 10vw - 30px);
-  }
-}
-
 .header-link {
   font-weight: 500;
   font-size: 14px;
   line-height: 19px;
-
+  font-family: 'Manrope Regular';
   transition: all 0.3s;
   color: #32363a;
 }
@@ -130,7 +124,7 @@ header {
 .list-links__wallet {
   padding: 12px 24px;
   margin-right: 20px;
-
+  font-family: 'Sofia Pro Regular';
   font-weight: 400;
   font-size: 14px;
   line-height: 22px;
@@ -152,8 +146,8 @@ main {
 }
 
 .balance-page {
-  min-width: calc(100% - 5.31%);
-  padding-right: 5.31%;
+  min-width: calc(100% - 5.31vw);
+  padding-right: 5.31vw;
 }
 
 .balance-page__panels {
@@ -180,7 +174,7 @@ main {
   background: #1a1b1d;
   width: 40px;
   height: 40px;
-  z-index: 1;
+  z-index: 99;
   position: fixed;
   border-radius: 0px 5px 5px 0;
   cursor: pointer;
@@ -294,9 +288,9 @@ main {
 }
 
 .balance-page__panel {
-  padding-top: 75px;
-  padding-left: 75px;
-  width: calc(100% - 75px);
+  margin-left: 3.07vw;
+  margin-top: 47px;
+  width: calc(100% - 185px - 3.07vw);
 }
 
 .panel-title {
@@ -327,7 +321,7 @@ main {
 .convert-page__title {
   margin-bottom: 30px;
 
-  font-family: 'Manrope';
+  font-family: 'Manrope Regular';
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -339,7 +333,7 @@ main {
 .staking-page__earning {
   margin-bottom: 5px;
 
-  font-family: 'Manrope';
+  font-family: 'Manrope Regular';
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -362,7 +356,7 @@ main {
 }
 
 .staking-btc__total p {
-  font-family: 'Manrope';
+  font-family: 'Manrope Regular';
   font-style: normal;
   font-weight: 600;
   font-size: 42px;
@@ -374,7 +368,7 @@ main {
 .staking-btc__usd {
   margin-bottom: 30px;
 
-  font-family: 'Manrope';
+  font-family: 'Manrope Regular';
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -413,7 +407,7 @@ main {
 .staking-top p {
   margin-bottom: 26px;
 
-  font-family: 'Manrope';
+  font-family: 'Manrope Regular';
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -432,7 +426,7 @@ main {
   border-right: none;
   border-bottom: 1px solid #22282f;
 
-  font-family: 'Manrope';
+  font-family: 'Manrope Regular';
   font-style: normal;
   font-weight: 600;
   font-size: 32px;
@@ -485,7 +479,7 @@ main {
 }
 
 .select-chosen p {
-  font-family: 'Manrope';
+  font-family: 'Manrope Regular';
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -502,7 +496,7 @@ main {
 }
 
 .staking-eth p {
-  font-family: 'Manrope';
+  font-family: 'Manrope Regular';
   font-style: normal;
   font-weight: 600;
   font-size: 32px;
@@ -515,7 +509,7 @@ main {
 .eth-com {
   margin-top: 20px;
 
-  font-family: 'Manrope';
+  font-family: 'Manrope Regular';
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -549,7 +543,7 @@ main {
 }
 
 .time-counter button {
-  font-family: 'Manrope';
+  font-family: 'Manrope Regular';
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
@@ -568,7 +562,7 @@ main {
 }
 
 .day-count {
-  font-family: 'Manrope';
+  font-family: 'Manrope Regular';
   font-style: normal;
   font-weight: 700;
   font-size: 22px;
@@ -578,7 +572,7 @@ main {
 }
 
 .days {
-  font-family: 'Manrope';
+  font-family: 'Manrope Regular';
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -596,7 +590,7 @@ main {
 }
 
 .time-warning p {
-  font-family: 'Manrope';
+  font-family: 'Manrope Regular';
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -870,6 +864,7 @@ main {
 }
 
 .drop-down__list {
+  display: none;
 }
 
 .drop-down__list li {
@@ -887,4 +882,9 @@ main {
 .drop-down__list li:hover {
   border-right: 1px solid #0047d0;
   background-color: #22282f;
+}
+@media (max-width: 600px) {
+  .balance-page__panel {
+    width: 100%;
+  }
 }

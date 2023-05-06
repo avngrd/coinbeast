@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'Sofia Pro';
+  font-family: 'Sofia Pro Regular';
   src: url('SofiaProRegular.eot');
   src: local('Sofia Pro Regular'), local('SofiaProRegular'),
     url('/fonts/SofiaProBold.eot') format('embedded-opentype'),
@@ -11,7 +11,7 @@
 }
 
 @font-face {
-  font-family: 'Sofia Pro';
+  font-family: 'Sofia Pro Medium';
   src: url('SofiaProMedium.eot');
   src: local('Sofia Pro Medium'), local('SofiaProMedium'),
     url('/fonts/SofiaProMedium.eot') format('embedded-opentype'),
@@ -23,7 +23,7 @@
 }
 
 @font-face {
-  font-family: 'Sofia Pro';
+  font-family: 'Sofia Pro Bold';
   src: url('SofiaProBold.eot');
   src: local('Sofia Pro Bold'), local('SofiaProBold'),
     url('/fonts/SofiaProBold.eot') format('embedded-opentype'),
@@ -34,7 +34,7 @@
 }
 
 @font-face {
-  font-family: 'Sofia Pro';
+  font-family: 'Sofia Pro Light';
   src: local('Sofia Pro Light'), local('Sofia-Pro-Light'),
     url('/fonts/SofiaProLight.woff2') format('woff2'),
     url('/fonts/SofiaProLight.woff') format('woff'),
@@ -51,7 +51,7 @@
 }
 
 @font-face {
-  font-family: 'Manrope';
+  font-family: 'Manrope Bold';
   src: local('Manrope Bold'), local('Manrope Bold'),
     url('/fonts/Manrope-Bold.ttf') format('truetype');
   font-weight: bold;
@@ -59,7 +59,7 @@
 }
 
 @font-face {
-  font-family: 'Manrope';
+  font-family: 'Manrope Light';
   src: local('Manrope Light'), local('Manrope Light'),
     url('/fonts/Manrope-Light.ttf') format('truetype');
   font-weight: 300;
@@ -67,7 +67,7 @@
 }
 
 @font-face {
-  font-family: 'Manrope';
+  font-family: 'Manrope Regular';
   src: local('Manrope Regular'), local('Manrope Regular'),
     url('/fonts/Manrope-Regular.ttf') format('truetype');
   font-weight: 400;
@@ -75,7 +75,7 @@
 }
 
 @font-face {
-  font-family: 'Manrope';
+  font-family: 'Manrope Medium';
   src: local('Manrope Medium'), local('Manrope Medium'),
     url('/fonts/Manrope-Medium.ttf') format('truetype');
   font-weight: 400;
@@ -83,7 +83,7 @@
 }
 
 @font-face {
-  font-family: 'Inter';
+  font-family: 'Inter SemiBold';
   src: local('Inter-SemiBold'), local('Inter-SemiBold'),
     url('/fonts/Inter-SemiBold.ttf') format('truetype');
   font-weight: 600;
@@ -91,7 +91,7 @@
 }
 
 @font-face {
-  font-family: 'Inter';
+  font-family: 'Inter Regular';
   src: local('Inter-Regular'), local('Inter-Regular'),
     url('/fonts/Inter-Regular.ttf') format('truetype');
   font-weight: 400;
@@ -99,7 +99,7 @@
 }
 
 @font-face {
-  font-family: 'Inter';
+  font-family: 'Inter Medium';
   src: local('Inter-Medium'), local('Inter-Medium'),
     url('/fonts/Inter-Medium.ttf') format('truetype');
   font-weight: 500;
@@ -107,7 +107,7 @@
 }
 
 @font-face {
-  font-family: 'San Francisco Pro';
+  font-family: 'San Francisco Pro Light';
   src: local('San Francisco Pro Display Light'), local('San-Francisco-Pro-Display-Light'),
     url('/fonts/SFProDisplay-Light.woff2') format('woff2'),
     url('/fonts/SFProDisplay-Light.woff') format('woff'),
@@ -117,7 +117,7 @@
 }
 
 @font-face {
-  font-family: 'San Francisco Pro';
+  font-family: 'San Francisco Pro Regular';
   src: local('San Francisco Pro Display Regular'), local('San-Francisco-Pro-Display-Regular'),
     url('/fonts/SFProDisplay-Regular.woff2') format('woff2'),
     url('/fonts/SFProDisplay-Regular.woff') format('woff'),
@@ -127,7 +127,7 @@
 }
 
 @font-face {
-  font-family: 'San Francisco Pro';
+  font-family: 'San Francisco Pro Medium';
   src: local('San Francisco Pro Display Medium'), local('San-Francisco-Pro-Display-Medium'),
     url('/fonts/SFProDisplay-Medium.woff2') format('woff2'),
     url('/fonts/SFProDisplay-Medium.woff') format('woff'),
@@ -137,7 +137,7 @@
 }
 
 @font-face {
-  font-family: 'San Francisco Pro';
+  font-family: 'San Francisco Pro Bold';
   src: local('San Francisco Pro Display Bold'), local('San-Francisco-Pro-Display-Bold'),
     url('/fonts/SFProDisplay-Bold.woff2') format('woff2'),
     url('/fonts/SFProDisplay-Bold.woff') format('woff'),
@@ -228,4 +228,13 @@
   top: 15px;
   left: 15px;
   transition: all 0.4s;
+}
+
+
+body{
+  overflow-y: hidden;
+}
+
+.menu-list__item a{
+  font-family: 'Manrope Regular';
 }
