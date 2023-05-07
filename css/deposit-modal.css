@@ -1,0 +1,224 @@
+.deposit-modal,
+.transfer-modal,
+.bitcoin-deposit__modal {
+  height: 100vh;
+  overflow: auto;
+}
+
+.deposit-form {
+  display: flex;
+  padding: 42px 42px;
+  flex-direction: column;
+  width: 390px;
+  background-color: #121518;
+  border-radius: 25px;
+}
+
+.form-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+
+  position: relative;
+}
+
+.cross-close {
+  transition: all 0.3s;
+  cursor: pointer;
+
+  position: absolute;
+  top: -15px;
+  right: -15px;
+}
+
+.cross-close:hover {
+  opacity: 0.7;
+}
+
+.deposit-img {
+  margin-bottom: 15px;
+}
+
+.select-network {
+  width: 389px;
+  height: 45px;
+}
+
+.deposit-button {
+  width: 389px;
+  height: 45px;
+  margin-top: 30px;
+}
+
+.deposit-button {
+  font-family: 'Sofia Pro Regular';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+
+  color: #ffffff;
+  border: none;
+  background: linear-gradient(265.56deg, #246cf9 -0.27%, #3177ff -0.26%, #075af8 98.59%),
+    linear-gradient(265.56deg, #246cf9 -0.27%, #1e68f6 -0.26%, #0047d0 98.59%);
+  border-radius: 100px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.deposit-button:hover {
+  opacity: 0.7;
+}
+
+.deposit-title {
+  font-family: 'Manrope Regular';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 19px;
+
+  color: #ffffff;
+}
+
+.deposit-coin__label {
+  margin-bottom: 13px;
+
+  font-family: 'Manrope Regular';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+
+  color: #ffffff;
+}
+
+.select-coin__block {
+  position: relative;
+  z-index: 999999;
+}
+
+.select-coin {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  padding-left: 8px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-right: 24px;
+  margin-bottom: 25px;
+  height: 45px;
+
+  color: #ffffff;
+
+  outline: none;
+  border: 1px solid #22282f;
+  border-radius: 22.5px;
+  background-color: #121518;
+}
+
+.select-coin img {
+  width: 33px;
+  height: 33px;
+  margin: 0 8px;
+}
+
+.select-coin p {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+
+  color: #ffffff;
+}
+
+.select-coin span {
+  margin-left: 5px;
+  margin-right: auto;
+  font-family: 'Manrope Regular';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  color: #32363a;
+}
+
+.select-coin svg,
+.select-network svg {
+  min-width: 7px;
+  height: 5px;
+}
+
+.coin-select__list {
+  display: none;
+  position: absolute;
+  padding-bottom: 18px;
+  z-index: -1;
+  top: 10px;
+  width: 100%;
+  border: 1px solid #22282f;
+  border-radius: 25px;
+  background-color: #121518;
+}
+
+.select-list__item {
+  transition: all 0.4s;
+  cursor: pointer;
+}
+
+.select-list__item:hover {
+  background-color: #1b1f22;
+  border-right: 1px solid #0047d0;
+}
+
+.select-list__item:hover .сhoose-coin {
+  background-color: #1b1f22;
+}
+
+.сhoose-coin span {
+  margin-left: 8px;
+
+  font-family: 'San Francisco Pro Light';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+
+  color: #32363a;
+}
+
+.сhoose-coin {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  padding-left: 8px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-right: 24px;
+  height: 45px;
+
+  color: #ffffff;
+  transition: all 0.3s;
+  outline: none;
+  border-radius: 22.5px;
+  background-color: #121518;
+}
+
+.choose-coin__photo {
+  width: 20px;
+  height: 20px;
+  margin: 0 8px;
+}
+
+.deposit-network__label {
+  margin-bottom: 13px;
+
+  font-family: 'Manrope Regular';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+
+  color: #ffffff;
+}

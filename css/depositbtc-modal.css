@@ -1,0 +1,156 @@
+.deposit-modal,
+.transfer-modal,
+.bitcoin-deposit__modal {
+  height: 100vh;
+  overflow: auto;
+}
+
+.bitcoin-form {
+  display: flex;
+  padding: 42px 42px;
+  flex-direction: column;
+  width: 432px;
+  height: 728px;
+  background-color: #121518;
+  border-radius: 25px;
+}
+
+.form-header__transfer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+
+  position: relative;
+}
+
+.cross-close {
+  transition: all 0.3s;
+  cursor: pointer;
+
+  position: absolute;
+  top: -15px;
+  right: -15px;
+}
+
+.cross-close:hover {
+  opacity: 0.7;
+}
+
+.bitcoin-payment__about {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bitcoin-payment__about img {
+  width: 144px;
+  height: 144px;
+  margin-bottom: 30px;
+}
+
+.bitcoin-payment__title {
+  margin-bottom: 15px;
+  font-family: 'Manrope Regular';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+
+  color: #ffffff;
+}
+
+.bitcoin-payment__description {
+  margin-bottom: 15px;
+
+  font-family: 'Manrope Regular';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+
+  color: #32363a;
+}
+
+.bitcoin-payment__minimal {
+  font-family: 'Manrope Regular';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  margin-bottom: 25px;
+
+  color: #ff6363;
+}
+
+.bitcoin-address__label {
+  margin-bottom: 13px;
+
+  font-family: 'San Francisco Pro Light';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+}
+
+.bitcoin-address__input {
+  position: relative;
+}
+
+.input-address {
+  padding-right: 40px;
+  width: calc(100% - 55px);
+  padding-left: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: 1px solid #22282f;
+  outline: none;
+  background-color: #121518;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  border-radius: 50px;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.copy-address {
+  position: absolute;
+  bottom: 46px;
+  right: 17px;
+
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.copy-address:hover path {
+  fill: #0047d0;
+}
+
+.bitcoin-deposit__button {
+  padding-top: 11px;
+  padding-bottom: 11px;
+
+  font-family: 'Sofia Pro Regular';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #ffffff;
+
+  background: linear-gradient(265.56deg, #246cf9 -0.27%, #3177ff -0.26%, #075af8 98.59%),
+    linear-gradient(265.56deg, #246cf9 -0.27%, #1e68f6 -0.26%, #0047d0 98.59%);
+  border-radius: 100px;
+  border: none;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.bitcoin-deposit__button:hover {
+  opacity: 0.7;
+}
