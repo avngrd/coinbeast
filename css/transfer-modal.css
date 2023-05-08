@@ -357,6 +357,12 @@
   line-height: 19px;
   outline: none;
   color: #ffffff;
+  border: 1px solid transparent;
+  transition: all 0.3s;
+}
+
+.amount-transfer__input:focus {
+  border: 1px solid #0047d0;
 }
 
 .amount-transfer__input::placeholder {
@@ -392,4 +398,109 @@
 
 .transfer-button:hover {
   opacity: 0.7;
+}
+
+@media (max-width: 500px) {
+  .deposit-form {
+    width: calc(100vw - 30vw);
+    margin: 0 auto;
+    padding: 40px 40px;
+  }
+
+  .deposit-img {
+    padding-left: 0;
+  }
+
+  .select-coin {
+    width: calc(100% - 32px);
+  }
+
+  .deposit-button {
+    width: 100%;
+  }
+
+  .withdraw-form {
+    width: calc(100vw - 30vw);
+    margin: 0 auto;
+  }
+
+  .amount-input {
+    width: calc(100% - 40px);
+  }
+
+  .withdraw-btc {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .available-balance {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    flex-direction: column;
+    padding: 20px 30px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .bitcoin-form {
+    width: calc(100vw - 30vw);
+  }
+}
+
+@media (max-width: 855px) {
+  .panel-balance {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .transfer-to__title {
+    margin-left: 0px;
+  }
+
+  .to-select {
+    margin-right: 0px;
+  }
+
+  .spot-balance {
+    padding-left: 0px;
+    border-left: none;
+    margin-top: 50px;
+  }
+
+  /* .transfer-modal {
+    left: 68%;
+    top: 30%;
+  } */
+
+  .from-select {
+    width: 200px;
+    margin-right: 0px;
+  }
+
+  .transfer-form {
+    width: calc(100vw - 30vw);
+    height: 700px;
+  }
+
+  .transfer-choose {
+    flex-direction: column;
+  }
+
+  .to-select {
+    width: 200px;
+    margin-left: 0px;
+  }
+
+  .available-btc {
+    width: calc(100% - 6px);
+  }
+
+  .transfer-button {
+    padding: 12px 30px;
+    text-align: center;
+  }
+
+  .bitcoin-form {
+    width: calc(100vw - 30vw);
+  }
 }

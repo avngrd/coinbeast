@@ -154,3 +154,59 @@
 .bitcoin-deposit__button:hover {
   opacity: 0.7;
 }
+
+.deposit-form {
+  display: flex;
+  padding: 42px 42px;
+  flex-direction: column;
+  width: 390px;
+  background-color: #121518;
+  border-radius: 25px;
+}
+
+@media (max-width: 500px) {
+  .deposit-form {
+    width: calc(100vw - 30vw);
+    margin: 0 auto;
+    padding: 40px 40px;
+  }
+
+  .deposit-img {
+    padding-left: 0;
+  }
+
+  .select-coin {
+    width: calc(100% - 32px);
+  }
+
+  .deposit-button {
+    width: 100%;
+  }
+
+  .withdraw-form {
+    width: calc(100vw - 30vw);
+    margin: 0 auto;
+  }
+
+  .amount-input {
+    width: calc(100% - 40px);
+  }
+
+  .withdraw-btc {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .available-balance {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    flex-direction: column;
+    padding: 20px 30px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .bitcoin-form {
+    width: calc(100vw - 30vw);
+  }
+}

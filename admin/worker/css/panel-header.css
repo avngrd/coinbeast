@@ -10,7 +10,8 @@ ul {
   display: flex;
   flex-direction: column;
   padding-top: 25px;
-  padding-left: 25px;
+  padding-left: 13px;
+  /* padding-right: 6px; */
   background-color: #0e1012;
 }
 
@@ -50,6 +51,11 @@ ul {
 
 .coinwork-logo {
   transition: all 0.3s;
+  font-family: 'Manrope Bold';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .coinwork-logo.active {
@@ -138,7 +144,7 @@ ul {
   padding-left: 25px;
   padding-top: 24px;
   padding-bottom: 15px;
-  padding-right: 44px;
+  padding-right: 24px;
 
   border-bottom: 1px solid #13171b;
 }
@@ -146,7 +152,7 @@ ul {
 .prev-route {
   margin-right: 12px;
 
-  font-family: 'San Francisco Pro';
+  font-family: 'San Francisco Pro Medium';
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -164,7 +170,7 @@ ul {
 .current-route {
   margin-left: 12px;
 
-  font-family: 'San Francisco Pro';
+  font-family: 'San Francisco Pro Medium';
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -189,7 +195,7 @@ ul {
   margin-left: 10px;
   margin-right: 8px;
 
-  font-family: 'San Francisco Pro';
+  font-family: 'San Francisco Pro Regular';
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
@@ -235,4 +241,44 @@ ul {
 
 .worker-menu.active {
   width: 60px;
+}
+
+@media (max-width: 840px) {
+  .promo-panel {
+    padding-top: 20px;
+    padding-left: 20px;
+  }
+}
+
+@media (max-width: 655px) {
+  .prev-route {
+    font-size: 12px;
+  }
+
+  .current-route {
+    font-size: 12px;
+  }
+
+  .worker-profile {
+    font-size: 12px;
+  }
+
+  .logout-button {
+    display: none;
+  }
+}
+
+@media (max-width: 470px) {
+  .panel-header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header-right {
+    margin-top: 10px;
+  }
+
+  .worker-logo {
+    padding-bottom: 42px;
+  }
 }

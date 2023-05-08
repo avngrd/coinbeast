@@ -206,7 +206,7 @@ main {
 }
 
 .balance-page__menu.activ ~ .mobile-dop_menu {
-  left: calc(50% + 17px);
+  left: calc(50% + 5px);
 }
 
 @media (max-width: 600px) {
@@ -238,7 +238,7 @@ main {
   }
 
   .balance-page__menu.activ {
-    transform: translateX(0);
+    transform: translateX(-2vw);
   }
 
   .menu-list {
@@ -509,24 +509,8 @@ tbody tr td {
   margin: 0 auto;
 }
 
-.deposit-modal,
-.transfer-modal,
-.bitcoin-deposit__modal {
-  height: 100vh;
-  overflow: auto;
-}
-
 .visually-hidden {
   display: none;
-}
-
-.deposit-form {
-  display: flex;
-  padding: 42px 42px;
-  flex-direction: column;
-  width: 390px;
-  background-color: #121518;
-  border-radius: 25px;
 }
 
 .deposit-img {
@@ -538,39 +522,6 @@ tbody tr td {
   height: 45px;
 }
 
-.deposit-button {
-  width: 389px;
-  height: 45px;
-  margin-top: 30px;
-}
-
-.deposit-title {
-  font-family: 'Manrope Regular';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 21px;
-  line-height: 19px;
-
-  color: #ffffff;
-}
-
-.deposit-coin__label {
-  margin-bottom: 13px;
-
-  font-family: 'Manrope Regular';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 19px;
-
-  color: #ffffff;
-}
-
-.select-coin__block {
-  position: relative;
-  z-index: 999999;
-}
-
 .hide-balance {
   cursor: pointer;
   transition: all 0.3s;
@@ -578,129 +529,6 @@ tbody tr td {
 
 .hide-balance:hover {
   opacity: 0.7;
-}
-
-.select-coin {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  padding-left: 8px;
-  padding-top: 1px;
-  padding-bottom: 1px;
-  padding-right: 24px;
-  margin-bottom: 25px;
-  height: 45px;
-
-  color: #ffffff;
-
-  outline: none;
-  border: 1px solid #22282f;
-  border-radius: 22.5px;
-  background-color: #121518;
-}
-
-.select-coin img {
-  width: 33px;
-  height: 33px;
-  margin: 0 8px;
-}
-
-.select-coin p {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 19px;
-
-  color: #ffffff;
-}
-
-.select-coin span {
-  margin-left: 5px;
-  margin-right: auto;
-  font-family: 'Manrope Regular';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 19px;
-  color: #32363a;
-}
-
-.select-coin svg,
-.select-network svg {
-  min-width: 7px;
-  height: 5px;
-}
-
-.coin-select__list {
-  position: absolute;
-  padding-bottom: 18px;
-  z-index: -1;
-  top: 10px;
-  width: 100%;
-  border: 1px solid #22282f;
-  border-radius: 25px;
-  background-color: #121518;
-}
-
-.select-list__item {
-  transition: all 0.4s;
-  cursor: pointer;
-}
-
-.select-list__item:hover {
-  background-color: #1b1f22;
-  border-right: 1px solid #0047d0;
-}
-
-.select-list__item:hover .сhoose-coin {
-  background-color: #1b1f22;
-}
-
-.сhoose-coin span {
-  margin-left: 8px;
-
-  font-family: 'San Francisco Pro Light';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 25px;
-
-  color: #32363a;
-}
-
-.сhoose-coin {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  padding-left: 8px;
-  padding-top: 1px;
-  padding-bottom: 1px;
-  padding-right: 24px;
-  height: 45px;
-
-  color: #ffffff;
-  transition: all 0.3s;
-  outline: none;
-  border-radius: 22.5px;
-  background-color: #121518;
-}
-
-.choose-coin__photo {
-  width: 20px;
-  height: 20px;
-  margin: 0 8px;
-}
-
-.deposit-network__label {
-  margin-bottom: 13px;
-
-  font-family: 'Manrope Regular';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 19px;
-
-  color: #ffffff;
 }
 
 .select-network {
@@ -736,66 +564,6 @@ tbody tr td {
   color: #ffffff;
 }
 
-.deposit-button {
-  font-family: 'Sofia Pro Regular';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 22px;
-
-  color: #ffffff;
-  border: none;
-  background: linear-gradient(265.56deg, #246cf9 -0.27%, #3177ff -0.26%, #075af8 98.59%),
-    linear-gradient(265.56deg, #246cf9 -0.27%, #1e68f6 -0.26%, #0047d0 98.59%);
-  border-radius: 100px;
-  cursor: pointer;
-  transition: all 0.3s;
-}
-
-.deposit-button:hover {
-  opacity: 0.7;
-}
-
-.available-balance {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  height: 48px;
-  padding-right: 6px;
-  padding-left: 6px;
-  margin-bottom: 25px;
-
-  background-color: #2471eb;
-  border-radius: 23px;
-}
-
-.available-balance img {
-  width: 33px;
-  height: 33px;
-}
-
-.available-balance p {
-  margin-left: 10px;
-  font-family: 'Manrope Regular';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 19px;
-
-  color: #ffffff;
-}
-
-.available-balance span {
-  margin-left: 10px;
-  font-family: 'Manrope Regular';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 19px;
-
-  color: #8bb8ff;
-}
-
 .withdraw-btc {
   margin-right: 70px;
 }
@@ -804,85 +572,8 @@ tbody tr td {
   display: none;
 }
 
-.withdraw-form {
-  display: flex;
-  padding: 42px 42px;
-  flex-direction: column;
-  width: 390px;
-  background-color: #121518;
-  border-radius: 25px;
-  margin-bottom: 30px;
-}
-
-.form-header__transfer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 50px;
-
-  position: relative;
-}
-
 .transfer-form .select-coin__block {
   margin-top: 13px;
-}
-
-.form-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 14px;
-
-  position: relative;
-}
-
-.cross-close {
-  transition: all 0.3s;
-  cursor: pointer;
-
-  position: absolute;
-  top: -15px;
-  right: -15px;
-}
-
-.cross-close:hover {
-  opacity: 0.7;
-}
-
-.amount-input {
-  height: 45px;
-  margin-bottom: 25px;
-  padding-left: 20px;
-  padding-right: 20px;
-  font-family: 'Manrope Regular';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 19px;
-
-  background-color: #121518;
-  border: 1px solid #22282f;
-  border-radius: 22.5px;
-  color: #ffffff;
-  outline: #0047d0;
-  transition: all 0.3s;
-}
-
-.amount-input:focus {
-  border: 1px solid #0047d0;
-}
-
-.transfer-form {
-  display: block;
-  padding: 42px 42px;
-  flex-direction: column;
-  width: 845px;
-  height: 554px;
-  background-color: #121518;
-  border-radius: 25px;
-  /* margin: 0 auto; */
 }
 
 .transfer-coin {
@@ -903,28 +594,6 @@ tbody tr td {
   border: 1px solid #22282f;
   border-radius: 22.5px;
   background-color: #121518;
-}
-
-.transfer-coin__label {
-  margin-bottom: 13px;
-
-  font-family: 'Manrope Regular';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 19px;
-
-  color: #ffffff;
-}
-.transfer-title {
-  font-family: 'Manrope Regular';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 21px;
-  line-height: 19px;
-  /* or 19px */
-
-  color: #ffffff;
 }
 
 .transfer-coin img {
@@ -953,221 +622,12 @@ tbody tr td {
   color: #32363a;
 }
 
-.transfer-choose {
-  display: flex;
-  align-items: center;
-  margin-bottom: 30px;
-  justify-content: space-evenly;
-  /* justify-content: space-between; */
-}
-
-.transfer-from__title {
-  margin-bottom: 13px;
-
-  font-family: 'Manrope Regular';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 19px;
-
-  color: #ffffff;
-}
-
-.from-select {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  padding-left: 15px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  margin-right: 21px;
-  width: 368px;
-  height: 29px;
-
-  border: 1px solid #22282f;
-  border-radius: 22.5px;
-}
-
-.from-select p {
-  margin-right: 280px;
-
-  font-family: 'Manrope Regular';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 19px;
-
-  color: #ffffff;
-}
-
-.transfer-to__title {
-  margin-bottom: 13px;
-  margin-left: 21px;
-
-  font-family: 'Manrope Regular';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 19px;
-
-  color: #ffffff;
-}
-
 .transfer-svg {
   cursor: pointer;
-}
-
-.transfer-svg path {
-  transition: all 0.3s;
-}
-
-.transfer-svg:hover path {
-  fill: #0047d0;
-}
-
-.to-select {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  margin-left: 21px;
-  padding-left: 15px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  width: 368px;
-  height: 29px;
-
-  border: 1px solid #22282f;
-  border-radius: 22.5px;
 }
 
 .transfer-svg {
   margin-top: 35px;
-}
-
-.to-select p {
-  margin-right: 280px;
-
-  font-family: 'Manrope Regular';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 19px;
-
-  color: #ffffff;
-}
-
-.available-btc {
-  width: calc(100% - 6px);
-  margin-top: 13px;
-  display: flex;
-  align-items: center;
-  height: 33px;
-  padding-left: 6px;
-  padding-top: 6px;
-  padding-bottom: 6px;
-  margin-bottom: 30px;
-
-  background: linear-gradient(265.56deg, #246cf9 -0.27%, #3177ff -0.26%, #075af8 98.59%), #2471eb;
-  border-radius: 22.5px;
-}
-
-.available-btc img {
-  margin-right: 10px;
-}
-
-.available-btc p {
-  font-family: 'Manrope Regular';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 19px;
-
-  color: #ffffff;
-}
-
-.available-btc span {
-  margin-left: 5px;
-  font-family: 'Manrope Regular';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 19px;
-  color: #8bb8ff;
-}
-
-.amount-transfer {
-  display: flex;
-  position: relative;
-  width: 100%;
-  margin-top: 13px;
-}
-
-.amount-transfer__input {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 33px;
-  padding-left: 15px;
-  width: 100%;
-  padding-bottom: 6px;
-  padding-right: 110px;
-  margin-bottom: 30px;
-  padding-top: 6px;
-  border: 1px solid #22282f;
-  background-color: #121518;
-  border-radius: 22.5px;
-  font-family: 'Manrope Regular';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 19px;
-  outline: none;
-  color: #ffffff;
-}
-
-.amount-transfer__input::placeholder {
-  color: #22282f;
-}
-
-.max-amount {
-  padding: 5px 7px;
-  position: absolute;
-  right: 5px;
-
-  bottom: 38px;
-
-  border: 1px solid #2471eb;
-  border-radius: 22.5px;
-  cursor: pointer;
-  transition: all 0.3s;
-}
-
-.max-amount:hover {
-  opacity: 0.7;
-}
-
-.transfer-button {
-  padding: 11px 374px;
-
-  background: linear-gradient(265.56deg, #246cf9 -0.27%, #3177ff -0.26%, #075af8 98.59%),
-    linear-gradient(265.56deg, #246cf9 -0.27%, #1e68f6 -0.26%, #0047d0 98.59%);
-  border-radius: 100px;
-  cursor: pointer;
-  transition: all 0.3s;
-}
-
-.transfer-button:hover {
-  opacity: 0.7;
-}
-
-.bitcoin-form {
-  display: flex;
-  padding: 42px 42px;
-  flex-direction: column;
-  width: 432px;
-  height: 728px;
-  background-color: #121518;
-  border-radius: 25px;
 }
 
 .bitcoin-title {
@@ -1190,123 +650,6 @@ tbody tr td {
   line-height: 17px;
 
   color: #32363a;
-}
-
-.bitcoin-payment__about {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-}
-
-.bitcoin-payment__about img {
-  width: 144px;
-  height: 144px;
-  margin-bottom: 30px;
-}
-
-.bitcoin-payment__title {
-  margin-bottom: 15px;
-  font-family: 'Manrope Regular';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 19px;
-
-  color: #ffffff;
-}
-
-.bitcoin-payment__description {
-  margin-bottom: 15px;
-
-  font-family: 'Manrope Regular';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 21px;
-  text-align: center;
-
-  color: #32363a;
-}
-
-.bitcoin-payment__minimal {
-  font-family: 'Manrope Regular';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 21px;
-  margin-bottom: 25px;
-
-  color: #ff6363;
-}
-
-.bitcoin-address__label {
-  margin-bottom: 13px;
-
-  font-family: 'San Francisco Pro Light';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 17px;
-  color: #ffffff;
-}
-
-.input-address {
-  padding-right: 40px;
-  width: calc(100% - 55px);
-  padding-left: 15px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  border: 1px solid #22282f;
-  outline: none;
-  background-color: #121518;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 16px;
-  border-radius: 50px;
-  color: #ffffff;
-  margin-bottom: 30px;
-}
-
-.bitcoin-address__input {
-  position: relative;
-}
-
-.copy-address {
-  position: absolute;
-  bottom: 46px;
-  right: 17px;
-
-  cursor: pointer;
-  transition: all 0.3s;
-}
-
-.copy-address:hover path {
-  fill: #0047d0;
-}
-
-.bitcoin-deposit__button {
-  padding-top: 11px;
-  padding-bottom: 11px;
-
-  font-family: 'Sofia Pro Regular';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 22px;
-  color: #ffffff;
-
-  background: linear-gradient(265.56deg, #246cf9 -0.27%, #3177ff -0.26%, #075af8 98.59%),
-    linear-gradient(265.56deg, #246cf9 -0.27%, #1e68f6 -0.26%, #0047d0 98.59%);
-  border-radius: 100px;
-  border: none;
-  transition: all 0.3s;
-  cursor: pointer;
-}
-
-.bitcoin-deposit__button:hover {
-  opacity: 0.7;
 }
 
 .burger {
@@ -1563,9 +906,6 @@ tbody tr td {
   .bitcoin-form {
     width: calc(100vw - 30vw);
   }
-}
-
-@media (max-width: 1105px) {
 }
 
 @media (max-width: 800px) {

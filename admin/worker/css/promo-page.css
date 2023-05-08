@@ -27,14 +27,9 @@ ul {
 /* clear */
 /* clear */
 
-.promo-panel {
-  padding-top: 50px;
-  padding-left: 50px;
-}
-
 .promo-form {
   padding: 25px 30px;
-
+  width: 70vw;
   border-radius: 10px;
   background-color: #0e1012;
 }
@@ -59,7 +54,7 @@ ul {
   position: absolute;
   right: 0px;
 
-  font-family: 'San Francisco Pro';
+  font-family: 'San Francisco Pro Medium';
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
@@ -85,7 +80,7 @@ ul {
   margin-bottom: 15px;
   width: 26vw;
 
-  font-family: 'Manrope';
+  font-family: 'Manrope Medium';
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -96,10 +91,15 @@ ul {
   border: 1px solid #1b1d1f;
   border-radius: 5px;
   color: #ffffff;
+  transition: all 0.3s;
 }
 
 .promo-input::placeholder {
   color: #3c4043;
+}
+
+.promo-input:focus {
+  border: 1px solid #085bf8;
 }
 
 .promo-text {
@@ -111,7 +111,7 @@ ul {
   width: 33vw;
   height: 85%;
 
-  font-family: 'Manrope';
+  font-family: 'Manrope Medium';
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -144,7 +144,7 @@ ul {
 
 .select-coin__name {
   margin-left: 8px;
-  font-family: 'Manrope';
+  font-family: 'Manrope Medium';
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -155,7 +155,7 @@ ul {
 
 .select-coin__fullname {
   margin-left: 8px;
-  font-family: 'Manrope';
+  font-family: 'Manrope Medium';
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -173,7 +173,7 @@ ul {
 .create-promo {
   padding: 12px 19px;
 
-  font-family: 'San Francisco Pro';
+  font-family: 'San Francisco Pro Medium';
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
@@ -194,7 +194,7 @@ ul {
 .promo-withdraw__block p {
   margin-left: 8px;
 
-  font-family: 'Manrope';
+  font-family: 'Manrope Bold';
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
@@ -216,7 +216,7 @@ ul {
 .table-title {
   margin-bottom: 30px;
 
-  font-family: 'Manrope';
+  font-family: 'Manrope Bold';
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -226,7 +226,7 @@ ul {
 }
 
 .column-item {
-  font-family: 'Manrope';
+  font-family: 'Manrope Bold';
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -240,20 +240,11 @@ ul {
   margin-bottom: 30px;
 }
 
-table {
-  display: flex;
-  flex-direction: column;
-}
-
 .table-item {
   display: flex;
-  padding: 11px 5px;
-  /* justify-content: space-between; */
+  justify-content: space-between;
 }
 
-.table-item:nth-child(odd) {
-  background-color: #131618;
-}
 .table-item li {
   font-family: 'Manrope';
   font-style: normal;
@@ -262,26 +253,6 @@ table {
   line-height: 19px;
   white-space: nowrap;
   color: #ffffff;
-}
-
-.promo {
-  min-width: 176px;
-}
-
-.activate {
-  min-width: 118px;
-}
-
-.amount {
-  min-width: 141px;
-}
-
-.text {
-  min-width: 250px;
-}
-
-.date {
-  min-width: 250px;
 }
 
 .delete {
@@ -302,59 +273,73 @@ table {
 
   .promo-text {
     margin-top: 10px;
+    width: calc(100% - 40px);
+  }
+
+  .promo-left {
+    margin-right: 0px;
+  }
+}
+
+@media (max-width: 470px) {
+}
+
+table {
+  width: 100%;
+  overflow: auto;
+}
+
+table tr th {
+  text-align: left;
+}
+
+table tr td {
+  padding: 11px 0px;
+  white-space: nowrap;
+}
+
+table tr td:first-child {
+  padding-left: 0px;
+}
+
+.promo {
+  min-width: 176px;
+}
+
+.activate {
+  min-width: 118px;
+}
+
+.amount {
+  min-width: 141px;
+}
+
+.text {
+  min-width: 280px;
+}
+
+.date {
+  min-width: 250px;
+}
+
+/* .menu-list__item {
+  justify-content: center;
+} */
+
+@media (max-width: 840px) {
+  .promo-input {
+    width: calc(100% - 100px);
   }
 
   .random-promo {
     width: 80px;
-    left: 240px;
+    right: 0px;
+  }
+
+  .promo-form {
+    width: calc(100% - 60px);
   }
 }
 
-@media (max-width: 655px) {
-  .prev-route {
-    font-size: 12px;
-  }
-
-  .current-route {
-    font-size: 12px;
-  }
-
-  .worker-profile {
-    font-size: 12px;
-  }
-
-  .logout-button {
-    font-size: 12px;
-  }
-}
-
-@media (max-width: 510px) {
-  .panel-header {
-    flex-direction: column;
-  }
-
-  .promo-panel {
-    padding-left: 15px;
-  }
-
-  .promo-input {
-    padding-right: 50px;
-  }
-
-  .random-promo {
-    left: 120px;
-  }
-
-  .promo-select {
-    width: 132px;
-  }
-
-  .promo-bottom {
-    flex-direction: column;
-  }
-
-  .create-promo {
-    width: 160px;
-    margin-top: 10px;
-  }
+@media (max-width: 650px) {
 }
