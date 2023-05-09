@@ -29,7 +29,7 @@ ul {
 
 .promo-form {
   padding: 25px 30px;
-  width: 70vw;
+  width: calc(100vw - 30vw - 60px);
   border-radius: 10px;
   background-color: #0e1012;
 }
@@ -102,13 +102,17 @@ ul {
   border: 1px solid #085bf8;
 }
 
+.promo-right {
+  width: 100%;
+}
+
 .promo-text {
   padding-top: 10px;
   padding-left: 10px;
   padding-bottom: 10px;
   padding-right: 30px;
   margin-bottom: 15px;
-  width: 33vw;
+  width: calc(100% - 40px);
   height: 85%;
 
   font-family: 'Manrope Medium';
@@ -206,7 +210,7 @@ ul {
 .promocodes-table {
   margin-top: 30px;
   padding: 25px 30px;
-  width: 70vw;
+  width: calc(100vw - 30vw - 60px);
   overflow: auto;
 
   background: #0e1012;
@@ -242,7 +246,7 @@ ul {
 
 .table-item {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
 .table-item li {
@@ -337,9 +341,33 @@ table tr td:first-child {
   }
 
   .promo-form {
-    width: calc(100% - 60px);
+    width: calc(100vw - 30vw - 60px);
+    margin: 0 auto;
+  }
+
+  .promocodes-table {
+    margin: 0 auto;
+    margin-top: 20px;
   }
 }
 
 @media (max-width: 650px) {
+}
+
+@media (max-width: 460px) {
+  .promo-bottom {
+    flex-direction: column;
+  }
+
+  .promo-withdraw__block {
+    margin-bottom: 10px;
+  }
+
+  .promo-form {
+    padding: 20px 25px;
+  }
+
+  .promocodes-table {
+    padding: 20px 25px;
+  }
 }

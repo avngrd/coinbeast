@@ -29,16 +29,16 @@ ul {
 
 .users-info {
   padding: 25px 30px;
-  min-width: 90%;
+  width: calc(100vw - 30vw - 60px);
   overflow: auto;
 
   background-color: #0e1012;
   border-radius: 10px;
 }
 
-@media (max-width: 1100px) {
-  .panel-header {
-    width: 68%;
+@media (max-width: 840px) {
+  .users-info {
+    margin: 0 auto;
   }
 }
 
@@ -100,53 +100,8 @@ ul {
   color: #ffffff;
 }
 
-.users-table .table-item:nth-child(even) {
-  background-color: #131618;
-}
-
 .country-flag {
   margin-right: 10px;
-}
-
-@media (max-width: 877px) {
-  .prev-route {
-    font-size: 12px;
-  }
-
-  .current-route {
-    font-size: 12px;
-  }
-
-  .worker-profile {
-    font-size: 12px;
-  }
-
-  .logout-button {
-    font-size: 12px;
-  }
-
-  .panel-header {
-    width: 50%;
-    flex-direction: column;
-  }
-
-  .header-left {
-    margin-bottom: 10px;
-  }
-}
-
-@media (max-width: 405px) {
-  .header-right {
-    flex-direction: column;
-  }
-
-  .worker-header__select {
-    margin-top: 10px;
-  }
-
-  .logout-button {
-    margin-left: 10px;
-  }
 }
 
 .mail {
@@ -169,21 +124,24 @@ ul {
   min-width: 187px;
 }
 
-/* сдыфв */
+table tr th {
+  text-align: left;
 
-@media (max-width: 1470px) {
-  .mail,
-  .country,
-  .promo-code,
-  .domain {
-    min-width: calc(283px - 100px);
-    margin-right: 10px;
-  }
+  font-family: 'Manrope Bold';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+
+  color: #3c4043;
 }
 
-@media (max-width: 1290px) {
+table tr td {
+  white-space: nowrap;
+}
+
+@media (max-width: 460px) {
   .users-info {
-    max-width: 100%;
-    overflow: auto;
+    padding: 20px 25px;
   }
 }
