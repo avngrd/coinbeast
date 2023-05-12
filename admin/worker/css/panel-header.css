@@ -17,6 +17,7 @@ ul {
 
 .worker-logo {
   display: flex;
+  position: relative;
   align-items: center;
   padding-bottom: 19px;
   border-bottom: 1px solid #13171b;
@@ -94,12 +95,15 @@ ul {
   align-items: center;
   padding-top: 12px;
   padding-bottom: 12px;
+  cursor: pointer;
+  transition: all 0.2s;
+  border-right: 1px solid transparent;
 }
 
-.menu-list__item a {
+.menu-list__item p {
   margin-left: 13px;
 
-  font-family: 'Manrope';
+  font-family: 'Manrope Medium';
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -109,8 +113,15 @@ ul {
   transition: all 0.3s;
 }
 
-.menu-list__item:hover a {
+.menu-item__active.menu-item__active {
   color: #ffffff;
+}
+
+.menu-list__item:hover p {
+  color: #ffffff;
+}
+.menu-list__item:hover {
+  border-right: 1px solid #3077ff;
 }
 
 .menu-list__item svg path {
@@ -139,6 +150,7 @@ ul {
 
 .panel-header {
   display: flex;
+  width: calc(100% - 49px);
   justify-content: space-between;
   align-items: center;
   padding-left: 25px;
@@ -266,6 +278,14 @@ ul {
   .logout-button {
     display: none;
   }
+
+  .worker-logo {
+    padding-bottom: 14px;
+  }
+
+  .menu {
+    margin-top: 20px;
+  }
 }
 
 @media (max-width: 470px) {
@@ -281,4 +301,24 @@ ul {
   .worker-logo {
     padding-bottom: 42px;
   }
+}
+
+.link-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 0;
+  width: 100%;
+}
+
+.worker-menu.active .link-wrapper {
+  justify-content: center;
+}
+
+.worker-menu.active .worker-menu.worker-menu {
+  padding-left: 0px;
+}
+
+.worker-menu.active .worker-logo {
+  padding-left: 11px;
 }

@@ -102,15 +102,38 @@ ul {
   border: 1px solid #085bf8;
 }
 
+.promo-input__two {
+  padding: 10px;
+  margin-bottom: 15px;
+
+  font-family: 'Manrope Medium';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  outline: none;
+
+  background-color: #0e1012;
+  border: 1px solid #1b1d1f;
+  border-radius: 5px;
+  color: #ffffff;
+  transition: all 0.3s;
+}
+
+.promo-input__two::placeholder {
+  color: #3c4043;
+}
+
+.promo-input__two:focus {
+  border: 1px solid #085bf8;
+}
+
 .promo-right {
   width: 100%;
 }
 
 .promo-text {
-  padding-top: 10px;
-  padding-left: 10px;
-  padding-bottom: 10px;
-  padding-right: 30px;
+  padding: 10px;
   margin-bottom: 15px;
   width: calc(100% - 40px);
   height: 85%;
@@ -288,8 +311,14 @@ ul {
 @media (max-width: 470px) {
 }
 
-table {
+/* table {
   width: 100%;
+  overflow: auto;
+} */
+
+.promo-table {
+  display: flex;
+  flex-direction: column;
   overflow: auto;
 }
 
@@ -335,6 +364,10 @@ table tr td:first-child {
     width: calc(100% - 100px);
   }
 
+  .promo-input__two {
+    width: calc(100% - 100px);
+  }
+
   .random-promo {
     width: 80px;
     right: 0px;
@@ -370,4 +403,32 @@ table tr td:first-child {
   .promocodes-table {
     padding: 20px 25px;
   }
+}
+
+.promo-select__dropdown {
+  position: absolute;
+  background-color: #0e1012;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #22282f;
+}
+
+.promo-select__menu {
+  position: relative;
+}
+
+.dropdown-list__item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 11px;
+  cursor: pointer;
+  transition: all 0.3s;
+  border-right: 1px solid transparent;
+}
+
+.dropdown-list__item:hover {
+  opacity: 0.9;
+  border-right: 1px solid #085bf8;
+  background-color: #1b1f22;
 }

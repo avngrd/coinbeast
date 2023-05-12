@@ -80,12 +80,7 @@ ul {
   color: #3c4043;
 }
 
-.telegram-user svg {
-  position: absolute;
-  left: 10px;
-}
-
-.telegram-group svg {
+.telegram-svg {
   position: absolute;
   left: 10px;
 }
@@ -100,12 +95,14 @@ ul {
 .telegram-group {
   position: relative;
   display: flex;
+  flex-direction: row;
   align-items: center;
+  margin-bottom: 10px;
 }
 
 .add-button {
   position: absolute;
-  padding: 12px 19px;
+  padding: 12px 29px;
   right: 0px;
 
   font-family: 'San Francisco Pro Regular';
@@ -164,4 +161,8 @@ ul {
   .telegram-notif__form {
     padding: 20px 25px;
   }
+}
+
+.tagsinput:focus {
+  border: 1px solid #085bf8;
 }

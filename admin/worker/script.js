@@ -14,3 +14,19 @@ function closeWorkMenu() {
 }
 
 closeMenuButton.addEventListener('click', closeWorkMenu);
+
+// if (window.innerWidth <= 650) {
+//   coinWorkLogo.classList.add('active');
+//   workerMenu.classList.add('active');
+//   closeMenuButton.classList.add('active');
+//   menuItem.forEach((elem) => {
+//     elem.classList.add('active');
+//   });
+// } else {
+//   coinWorkLogo.classList.remove('active');
+//   workerMenu.classList.remove('active');
+//   closeMenuButton.classList.remove('active');
+//   menuItem.forEach((elem) => {
+//     elem.classList.remove('active');
+//   });
+// }
