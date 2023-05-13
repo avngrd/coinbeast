@@ -29,7 +29,7 @@ ul {
 
 .promo-form {
   padding: 25px 30px;
-  width: calc(100vw - 30vw - 60px);
+  width: calc(100% - 50px - 60px);
   border-radius: 10px;
   background-color: #0e1012;
 }
@@ -78,8 +78,7 @@ ul {
   padding-bottom: 10px;
   padding-right: 90px;
   margin-bottom: 15px;
-  width: 26vw;
-
+  width: calc(100% - 100px);
   font-family: 'Manrope Medium';
   font-style: normal;
   font-weight: 500;
@@ -233,7 +232,7 @@ ul {
 .promocodes-table {
   margin-top: 30px;
   padding: 25px 30px;
-  width: calc(100vw - 30vw - 60px);
+  width: calc(100% - 50px - 60px);
   overflow: auto;
 
   background: #0e1012;
@@ -365,7 +364,7 @@ table tr td:first-child {
   }
 
   .promo-input__two {
-    width: calc(100% - 100px);
+    width: calc(100% - 20px);
   }
 
   .random-promo {

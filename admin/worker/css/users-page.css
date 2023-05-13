@@ -29,7 +29,7 @@ ul {
 
 .users-info {
   padding: 25px 30px;
-  width: calc(100vw - 30vw - 60px);
+  width: calc(100% - 50px - 60px);
   overflow: auto;
   background-color: #0e1012;
   border-radius: 10px;
@@ -104,10 +104,6 @@ ul {
   color: #ffffff;
 }
 
-.users-table .table-item:nth-child(even) {
-  background-color: #131618;
-}
-
 .country-flag {
   margin-right: 10px;
 }
@@ -126,6 +122,12 @@ table tr th {
 
 table tr td {
   white-space: nowrap;
+}
+
+.users-table {
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
 }
 
 @media (max-width: 840px) {

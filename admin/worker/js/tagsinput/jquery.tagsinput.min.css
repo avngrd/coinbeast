@@ -2,7 +2,7 @@ div.tagsinput {
   border: 1px solid #1b1d1f;
   border-radius: 10px;
   background: #0e1012;
-  padding: 0px 8px;
+  padding: 5px;
   padding-left: 35px;
   width: calc(100% - 16px);
   height: 25px;
@@ -15,25 +15,24 @@ div.tagsinput span.tag {
   -webkit-border-radius: 2px;
   display: block;
   float: left;
-  padding: 5px;
+  padding: 2px;
   text-decoration: none;
   background: #cde69c;
   color: #638421;
-  margin-right: 5px;
-  margin-bottom: 5px;
+  margin: 2px;
   font-family: helvetica;
-  font-size: 13px;
+  font-size: 8px;
 
-  background: #181b22;
-  border-radius: 8.24885px;
-  padding: 8px 10px;
+  background: #1b1d1f;
+  border-radius: 4px;
+  padding: 3px 8px;
   display: flex;
   align-items: center;
 
   font-family: 'Manrope Medium';
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 10px;
   line-height: 19px;
   text-align: center;
 
@@ -56,14 +55,13 @@ div.tagsinput span.tag a svg:hover {
 }
 div.tagsinput input {
   width: 110px;
-  margin: 0 5px 5px 0;
   font-family: helvetica;
   font-size: 13px;
   border: 1px solid transparent;
   padding: 5px;
-  padding-left: 30px;
+  padding-left: 5px;
   background: 0 0;
-  color: #ffffff;
+  color: #3c4043;
   outline: 0;
 }
 div.tagsinput div {
