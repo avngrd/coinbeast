@@ -29,9 +29,15 @@ ul {
 
 .promo-form {
   padding: 25px 30px;
-  width: calc(100% - 50px - 60px);
-  border-radius: 10px;
+  width: calc(100% - 60px);
   background-color: #0e1012;
+  border-radius: 10px;
+}
+
+.wrapper_table {
+  width: 100%;
+  position: relative;
+  overflow: auto;
 }
 
 .promo-title {
@@ -44,6 +50,7 @@ ul {
 
 .promo-left {
   display: flex;
+  width: 100%;
   flex-direction: column;
   margin-right: 20px;
   position: relative;
@@ -134,7 +141,7 @@ ul {
 .promo-text {
   padding: 10px;
   margin-bottom: 15px;
-  width: calc(100% - 40px);
+  width: calc(100% - 20px);
   height: 85%;
 
   font-family: 'Manrope Medium';
@@ -232,10 +239,10 @@ ul {
 .promocodes-table {
   margin-top: 30px;
   padding: 25px 30px;
-  width: calc(100% - 50px - 60px);
-  overflow: auto;
-
-  background: #0e1012;
+  width: calc(100% - 60px);
+  /* overflow: auto; */
+  display: grid;
+  background-color: #0e1012;
   border-radius: 10px;
 }
 
@@ -262,12 +269,10 @@ ul {
 }
 
 .table-columns {
-  display: flex;
   margin-bottom: 30px;
 }
 
 .table-item {
-  display: flex;
   /* justify-content: space-between; */
 }
 
@@ -316,9 +321,6 @@ ul {
 } */
 
 .promo-table {
-  display: flex;
-  flex-direction: column;
-  overflow: auto;
 }
 
 table tr th {
@@ -373,8 +375,8 @@ table tr td:first-child {
   }
 
   .promo-form {
-    width: calc(100vw - 30vw - 60px);
-    margin: 0 auto;
+    /* width: calc(100vw - 30vw - 60px); */
+    /* margin: 0 auto; */
   }
 
   .promocodes-table {
@@ -393,14 +395,6 @@ table tr td:first-child {
 
   .promo-withdraw__block {
     margin-bottom: 10px;
-  }
-
-  .promo-form {
-    padding: 20px 25px;
-  }
-
-  .promocodes-table {
-    padding: 20px 25px;
   }
 }
 
@@ -430,4 +424,33 @@ table tr td:first-child {
   opacity: 0.9;
   border-right: 1px solid #085bf8;
   background-color: #1b1f22;
+}
+
+.worker-header__menu {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu-title {
+  display: flex;
+  align-items: center;
+}
+
+.menu-dropdown {
+  padding: 5px;
+  z-index: 11;
+  background-color: #0b0d0f;
+  position: absolute;
+  top: 30px;
+  right: -15px;
+  border-radius: 10px;
+  border: 1px solid #22282f;
+}
+
+.dropdown-list__item {
+  border-radius: 8px;
+  padding: 10px 30px 10px 10px;
+  text-align: left;
 }

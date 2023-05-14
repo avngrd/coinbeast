@@ -150,13 +150,12 @@ ul {
 
 .panel-header {
   display: flex;
-  width: calc(100% - 125px);
   justify-content: space-between;
   align-items: center;
-  padding-left: 25px;
+  width: calc(100% - 86px);
+  padding: 0 43px;
   padding-top: 24px;
   padding-bottom: 15px;
-  padding-right: 24px;
 
   border-bottom: 1px solid #13171b;
 }
@@ -247,9 +246,9 @@ ul {
 }
 
 .promo-panel {
+  padding: 0 43px;
   padding-top: 50px;
-  padding-left: 50px;
-  width: calc(100% - 50px - 73px);
+  width: calc(100% - 86px);
 }
 
 .worker-menu.active {
@@ -258,9 +257,15 @@ ul {
 
 @media (max-width: 840px) {
   .promo-panel {
+    padding: 0 10px;
+    width: calc(100% - 20px);
     padding-top: 20px;
-    padding-left: 0px;
-    width: calc(100% - 0px - 73px);
+  }
+
+  .panel-header {
+    padding-left: 10px;
+    padding-right: 10px;
+    width: calc(100% - 20px);
   }
 }
 
@@ -324,4 +329,10 @@ ul {
 
 .worker-menu.active .worker-logo {
   padding-left: 11px;
+}
+
+.wrapper-table {
+  width: 100%;
+  position: relative;
+  overflow: auto;
 }

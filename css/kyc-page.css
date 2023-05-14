@@ -949,7 +949,7 @@ main {
 .photo-type__form {
   margin: 0 auto;
   background-color: #121518;
-  width: calc(100% - 84px);
+  width: 482px;
   border-radius: 25px;
   padding: 42px 42px;
 }
@@ -1288,12 +1288,19 @@ main {
   min-width: 27px;
   min-height: 27px;
 }
+.face-verif__right {
+  margin-left: 20px;
+}
 
 @media (max-width: 500px) {
   .document-type__form {
     width: calc(100% - 10% - 84px);
     margin: 0 auto;
     padding: 32px 32px;
+  }
+
+  .face-verif__right {
+    margin-left: 0px;
   }
 
   .photo-upload__button {
@@ -1378,10 +1385,6 @@ main {
 
 .photo-condition__list-two {
   margin-top: 0px;
-}
-
-.face-verif__right {
-  margin-left: 20px;
 }
 
 .verif-username {

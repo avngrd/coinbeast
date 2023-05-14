@@ -27,7 +27,7 @@ ul {
 
 .telegram-notif__form {
   padding: 25px 30px;
-  width: calc(100% - 50px - 60px);
+  width: calc(100% - 60px);
 
   background-color: #0e1012;
   border-radius: 10px;

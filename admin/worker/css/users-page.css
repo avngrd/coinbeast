@@ -29,10 +29,17 @@ ul {
 
 .users-info {
   padding: 25px 30px;
-  width: calc(100% - 50px - 60px);
-  overflow: auto;
+  width: calc(100% - 60px);
+  /* overflow: auto; */
+  display: grid;
   background-color: #0e1012;
   border-radius: 10px;
+}
+
+.wrapper_table {
+  width: 100%;
+  position: relative;
+  overflow: auto;
 }
 
 .users-title {
@@ -57,8 +64,6 @@ ul {
 }
 
 .table-columns {
-  display: flex;
-  flex-direction: row;
   margin-bottom: 30px;
 }
 
@@ -87,10 +92,9 @@ ul {
   min-width: 230px;
 }
 
-.item {
-  display: flex;
-  padding-top: 11px;
-  padding-bottom: 11px;
+table tr td {
+  white-space: nowrap;
+  padding: 11px 0px;
 }
 
 .item li {
@@ -125,9 +129,7 @@ table tr td {
 }
 
 .users-table {
-  display: flex;
-  flex-direction: column;
-  overflow: auto;
+  width: 100%;
 }
 
 @media (max-width: 840px) {
@@ -138,6 +140,7 @@ table tr td {
 
 @media (max-width: 460px) {
   .users-info {
-    padding: 20px 25px;
+    padding: 20px 20px;
+    width: calc(100% - 40px);
   }
 }
