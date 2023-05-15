@@ -253,6 +253,11 @@ ul {
 
 .worker-menu.active {
   width: 60px;
+  padding-left: 8px;
+}
+
+.worker-menu.active .menu-list__item {
+  padding-right: 8px;
 }
 
 @media (max-width: 840px) {

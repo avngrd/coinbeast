@@ -439,18 +439,26 @@ table tr td:first-child {
 }
 
 .menu-dropdown {
-  padding: 5px;
-  z-index: 11;
+  padding: 5px 5px 5px 5px;
   background-color: #0b0d0f;
   position: absolute;
   top: 30px;
-  right: -15px;
+  z-index: 10;
+  width: 100px;
+  right: 0px;
   border-radius: 10px;
   border: 1px solid #22282f;
 }
 
 .dropdown-list__item {
-  border-radius: 8px;
-  padding: 10px 30px 10px 10px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  padding: 10px;
   text-align: left;
+}
+
+@media (max-width: 500px) {
+  .menu-dropdown {
+    right: -10px;
+  }
 }
