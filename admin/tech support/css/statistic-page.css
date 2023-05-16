@@ -30,6 +30,7 @@ ul {
 }
 
 .users-stats {
+  width: calc(100% - 60px);
   padding: 25px 30px;
   background-color: #0e1012;
   border-radius: 10px;
@@ -56,7 +57,7 @@ ul {
 }
 
 .chart-title {
-  font-family: 'Manrope';
+  font-family: 'Manrope Bold';
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -68,7 +69,7 @@ ul {
 .chart-count {
   padding-left: 20px;
 
-  font-family: 'Inter';
+  font-family: 'Inter Medium';
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -92,7 +93,7 @@ ul {
   padding: 2px 8px;
   margin-right: 11px;
 
-  font-family: 'Inter';
+  font-family: 'Inter Medium';
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -112,6 +113,7 @@ ul {
 .user-total__count {
   margin-top: 20px;
   padding: 18px 20px;
+  width: calc(100% - 40px);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -128,7 +130,7 @@ ul {
 .total-text {
   margin-left: 16px;
 
-  font-family: 'Manrope';
+  font-family: 'Manrope Bold';
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -136,10 +138,27 @@ ul {
   color: #ffffff;
 }
 
+.promo-panel__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.user-stats__block {
+  /* width: 100%; */
+  max-width: 761px;
+  margin-bottom: 20px;
+}
+
+.money-stats-block {
+  max-width: 761px;
+  margin-bottom: 20px;
+}
+
 .total-count {
   padding: 2px 8px;
 
-  font-family: 'Inter';
+  font-family: 'Inter Medium';
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -150,38 +169,31 @@ ul {
   border-radius: 8px;
 }
 
-.money-stats-block {
-  margin-left: 20px;
+.users-stats__chart img {
+  width: 100%;
 }
 
-@media (max-width: 925px) {
-  .user-total__count {
-    width: calc(100vw - 30vw - 10px);
-  }
-}
-
-@media (max-width: 540px) {
-  .total-text {
-    white-space: nowrap;
-  }
-
-  .user-total__count {
+@media (max-width: 560px) {
+  .chart-header {
     flex-direction: column;
-    max-width: 200px;
-    justify-content: center;
-    align-items: center;
   }
 
-  .total-left {
-    justify-content: space-between;
+  .users-stats__chart img {
+    max-width: 450px;
+  }
+
+  .chart-periods__list {
+    margin-top: 20px;
   }
 
   .chart-count {
-    white-space: nowrap;
-    margin-right: 10px;
+    text-align: center;
   }
 
-  .chart-title {
+  .total-count {
     white-space: nowrap;
   }
+}
+
+@media (max-width: 880px) {
 }

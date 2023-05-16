@@ -30,7 +30,7 @@ a {
 
 .find-worker__panel {
   padding: 25px 30px;
-  max-width: 780px;
+  width: calc(100% - 60px);
   position: relative;
   margin-bottom: 20px;
 
@@ -41,7 +41,7 @@ a {
 .find-title {
   margin-bottom: 34px;
 
-  font-family: 'Manrope';
+  font-family: 'Manrope Bold';
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -55,9 +55,9 @@ a {
   padding-bottom: 10px;
   padding-left: 12px;
   padding-right: 36px;
-  width: 90%;
+  width: calc(100% - 12px - 36px);
 
-  font-family: 'Manrope';
+  font-family: 'Manrope Medium';
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -86,7 +86,7 @@ a {
   right: 26px;
   /* top: 0px; */
   bottom: 26px;
-  font-family: 'San Francisco Pro';
+  font-family: 'San Francisco Pro Bold';
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
@@ -104,9 +104,9 @@ a {
 }
 
 .find-user__panel {
+  display: grid;
   padding: 25px 30px;
-  display: flex;
-  flex-direction: column;
+  width: calc(100% - 60px);
 
   background: #0e1012;
   border-radius: 10px;
@@ -114,8 +114,9 @@ a {
 
 .panel-title {
   white-space: nowrap;
+  min-width: 80px;
 
-  font-family: 'Manrope';
+  font-family: 'Manrope Bold';
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -134,13 +135,12 @@ a {
   display: flex;
   flex-direction: row;
   align-items: center;
-  position: relative;
 }
 
 .input-search {
   padding: 8px 22px 8px 12px;
 
-  font-family: 'Manrope';
+  font-family: 'Manrope Medium';
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -164,15 +164,18 @@ a {
 
 .find-svg {
   position: absolute;
-  left: 150px;
+  right: 5px;
+  top: 10px;
 }
 
 .find-filter {
   padding: 9px 9px;
   margin-left: 15px;
   white-space: nowrap;
+  position: relative;
+  z-index: 100;
 
-  font-family: 'Manrope';
+  font-family: 'Manrope Medium';
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -185,8 +188,33 @@ a {
   transition: all 0.3s;
 }
 
+.filter-menu__list {
+  position: absolute;
+  display: none;
+  background-color: #0e1012;
+  z-index: 99;
+  width: 100%;
+  left: 0;
+  border-radius: 5px;
+  border: 1px solid #1b1d1f;
+}
+
+.filter-item {
+  color: #3c4043;
+  font-family: 'Manrope Medium';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  padding-left: 8px;
+  transition: all 0.3s;
+}
+
+.filter-item:hover {
+  border-right: 1px solid #085bf8;
+  background-color: #131618;
+}
+
 .find-filter:hover {
-  opacity: 0.7;
 }
 
 .find-filter svg {
@@ -199,7 +227,7 @@ a {
   margin-right: 18px;
   white-space: nowrap;
 
-  font-family: 'Manrope';
+  font-family: 'Manrope Medium';
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -223,6 +251,8 @@ a {
 .refresh-svg {
   cursor: pointer;
   transition: all;
+  min-width: 20px;
+  min-height: 20px;
 }
 
 .refresh-svg path {
@@ -239,15 +269,12 @@ a {
 }
 
 .table-columns__list {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
   margin-bottom: 30px;
 }
 
 .table-columns__list li {
   white-space: nowrap;
-  font-family: 'Manrope';
+  font-family: 'Manrope Bold';
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -276,17 +303,7 @@ a {
   min-width: 305px;
 }
 
-.id,
-.mail,
-.worker-column,
-.status,
-.domain,
-.date {
-}
-
 .logs-item {
-  display: flex;
-  flex-direction: row;
   padding-top: 11px;
   padding-bottom: 11px;
 }
@@ -304,7 +321,7 @@ a {
 }
 
 .logs-item li p {
-  font-family: 'Manrope';
+  font-family: 'Manrope SemiBold';
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -333,36 +350,86 @@ a {
   fill: #085bf8;
 }
 
-@media (max-width: 1490px) {
-  .panel-right {
-    margin-right: 70px;
-  }
-}
-
 .column-row:nth-child(even) {
   background: #131618;
 }
 
-@media (max-width: 1000px) {
-  .find-worker__panel {
-    width: calc(100% - 20% - 20px);
-  }
-
-  .find-worker__input {
-    width: calc(100% - 20% - 20px);
-  }
-}
-
-@media (max-width: 697px) {
-  .find-set__button {
-    /* right: 120px; */
-    bottom: 24px;
-  }
-  .users-panel {
-    padding-left: 15px;
-  }
-}
-
 .clzlc {
   stroke-dasharray: none;
+}
+
+table tr th {
+  text-align: left;
+}
+
+.users-table {
+  width: 100%;
+  margin-top: 24px;
+}
+.users-table tbody tr td {
+  padding-top: 11px;
+  padding-bottom: 11px;
+}
+
+.wrapper_table {
+  width: 100%;
+  position: relative;
+  overflow: auto;
+}
+
+.input-search__wrapper {
+  position: relative;
+  width: 100%;
+}
+
+@media (max-width: 740px) {
+  .find-panel__header {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .panel-title {
+    margin-bottom: 10px;
+  }
+
+  .panel-right {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .input-search {
+    width: calc(100% - 34px);
+    margin-bottom: 10px;
+  }
+
+  .find-filter {
+    width: calc(100% - 18px);
+    margin-left: 0px;
+    position: relative;
+    margin-bottom: 10px;
+  }
+
+  .find-filter svg {
+    position: absolute;
+    right: 5px;
+    bottom: 15px;
+  }
+
+  .find-filter__worker {
+    position: relative;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: calc(100% - 18px);
+    margin-bottom: 10px;
+  }
+
+  .find-filter__worker svg {
+    margin-left: 0px;
+    margin-top: 10px;
+    position: absolute;
+    right: 5px;
+    bottom: 15px;
+  }
 }
