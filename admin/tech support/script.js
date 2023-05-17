@@ -14,3 +14,18 @@ function closeWorkMenu() {
 }
 
 closeMenuButton.addEventListener('click', closeWorkMenu);
+
+function checkWidth() {
+  if (window.innerWidth <= 600) {
+    coinWorkLogo.classList.add('active');
+    workerMenu.classList.add('active');
+    closeMenuButton.classList.add('active');
+
+    menuItem.forEach((elem) => {
+      elem.classList.add('active');
+    });
+  }
+  console.log(window.innerWidth);
+}
+
+checkWidth();
