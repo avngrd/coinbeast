@@ -1,0 +1,12 @@
+.tagging .tag {
+  background: none repeat scroll 0 0 #1b1d1f;
+  max-width: 89px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  padding: 4px 20px 4px 4px;
+  border-radius: 4px;
+}
+
+.tag span {
+  display: none;
+}

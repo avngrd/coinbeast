@@ -167,3 +167,7 @@ ul {
 .tagsinput:focus {
   border: 1px solid #085bf8;
 }
+
+.add-button {
+  display: none;
+}

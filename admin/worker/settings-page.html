@@ -6,12 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/admin/worker/css/settings-page.css" />
     <link rel="stylesheet" href="/admin/worker/css/panel-header.css" />
+    <link rel="stylesheet" href="/admin/worker/css/taging.css" />
     <link rel="stylesheet" href="/css/fonts.css" />
     <script src="/js/jquery.js"></script>
     <title>Settings</title>
 
     <script src="js/tagsinput/jquery.tagsinput.min.js"></script>
     <link rel="stylesheet" href="js/tagsinput/jquery.tagsinput.min.css" />
+
+    <script src="js/taggingJS/tagging.min.js"></script>
+    <link rel="stylesheet" href="js/taggingJS/tag-basic-style.css" />
   </head>
   <body>
     <main>
@@ -327,13 +331,7 @@
                     fill="#1B1D1F"
                   />
                 </svg>
-                <input
-                  class="tagsinput"
-                  data-role="tagsinput"
-                  type="text"
-                  placeholder="Enter telegram id"
-                />
-                <button class="add-button">Add</button>
+                <div data-tags-input-name="tag" id="tagBox" data-tags-limit="3">Add more..</div>
               </div>
               <div class="telegram-group">
                 <svg
@@ -351,13 +349,7 @@
                     fill="#1B1D1F"
                   />
                 </svg>
-                <input
-                  class="tagsinput"
-                  data-role="tagsinput"
-                  type="text"
-                  placeholder="Enter group id"
-                />
-                <button class="add-button">Add</button>
+                <div data-tags-input-name="tag" id="tagBox2" data-tags-limit="3">Add more..</div>
               </div>
             </div>
           </div>
@@ -373,6 +365,14 @@
         height: 'auto',
         placeholderColor: '#3C4043',
         interactive: true,
+      });
+
+      $('#tagBox').tagging({
+        'tag-char': '',
+      });
+
+      $('#tagBox2').tagging({
+        'tag-char': '',
       });
     </script>
   </body>
