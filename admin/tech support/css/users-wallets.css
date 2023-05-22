@@ -1,0 +1,220 @@
+/* clear */
+
+.transactions-block {
+  margin-top: 33px;
+  margin-bottom: 30px;
+  display: grid;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.block-columns {
+  display: flex;
+  flex-direction: row;
+}
+
+.column-item {
+  padding: 21px 30px;
+
+  font-family: 'Manrope Bold';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.3s;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.column-item:hover {
+  background-color: #0f1214;
+  opacity: 0.7;
+}
+
+.column-item__active {
+  background-color: #0f1214;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.transaction-table {
+  background-color: #0f1214;
+  padding: 30px;
+  width: 100%;
+}
+
+.status {
+  min-width: 257px;
+}
+.amount {
+  min-width: 255px;
+}
+.trans-type {
+  min-width: 174px;
+}
+.address {
+  min-width: 240px;
+}
+.action {
+  min-width: 286px;
+}
+
+.date {
+  min-width: 140px;
+}
+
+td p {
+  font-family: 'Manrope Bold';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+td {
+  font-family: 'Manrope Bold';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+table tr th {
+  text-align: left;
+  font-family: 'Manrope Bold';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+
+  color: #3c4043;
+}
+
+.ip-block img {
+  margin-right: 5px;
+}
+
+.ip-block {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.amoun-coin {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.coin-transaction {
+  margin-right: 10px;
+}
+
+.accept-block {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.accept-btn {
+  margin-right: 7px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.accept-btn:hover {
+  opacity: 0.7;
+}
+
+.cancel-btn {
+  margin-left: 7px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.cancel-btn:hover {
+  opacity: 0.7;
+}
+
+table tbody tr td {
+  padding: 11px 0;
+}
+
+.operation-status {
+  font-family: 'Manrope Medium';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.email-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.link-svg {
+  margin-right: 30px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.link-svg__wrapper {
+  transition: all 0.3s;
+}
+
+.link-svg path {
+  transition: all 0.3s;
+}
+
+.link-svg__wrapper:hover .link-svg path {
+  fill: #0047d0;
+}
+
+.wallets-list {
+  width: calc(100% - 60px);
+  background: #0f1214;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.wallet-img {
+  margin-right: 10px;
+}
+
+.wallets-list__item {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 15px;
+  max-width: 320px;
+  border: 1px solid #1b1d1f;
+  border-radius: 5px;
+}
+
+.wallets-list__item:last-child {
+  margin-bottom: 0px;
+}
+
+.wallet-number__hash {
+  font-family: 'Manrope Medium';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+
+  color: #ffffff;
+}
+
+p.wallet-number__hash {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
