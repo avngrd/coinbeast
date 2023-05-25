@@ -238,6 +238,7 @@ a {
   display: flex;
   flex-direction: row;
   margin-bottom: 20px;
+  width: 100%;
 }
 
 .network-status {
@@ -851,10 +852,14 @@ a {
     flex-direction: column;
   }
 
+  .messages-count {
+    margin-left: auto;
+  }
+
   .message-users {
     margin-bottom: 20px;
     margin-right: 0px;
-    width: 345px;
+    width: 100%;
   }
 
   .message-bottom {
@@ -865,5 +870,111 @@ a {
     margin-top: 20px;
     margin-left: 0px;
     width: calc(100% - 60px);
+  }
+}
+
+@media (max-width: 530px) {
+  .template-input__wrapper {
+    flex-direction: column;
+  }
+
+  .template-text__input {
+    margin-top: 10px;
+    margin-left: 0px;
+  }
+
+  .message-date {
+    white-space: nowrap;
+    width: 25px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .message-text {
+    font-size: 10px;
+  }
+
+  .all-templates__list {
+    flex-direction: column;
+  }
+
+  .templates-list__item {
+    margin-right: 0px;
+    margin-bottom: 10px;
+    width: calc(100% - 20px);
+    justify-content: space-between;
+  }
+
+  /* .message-chat {
+    max-width: calc(100% - 60px);
+    overflow: auto;
+  } */
+
+  .message-send {
+    flex-direction: column;
+  }
+
+  .template-choose {
+    margin-top: 10px;
+    position: static;
+    justify-content: space-between;
+    width: calc(100% - 16px);
+  }
+
+  .clip-svg {
+    position: static;
+    padding: 20px;
+    margin-top: 10px;
+    background-color: #0e1012;
+    border-radius: 10px;
+    border: 1px solid #1b1d1f;
+  }
+
+  .clip-svg path {
+    fill: #1b1d1f;
+  }
+
+  .clip-svg:hover path {
+    fill: #085bf8;
+  }
+
+  .send-message__button {
+    position: static;
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .message-send__input {
+    padding: 15px 30px;
+    width: calc(100% - 60px);
+  }
+}
+
+@media (max-width: 395px) {
+  .messages-count {
+    margin-left: 9px;
+  }
+}
+
+@media (max-width: 370px) {
+  .message-operation__list {
+    display: none;
+  }
+
+  .message-chat {
+    padding: 15px;
+    width: calc(100% - 30px);
+  }
+
+  .users-list__item {
+    padding: 10px;
+  }
+
+  .network-status {
+    left: 43px;
+  }
+
+  .user-avatar {
+    margin-right: 0px;
   }
 }
