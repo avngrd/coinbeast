@@ -161,7 +161,7 @@ a {
 .add-domain__button {
   padding-top: 12px;
   padding-bottom: 12px;
-  width: 100%;
+  /* width: 100%; */
 
   font-family: 'Manrope Medium';
   font-style: normal;
@@ -183,7 +183,10 @@ a {
 
 .domain-input__wrapper {
   display: flex;
-  align-items: flex-end;
+  flex-direction: column;
+  margin-right: 20px;
+  max-width: 315px;
+  width: 100%;
 }
 
 .add-domain__table {
@@ -579,4 +582,268 @@ table tbody tr td {
   .domain-modal__title {
     font-size: 18px;
   }
+}
+
+.domain-input__title {
+  margin-bottom: 13px;
+  white-space: nowrap;
+
+  font-family: 'Manrope Medium';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+
+  color: #ffffff;
+}
+
+.all-domains__wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+@media (max-width: 610px) {
+  .all-domains__wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .domain-input__wrapper {
+    max-width: 100%;
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+
+  .domain-input {
+    margin-right: 0px;
+    margin-bottom: 0px;
+  }
+}
+
+.telegram-title {
+  margin-bottom: 30px;
+
+  font-family: 'Manrope Bold';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #ffffff;
+}
+
+.tg-user__input {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 35px;
+  padding-right: 70px;
+
+  font-family: 'Manrope Medium';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+
+  background-color: #0e1012;
+  color: #ffffff;
+  outline: none;
+  border: 1px solid #1b1d1f;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+
+.tg-user__input:focus {
+  border: 1px solid #085bf8;
+}
+
+.tg-user__input::placeholder {
+  font-family: 'Manrope Medium';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+
+  color: #3c4043;
+}
+
+.telegram-svg {
+  position: absolute;
+  left: 10px;
+}
+
+.telegram-user {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.telegram-group {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.add-button {
+  position: absolute;
+  padding: 12px 29px;
+  right: 0px;
+
+  font-family: 'San Francisco Pro Regular';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 92.5%;
+  border: none;
+
+  color: #ffffff;
+  cursor: pointer;
+  background: linear-gradient(117.67deg, #3077ff 17.49%, #085bf8 105.01%);
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+
+.add-button:hover {
+  opacity: 0.7;
+}
+
+.telegram-notif__form {
+  padding: 25px 30px;
+  max-width: 300px;
+  width: calc(100% - 60px);
+
+  background-color: #0e1012;
+  border-radius: 10px;
+}
+
+.telegram-title {
+  margin-bottom: 30px;
+
+  font-family: 'Manrope Bold';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #ffffff;
+}
+
+.tg-user__input {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 35px;
+  padding-right: 70px;
+
+  font-family: 'Manrope Medium';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+
+  background-color: #0e1012;
+  color: #ffffff;
+  outline: none;
+  border: 1px solid #1b1d1f;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+
+.tg-user__input:focus {
+  border: 1px solid #085bf8;
+}
+
+.tg-user__input::placeholder {
+  font-family: 'Manrope Medium';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+
+  color: #3c4043;
+}
+
+.telegram-svg {
+  position: absolute;
+  left: 10px;
+}
+
+.telegram-user {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.telegram-group {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.add-button {
+  position: absolute;
+  padding: 12px 29px;
+  right: 0px;
+
+  font-family: 'San Francisco Pro Regular';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 92.5%;
+  border: none;
+
+  color: #ffffff;
+  cursor: pointer;
+  background: linear-gradient(117.67deg, #3077ff 17.49%, #085bf8 105.01%);
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+
+.add-button:hover {
+  opacity: 0.7;
+}
+
+@media (max-width: 405px) {
+  .tg-user__input {
+    padding-right: 10px;
+  }
+
+  /* .add-button {
+        right: 35px;
+      } */
+}
+
+@media (max-width: 840px) {
+  .telegram-notif__form {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 460px) {
+  .telegram-notif__form {
+    width: calc(100% - 50px);
+    padding: 20px 20px;
+  }
+}
+
+.tagsinput:focus {
+  border: 1px solid #085bf8;
+}
+
+.add-button {
+  display: none;
+}
+
+.domain-add__users {
+  position: absolute;
+  background-color: #0e1012;
+  top: 90px;
+  width: 100%;
 }

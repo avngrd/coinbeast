@@ -4,12 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/admin/tech support/css/domains-page.css" />
-    <link rel="stylesheet" href="/admin/tech support/css/panel-header.css" />
+    <link rel="stylesheet" href="/admin/admin/css/domains-page.css" />
+    <link rel="stylesheet" href="/admin/admin/css/panel-header.css" />
+    <link rel="stylesheet" href="/admin/admin/js/taggingJS/tag-basic-style.css" />
     <link rel="stylesheet" href="/css/fonts.css" />
-    <script src="/admin/tech support/js/jquery.js"></script>
-    <script src="/admin/tech support/js/_modal.js"></script>
-    <script src="/admin/tech support/js/jquery.bpopup.min.js"></script>
+    <script src="/admin/admin/js/jquery.js"></script>
+    <script src="/admin/admin/js/_modal.js"></script>
+    <script src="/admin/admin/js/jquery.bpopup.min.js"></script>
     <title>Domains</title>
   </head>
   <body>
@@ -300,7 +301,7 @@
         <div class="worker-panel">
           <div class="panel-header">
             <div class="header-left">
-              <a href="#" class="prev-route">TC panel</a>
+              <a href="#" class="prev-route">Admin panel</a>
               <svg
                 width="5"
                 height="9"
@@ -382,7 +383,7 @@
                 </defs>
               </svg>
               <div class="worker-header__select">
-                <p class="worker-profile">Team creator</p>
+                <p class="worker-profile">Admin</p>
                 <svg
                   width="7"
                   height="5"
@@ -430,10 +431,17 @@
           <div class="users-panel">
             <div class="add-domain__panel">
               <p class="add-domain__title">Add domains</p>
-              <div class="domain-input__wrapper">
-                <input type="text" class="domain-input" placeholder="Domain" />
+              <div class="all-domains__wrapper">
+                <div class="domain-input__wrapper">
+                  <p class="domain-input__title">Enter your domain name</p>
+                  <input type="text" class="domain-input" placeholder="Domain" />
+                </div>
+                <div class="domain-input__wrapper">
+                  <p class="domain-input__title">Set TC</p>
+                  <input type="text" class="domain-input" placeholder="Email" />
+                </div>
                 <div class="button-wrapper">
-                  <div class="info-message">wait, your domain is being configured</div>
+                  <!-- <div class="info-message">wait, your domain is being configured</div> -->
                   <button
                     class="add-domain__button"
                     onclick="modal(this)"
@@ -485,6 +493,8 @@
                       <th class="domain">Domain</th>
                       <th class="template">Template</th>
                       <th class="total-earn">Total earn</th>
+                      <th class="total-earn">Total registered</th>
+                      <th class="total-earn">TC</th>
                       <th class="status">Status</th>
                       <th>#</th>
                     </tr>
@@ -494,6 +504,8 @@
                       <td>example@gmail.com</td>
                       <td>coinwork/loginpage</td>
                       <td>22 500 $</td>
+                      <td>125 245</td>
+                      <td>Username</td>
                       <td class="domain-status status-online">Online</td>
                       <td>
                         <div class="domain-functions">
@@ -583,10 +595,17 @@
                         </div>
                       </td>
                     </tr>
+
+                    <div class="domain-add__users">
+                      <div data-tags-input-name="tag" id="tagBox2" data-tags-limit="15"></div>
+                    </div>
+
                     <tr>
                       <td>example@gmail.com</td>
                       <td>coinwork/loginpage</td>
                       <td>22 500 $</td>
+                      <td>125 245</td>
+                      <td>Username</td>
                       <td class="domain-status status-waiting">Waiting</td>
                       <td>
                         <div class="domain-functions">
@@ -654,6 +673,8 @@
                       <td>example@gmail.com</td>
                       <td>coinwork/loginpage</td>
                       <td>22 500 $</td>
+                      <td>125 245</td>
+                      <td>Username</td>
                       <td class="domain-status status-offline">Offline</td>
                       <td>
                         <div class="domain-functions">
@@ -721,6 +742,8 @@
                       <td>example@gmail.com</td>
                       <td>coinwork/loginpage</td>
                       <td>22 500 $</td>
+                      <td>125 245</td>
+                      <td>Username</td>
                       <td class="domain-status status-online">Online</td>
                       <td>
                         <div class="domain-functions">
@@ -788,6 +811,8 @@
                       <td>example@gmail.com</td>
                       <td>coinwork/loginpage</td>
                       <td>22 500 $</td>
+                      <td>125 245</td>
+                      <td>Username</td>
                       <td class="domain-status status-online">Online</td>
                       <td>
                         <div class="domain-functions">
@@ -926,7 +951,13 @@
         </div>
       </div>
     </main>
-    <script src="/admin/tech support/js/__copyInput.js"></script>
+    <script src="/admin/admin/js/taggingJS/tagging.min.js"></script>
+    <script>
+      $('#tagBox2').tagging({
+        'tag-char': '',
+      });
+    </script>
+    <script src="/admin/admin/js/__copyInput.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

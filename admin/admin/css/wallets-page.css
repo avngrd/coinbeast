@@ -1,0 +1,368 @@
+body,
+html {
+  background-color: #0b0d0f;
+  color: #ffff;
+  font-family: 'Manrope', Helvetica, sans-serif;
+  font-style: normal;
+  margin: auto;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+a {
+  color: #ffff;
+  text-decoration: none;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.users-panel {
+  padding-top: 50px;
+  padding-left: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* clear */
+
+.find-worker__panel {
+  padding: 25px 30px;
+  width: calc(100% - 60px);
+  position: relative;
+  margin-bottom: 20px;
+
+  background-color: #0e1012;
+  border-radius: 10px;
+}
+
+.find-title {
+  margin-bottom: 34px;
+
+  font-family: 'Manrope Bold';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #ffffff;
+}
+
+.find-worker__input {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 12px;
+  padding-right: 36px;
+  width: calc(100% - 12px - 36px);
+
+  font-family: 'Manrope Medium';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+
+  outline: none;
+  color: #ffffff;
+  border: 1px solid #1b1d1f;
+  border-radius: 5px;
+  background-color: #0e1012;
+  transition: all 0.3s;
+}
+
+.find-worker__input:focus {
+  border: 1px solid #085bf8;
+}
+
+.find-worker__input::placeholder {
+  color: #3c4043;
+  outline: none;
+}
+
+.find-set__button {
+  padding: 12px 19px 14px 19px;
+  position: absolute;
+  right: 26px;
+  /* top: 0px; */
+  bottom: 26px;
+  font-family: 'San Francisco Pro Bold';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 11px;
+  color: #ffffff;
+  border: none;
+  background: linear-gradient(117.67deg, #3077ff 17.49%, #085bf8 105.01%);
+  border-radius: 5px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.find-set__button:hover {
+  opacity: 0.7;
+}
+
+.wallets-panel {
+  padding: 25px 30px;
+  margin-right: 20px;
+  max-width: 702px;
+  width: calc(100% - 60px - 20px);
+  background: #0e1012;
+  border-radius: 10px;
+}
+
+.wallets-panel:last-child {
+  margin-right: 0px;
+  width: calc(100% - 60px);
+}
+
+.wallets-panel__title {
+  margin-bottom: 25px;
+
+  font-family: 'Manrope Bold';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #ffffff;
+}
+
+.wallets-input__item {
+  position: relative;
+}
+
+.wallets-input__item img {
+  position: absolute;
+  z-index: 999;
+  left: 10px;
+  top: 10px;
+}
+
+.wallets-input__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.wallet-input {
+  margin-bottom: 20px;
+  padding: 10px 0px 10px 40px;
+  width: calc(100% - 40px);
+
+  font-family: 'Manrope Medium';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+
+  color: #ffff;
+  background-color: #0e1012;
+  border: 1px solid #1b1d1f;
+  border-radius: 5px;
+  outline: none;
+  transition: all 0.3s;
+}
+
+.wallet-input:focus {
+  border: 1px solid #085bf8;
+}
+
+.wallet-save__button {
+  width: 100%;
+  padding: 12px 0px;
+
+  font-family: 'San Francisco Pro Medium';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 92.5%;
+
+  color: #ffffff;
+
+  background: linear-gradient(117.67deg, #3077ff 17.49%, #085bf8 105.01%);
+  border-radius: 5px;
+  border: none;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.wallet-save__button:hover {
+  opacity: 0.7;
+}
+
+.wallets-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width: 810px) {
+  .wallets-wrapper {
+    flex-direction: column;
+  }
+
+  .wallets-panel {
+    margin-right: 0px;
+    width: calc(100% - 60px);
+  }
+
+  .wallets-panel {
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+}
+
+.wallet-input__two {
+  margin-bottom: 20px;
+  padding: 10px;
+  width: calc(100% - 20px);
+
+  font-family: 'Manrope Medium';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+
+  color: #ffff;
+  background-color: #0e1012;
+  border: 1px solid #1b1d1f;
+  border-radius: 5px;
+  outline: none;
+  transition: all 0.3s;
+}
+
+.wallet-input__two:focus {
+  border: 1px solid #085bf8;
+}
+
+.wallet-panel__two {
+  margin-top: 20px;
+  padding: 25px 30px;
+  max-width: 702px;
+  width: calc(100% - 60px);
+  background: #0e1012;
+  border-radius: 10px;
+}
+
+.wallets-input__list--two {
+  display: flex;
+  flex-direction: row;
+}
+
+.wallets-input__item--two {
+  width: 100%;
+}
+
+.wallets-input__item--two {
+  margin-right: 20px;
+}
+
+.wallets-input__item--two:last-child {
+  margin-right: 0px;
+}
+
+.wallet-input__title {
+  margin-bottom: 10px;
+
+  font-family: 'Manrope Medium';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+
+  color: #ffffff;
+}
+
+@media (max-width: 610px) {
+  .wallets-input__list--two {
+    flex-direction: column;
+  }
+}
+
+.terms-panel__title {
+  margin-bottom: 20px;
+
+  font-family: 'Manrope Bold';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #ffffff;
+}
+
+.terms-change__panel {
+  padding: 25px 30px;
+  margin-top: 10px;
+  margin-bottom: 50px;
+
+  background: #0e1012;
+  border-radius: 10px;
+}
+
+.plugin-text {
+  height: 300px;
+  border: 1px solid red;
+  margin-bottom: 20px;
+}
+
+.save-terms__button {
+  padding: 12px 25px;
+  border: 0px;
+
+  font-family: 'San Francisco Pro Medium';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 11px;
+
+  color: #ffffff;
+
+  background: linear-gradient(117.67deg, #3077ff 17.49%, #085bf8 105.01%);
+  border-radius: 5px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.save-cancel__button {
+  padding: 12px 25px;
+  border: 0px;
+  margin-left: 15px;
+
+  font-family: 'San Francisco Pro Medium';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 11px;
+
+  color: #0b0d0f;
+
+  background: #ff6363;
+  border-radius: 5px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.save-cancel__button:hover {
+  opacity: 0.7;
+}
+
+.save-terms__button:hover {
+  opacity: 0.7;
+}
+
+@media (max-width: 400px) {
+  .terms-buttons__wrapper {
+    flex-direction: column;
+  }
+
+  .save-terms__button {
+    width: 100%;
+  }
+
+  .save-cancel__button {
+    margin-left: 0px;
+    margin-top: 10px;
+    width: 100%;
+  }
+}

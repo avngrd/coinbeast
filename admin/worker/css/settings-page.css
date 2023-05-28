@@ -27,6 +27,7 @@ ul {
 
 .telegram-notif__form {
   padding: 25px 30px;
+  max-width: 300px;
   width: calc(100% - 60px);
 
   background-color: #0e1012;
@@ -160,7 +161,7 @@ ul {
 @media (max-width: 460px) {
   .telegram-notif__form {
     width: calc(100% - 50px);
-    padding: 20px 25px;
+    padding: 20px 20px;
   }
 }
 

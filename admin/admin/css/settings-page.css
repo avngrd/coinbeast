@@ -1,0 +1,329 @@
+body,
+html {
+  background-color: #0b0d0f;
+  color: #ffff;
+  font-family: 'Manrope', Helvetica, sans-serif;
+  font-style: normal;
+  margin: auto;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+a {
+  color: #ffff;
+  text-decoration: none;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.users-panel {
+  padding-top: 50px;
+  padding-left: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* clear */
+
+.find-worker__panel {
+  padding: 25px 30px;
+  width: calc(100% - 60px);
+  position: relative;
+  margin-bottom: 20px;
+
+  background-color: #0e1012;
+  border-radius: 10px;
+}
+
+.find-title {
+  margin-bottom: 34px;
+
+  font-family: 'Manrope Bold';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #ffffff;
+}
+
+.find-worker__input {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 12px;
+  padding-right: 36px;
+  width: calc(100% - 12px - 36px);
+
+  font-family: 'Manrope Medium';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+
+  outline: none;
+  color: #ffffff;
+  border: 1px solid #1b1d1f;
+  border-radius: 5px;
+  background-color: #0e1012;
+  transition: all 0.3s;
+}
+
+.find-worker__input:focus {
+  border: 1px solid #085bf8;
+}
+
+.find-worker__input::placeholder {
+  color: #3c4043;
+  outline: none;
+}
+
+.find-set__button {
+  padding: 12px 19px 14px 19px;
+  position: absolute;
+  right: 26px;
+  /* top: 0px; */
+  bottom: 26px;
+  font-family: 'San Francisco Pro Bold';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 11px;
+  color: #ffffff;
+  border: none;
+  background: linear-gradient(117.67deg, #3077ff 17.49%, #085bf8 105.01%);
+  border-radius: 5px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.find-set__button:hover {
+  opacity: 0.7;
+}
+
+.telegram-notif__form {
+  padding: 25px 30px;
+  max-width: 300px;
+  width: calc(100% - 60px);
+
+  background-color: #0e1012;
+  border-radius: 10px;
+}
+
+.telegram-title {
+  margin-bottom: 30px;
+
+  font-family: 'Manrope Bold';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #ffffff;
+}
+
+.tg-user__input {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 35px;
+  padding-right: 70px;
+
+  font-family: 'Manrope Medium';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+
+  background-color: #0e1012;
+  color: #ffffff;
+  outline: none;
+  border: 1px solid #1b1d1f;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+
+.tg-user__input:focus {
+  border: 1px solid #085bf8;
+}
+
+.tg-user__input::placeholder {
+  font-family: 'Manrope Medium';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+
+  color: #3c4043;
+}
+
+.telegram-svg {
+  position: absolute;
+  left: 10px;
+}
+
+.telegram-user {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.telegram-group {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.add-button {
+  position: absolute;
+  padding: 12px 29px;
+  right: 0px;
+
+  font-family: 'San Francisco Pro Regular';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 92.5%;
+  border: none;
+
+  color: #ffffff;
+  cursor: pointer;
+  background: linear-gradient(117.67deg, #3077ff 17.49%, #085bf8 105.01%);
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+
+.add-button:hover {
+  opacity: 0.7;
+}
+
+.telegram-notif__form {
+  padding: 25px 30px;
+  max-width: 300px;
+  width: calc(100% - 60px);
+
+  background-color: #0e1012;
+  border-radius: 10px;
+}
+
+.telegram-title {
+  margin-bottom: 30px;
+
+  font-family: 'Manrope Bold';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #ffffff;
+}
+
+.tg-user__input {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 35px;
+  padding-right: 70px;
+
+  font-family: 'Manrope Medium';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+
+  background-color: #0e1012;
+  color: #ffffff;
+  outline: none;
+  border: 1px solid #1b1d1f;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+
+.tg-user__input:focus {
+  border: 1px solid #085bf8;
+}
+
+.tg-user__input::placeholder {
+  font-family: 'Manrope Medium';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+
+  color: #3c4043;
+}
+
+.telegram-svg {
+  position: absolute;
+  left: 10px;
+}
+
+.telegram-user {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.telegram-group {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.add-button {
+  position: absolute;
+  padding: 12px 29px;
+  right: 0px;
+
+  font-family: 'San Francisco Pro Regular';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 92.5%;
+  border: none;
+
+  color: #ffffff;
+  cursor: pointer;
+  background: linear-gradient(117.67deg, #3077ff 17.49%, #085bf8 105.01%);
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+
+.add-button:hover {
+  opacity: 0.7;
+}
+
+@media (max-width: 405px) {
+  .tg-user__input {
+    padding-right: 10px;
+  }
+}
+
+@media (max-width: 840px) {
+  .telegram-notif__form {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 460px) {
+  .telegram-notif__form {
+    width: calc(100% - 50px);
+    padding: 20px 20px;
+  }
+}
+
+.tagsinput:focus {
+  border: 1px solid #085bf8;
+}
+
+.add-button {
+  display: none;
+}

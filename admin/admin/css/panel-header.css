@@ -2,6 +2,16 @@ ul {
   list-style-type: none;
 }
 
+table thead tr th {
+  font-family: 'Manrope Bold';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+
+  color: #3c4043;
+}
+
 .worker-panels {
   display: flex;
 }
@@ -389,16 +399,6 @@ ul {
 
 .tag span {
   display: none;
-}
-
-table thead tr th {
-  font-family: 'Manrope Bold';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 19px;
-
-  color: #3c4043;
 }
 
 @media (max-width: 370px) {

@@ -1,0 +1,199 @@
+body,
+html {
+  background-color: #0b0d0f;
+  color: #ffff;
+  font-family: 'Manrope', Helvetica, sans-serif;
+  font-style: normal;
+  margin: auto;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+a {
+  color: #ffff;
+  text-decoration: none;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.header-right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.users-stats {
+  width: calc(100% - 60px);
+  padding: 25px 30px;
+  background-color: #0e1012;
+  border-radius: 10px;
+}
+
+.chart-header {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 39px;
+}
+
+.chart-header div {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.chart-periods__list {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.chart-title {
+  font-family: 'Manrope Bold';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+  margin-right: 20px;
+}
+
+.chart-count {
+  padding-left: 20px;
+
+  font-family: 'Inter Medium';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #3c4043;
+
+  border-left: 1px solid #13171b;
+}
+
+.chart-count span {
+  color: #ffffff;
+}
+
+.chart-periods__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.chart-periods__list li {
+  padding: 2px 8px;
+  margin-right: 11px;
+
+  font-family: 'Inter Medium';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #ffffff;
+
+  background: #1b1d1f;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.chart-periods__list li:hover {
+  background-color: #2471eb;
+}
+
+.user-total__count {
+  margin-top: 20px;
+  padding: 18px 20px;
+  width: calc(100% - 40px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background-color: #0e1012;
+  border-radius: 10px;
+}
+
+.total-left {
+  display: flex;
+  align-items: center;
+}
+
+.total-text {
+  margin-left: 16px;
+
+  font-family: 'Manrope Bold';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.promo-panel__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.user-stats__block {
+  /* width: 100%; */
+  max-width: 761px;
+  margin-bottom: 20px;
+}
+
+.money-stats-block {
+  max-width: 761px;
+  margin-bottom: 20px;
+}
+
+.total-count {
+  padding: 2px 8px;
+
+  font-family: 'Inter Medium';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #ffffff;
+
+  background: linear-gradient(159.3deg, #2f76ff 7.8%, #085bf8 106.69%), #1b1d1f;
+  border-radius: 8px;
+}
+
+.users-stats__chart img {
+  width: 100%;
+}
+
+@media (max-width: 560px) {
+  .chart-header {
+    flex-direction: column;
+  }
+
+  .users-stats__chart img {
+    max-width: 450px;
+  }
+
+  .chart-periods__list {
+    margin-top: 20px;
+  }
+
+  .chart-count {
+    text-align: center;
+  }
+
+  .total-count {
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 880px) {
+}
