@@ -105,7 +105,7 @@ a {
 
 .wallets-panel {
   padding: 25px 30px;
-  max-width: 702px;
+
   width: calc(100% - 60px);
   background: #0e1012;
   border-radius: 10px;
@@ -125,6 +125,8 @@ a {
 
 .wallets-input__item {
   position: relative;
+  width: calc(33% - 22px);
+  margin-right: 22px;
 }
 
 .wallets-input__item img {
@@ -136,7 +138,8 @@ a {
 
 .wallets-input__list {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .wallet-input {
@@ -183,4 +186,13 @@ a {
 
 .wallet-save__button:hover {
   opacity: 0.7;
+}
+
+
+@media (max-width: 800px) {
+  .wallets-input__item {
+    position: relative;
+    width: 100%;
+    margin-right: 0;
+  }
 }

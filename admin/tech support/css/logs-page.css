@@ -315,6 +315,7 @@ a {
 
 .id {
   min-width: 230px;
+  padding-left: 20px
 }
 
 .mail {

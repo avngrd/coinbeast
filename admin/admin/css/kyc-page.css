@@ -112,6 +112,8 @@ a {
 
 .kyc-list {
   margin-bottom: 50px;
+  display: grid;
+  position: relative;
 
   background-color: #0e1012;
   border-bottom-left-radius: 10px;
@@ -207,7 +209,9 @@ table thead tr th {
 }
 
 .user {
-  min-width: 176px;
+  min-width: 226px;
+  max-width: 100%;
+  padding-left: 40px;
 }
 
 .date {
@@ -226,19 +230,24 @@ table thead tr th {
   min-width: 241px;
 }
 
+.status {
+  min-width: 190px;
+}
+
 table {
-  margin-left: 68px;
+  width: 100%;
   margin-bottom: 5px;
+  border-collapse: collapse;
 }
 
 .kyc-user__info {
   margin-top: 10px;
   padding: 5px 31px;
-  display: flex;
+  /* display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-between; */
   width: calc(100% - 62px);
   background: #131618;
 }
@@ -296,6 +305,12 @@ table {
   font-size: 12px;
   line-height: 16px;
   color: #085bf8;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.mail:hover {
+  opacity: 0.8;
 }
 
 .info-date {
@@ -350,9 +365,9 @@ table {
   padding: 12px 25px;
   white-space: nowrap;
 
-  font-family: 'SF Pro Display SemiBold';
+  font-family: 'Manrope Medium';
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 12px;
   line-height: 92.5%;
   color: #ffffff;
@@ -371,9 +386,9 @@ table {
 .cancel-kyc__button {
   padding: 12px 25px;
 
-  font-family: 'SF Pro Display SemiBold';
+  font-family: 'Manrope Medium';
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 12px;
   line-height: 92.5%;
   /* color: #ffffff; */
@@ -401,8 +416,9 @@ table {
 .kyc-list__info {
   display: flex;
   flex-wrap: wrap;
+  position: absolute;
+  top: 70px;
   border-top: 1px solid #1c2124;
-  margin-bottom: 20px;
 
   width: calc(100% - 60px);
   background: #131618;
@@ -413,6 +429,7 @@ table {
 
 .kyc-list__item {
   display: flex;
+  position: relative;
   flex-direction: column;
   margin-right: 20px;
   margin-bottom: 30px;
@@ -426,6 +443,7 @@ table {
   font-weight: 600;
   font-size: 14px;
   line-height: 19px;
+  white-space: nowrap;
 
   color: #ffffff;
 }
@@ -444,27 +462,11 @@ table {
   border-radius: 5px;
 }
 
-.kyc-user__info--item {
-  margin: 5px;
-}
-
-@media (max-width: 1195px) {
-  table {
-    display: none;
-  }
-}
-
 @media (max-width: 540px) {
   .kyc-user__info {
     flex-direction: column;
     align-items: flex-start;
     position: relative;
-  }
-
-  .arrow-hide {
-    position: absolute;
-    right: 35px;
-    top: 35px;
   }
 
   .kyc-user__info--item {
@@ -482,6 +484,10 @@ table {
 @media (max-width: 440px) {
   .kyc-panel__title {
     flex-direction: column;
+  }
+
+  .item-info__title {
+    font-size: 12px;
   }
 
   .kyc-title {
@@ -519,4 +525,49 @@ table {
 .deactivated-button {
   background: #1b1d1f;
   color: #4f5458;
+}
+
+.username-mail {
+  width: 130px;
+}
+
+p.mail {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+p.username {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+table tbody tr td {
+  padding: 5px;
+}
+
+@media (max-width: 840px) {
+  .kyc-list__item {
+    width: 100%;
+    margin-right: 0px;
+  }
+}
+
+@media (max-width: 1550px) {
+  .users-panel {
+    margin-bottom: 200px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .users-panel {
+    margin-bottom: 300px;
+  }
+}
+
+@media (max-width: 840px) {
+  .users-panel {
+    margin-bottom: 1000px;
+  }
 }

@@ -359,6 +359,7 @@ table thead tr th {
   width: 100%;
   position: relative;
   overflow: auto;
+  /* z-index: 999; */
 }
 
 .menu-item__active.menu-item__active {

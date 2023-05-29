@@ -227,6 +227,7 @@ a {
 
 .worker-item {
   color: #3c4043;
+      padding: 5px 0;
   font-family: 'Manrope Medium';
   font-style: normal;
   font-weight: 500;
@@ -313,6 +314,7 @@ a {
 
 .id {
   min-width: 150px;
+  padding-left: 20px;
 }
 
 .mail {
@@ -358,11 +360,6 @@ a {
 
 .date {
   white-space: nowrap;
-}
-
-.id {
-  display: flex;
-  align-items: center;
 }
 
 .id svg {

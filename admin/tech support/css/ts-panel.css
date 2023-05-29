@@ -30,7 +30,7 @@ a {
 }
 
 .panel-left {
-  width: 100%;
+  width: 40%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -485,6 +485,9 @@ li .wallet-list__item:first-child {
 }
 
 @media (max-width: 1140px) {
+  .panel-left{
+    width: 100%;
+  }
   .user-info__panel {
     flex-direction: column;
   }
@@ -540,6 +543,7 @@ li .wallet-list__item:first-child {
 }
 
 @media (max-width: 680px) {
+  
   .info-list {
     flex-direction: column;
   }

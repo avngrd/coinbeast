@@ -183,6 +183,9 @@ table tbody tr td {
   background: #0f1214;
   padding: 30px;
   border-radius: 10px;
+
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .wallet-img {
@@ -190,6 +193,7 @@ table tbody tr td {
 }
 
 .wallets-list__item {
+  margin-right: 20px;
   margin-bottom: 20px;
   display: flex;
   flex-direction: row;
@@ -198,10 +202,6 @@ table tbody tr td {
   max-width: 320px;
   border: 1px solid #1b1d1f;
   border-radius: 5px;
-}
-
-.wallets-list__item:last-child {
-  margin-bottom: 0px;
 }
 
 .wallet-number__hash {
@@ -217,4 +217,11 @@ table tbody tr td {
 p.wallet-number__hash {
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+
+@media (max-width: 500px) {
+  .wallets-list__item{
+    width: calc(100% - 30px);
+  }
 }
