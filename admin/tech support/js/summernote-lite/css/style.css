@@ -1,0 +1,26 @@
+.note-toolbar {
+  background-color: #1b1d1f;
+  border: 1px solid #32363a;
+  border-bottom: none;
+}
+
+.note-btn {
+  background: transparent;
+  transition: all 0.4s;
+  border: 1px solid transparent;
+}
+
+.note-toolbar,
+.note-btn {
+  color: #ffffff;
+}
+
+.note-editable {
+  background-color: #0f1214;
+  border: 1px solid #32363a;
+  border-top: none;
+}
+
+.note-input {
+  width: calc(100% - 2rem);
+}

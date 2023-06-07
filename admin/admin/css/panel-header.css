@@ -2,16 +2,6 @@ ul {
   list-style-type: none;
 }
 
-table thead tr th {
-  font-family: 'Manrope Bold';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 19px;
-
-  color: #3c4043;
-}
-
 .worker-panels {
   display: flex;
 }
@@ -402,8 +392,94 @@ table thead tr th {
   display: none;
 }
 
+table thead tr th {
+  font-family: 'Manrope Bold';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+
+  color: #3c4043;
+  white-space: nowrap;
+}
+
+table thead tr th,
+table tbody tr td {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+tbody tr td:first-child,
+thead tr th:first-child {
+  padding-left: 0;
+}
+
+.network-status {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  top: 2px;
+  right: 12px;
+  border-radius: 50%;
+}
+
+.offline {
+  color: #ff6363;
+}
+
+.online {
+  color: #52ff00;
+}
+
+.offline__st {
+  background: #ff6363;
+  border: 2px solid #0f1214;
+}
+
+.online__st {
+  background: #52ff00;
+  border: 2px solid #0f1214;
+}
+
+.user-info__photo {
+  border-radius: 100%;
+  background-color: #085bf8;
+  width: 64px;
+  height: 64px;
+}
+
 @media (max-width: 370px) {
   .user-info__item {
     margin-left: 10px;
   }
+}
+
+@media (max-width: 700px) {
+  table thead tr th,
+  table tbody tr td {
+    min-width: auto !important;
+  }
+}
+
+.user-avatar-wrapper {
+  position: relative;
+}
+
+.user-avatar {
+  border-radius: 50%;
+  background-color: #282c2e;
+  margin-right: 10px;
+  min-width: 42px;
+  min-height: 42px;
+  width: 42px;
+  height: 42px;
+}
+
+.network-status {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  top: 2px;
+  right: 12px;
+  border-radius: 50%;
 }

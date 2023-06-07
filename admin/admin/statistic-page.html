@@ -9,11 +9,18 @@
     <link rel="stylesheet" href="/admin/admin/css/panel-header.css" />
     <script src="/js/jquery.js"></script>
     <title>Statistic</title>
+
+    <script src="js/flot-tooltip/jquery.flot.js"></script>
+    <script src="js/flot-tooltip/jquery.flot.resize.js"></script>
+    <script src="js/flot-tooltip/categories/jquery.flot.categories.js"></script>
+    <link rel="stylesheet" href="js/flot-tooltip/flot-tooltip.css" />
+    <link rel="stylesheet" href="js/flot-tooltip/categories/flot-tooltip-catalogs.css" />
+    <link rel="stylesheet" href="js/flot-tooltip/css/flot-tooltip-home.css?v={{ time() }}" />
   </head>
   <body>
     <main>
       <section class="worker-panels">
-        <div class="worker-menu">
+        <div class="worker-menu active">
           <div class="worker-logo">
             <a href="#" class="logo-link">
               <svg
@@ -60,9 +67,9 @@
                   </linearGradient>
                 </defs>
               </svg>
-              <p class="coinwork-logo">Coin<span>Work</span>.</p>
+              <p class="coinwork-logo active">Coin<span>Work</span>.</p>
             </a>
-            <div class="close-menu">
+            <div class="close-menu active">
               <svg
                 width="6"
                 height="10"
@@ -129,7 +136,7 @@
                       </linearGradient>
                     </defs>
                   </svg>
-                  <p href="#" class="menu-item menu-item__active">Statistic</p>
+                  <p href="#" class="menu-item menu-item__active active">Statistic</p>
                 </a>
               </li>
               <li class="menu-list__item">
@@ -150,7 +157,7 @@
                       fill="#32363A"
                     />
                   </svg>
-                  <p href="#" class="menu-item">Users</p>
+                  <p href="#" class="menu-item active">Users</p>
                 </a>
               </li>
               <li class="menu-list__item">
@@ -171,7 +178,7 @@
                       fill="#32363A"
                     />
                   </svg>
-                  <p class="menu-item">Logs</p>
+                  <p class="menu-item active">Logs</p>
                 </a>
               </li>
               <li class="menu-list__item">
@@ -205,7 +212,7 @@
                       stroke-linejoin="round"
                     />
                   </svg>
-                  <p class="menu-item">KYC</p>
+                  <p class="menu-item active">KYC</p>
                 </a>
               </li>
               <li class="menu-list__item">
@@ -226,7 +233,7 @@
                       fill="#32363A"
                     />
                   </svg>
-                  <p class="menu-item">Support</p>
+                  <p class="menu-item active">Support</p>
                 </a>
               </li>
               <li class="menu-list__item">
@@ -247,7 +254,7 @@
                       fill="#32363A"
                     />
                   </svg>
-                  <p class="menu-item">Domains</p>
+                  <p class="menu-item active">Domains</p>
                 </a>
               </li>
               <li class="menu-list__item">
@@ -272,7 +279,7 @@
                       fill="#32363A"
                     />
                   </svg>
-                  <p class="menu-item">Wallets</p>
+                  <p class="menu-item active">Wallets</p>
                 </a>
               </li>
               <li class="menu-list__item">
@@ -289,7 +296,7 @@
                       fill="#32363A"
                     />
                   </svg>
-                  <p class="menu-item">Settings</p>
+                  <p class="menu-item active">Settings</p>
                 </a>
               </li>
             </ul>
@@ -442,7 +449,7 @@
                         <li>Y</li>
                       </ul>
                     </div>
-                    <img src="/img/tcchart.png" width="675" height="200" />
+                    <div class="flot-categories" data-tickers="" data-theme="red"></div>
                   </div>
                 </div>
                 <div class="user-total__count">
@@ -498,7 +505,7 @@
                         <li>Y</li>
                       </ul>
                     </div>
-                    <img src="/img/tcmoneychart.png" width="675" height="200" />
+                    <div class="flot-categories" data-tickers="" data-theme="red"></div>
                   </div>
                 </div>
                 <div class="user-total__count">
@@ -564,5 +571,101 @@
       </section>
     </main>
     <script src="script.js"></script>
+    <script>
+      $('<div class="flot-tooltip"></div>').appendTo('body');
+      $(function () {
+        var data = [
+          ['Jan', 10],
+          ['Feb', 9],
+          ['Mar', 4],
+          ['Apr', 13],
+          ['May', 17],
+          ['Jun', 9],
+        ];
+        var da = $('.flot-categories');
+        da.on('plothover', function (e, t, a) {
+          if (a && a.datapoint) {
+            var o = a.datapoint[0].toFixed(0),
+              i = a.datapoint[1].toFixed(0);
+            $('.flot-tooltip')
+              .html(`<span>` + i + `</span>`)
+              .css({
+                top: a.pageY - $('.flot-tooltip').innerHeight() - 10,
+                left: a.pageX - $('.flot-tooltip').innerWidth() / 2,
+              })
+              .show();
+          } else {
+            $('.flot-tooltip').hide();
+          }
+        });
+
+        $.plot(
+          da,
+          [
+            {
+              data: data,
+              points: {
+                show: 0, // видны ли изначально точки
+                radius: 3,
+              },
+            },
+          ],
+          {
+            series: {
+              bars: {
+                show: true,
+                barWidth: 0.2,
+                align: 'center',
+                lineWidth: 0,
+
+                horizontal: 0,
+                fill: 1,
+                fillColor: { colors: ['#1b1d1f', '#1b1d1f', '#1b1d1f', '#1b1d1f'] },
+              },
+              points: {
+                show: !1,
+              },
+            },
+            xaxis: {
+              mode: 'categories',
+              showTicks: false,
+              gridLines: false,
+              color: '#13171B',
+
+              font: {
+                lineHeight: 24,
+                style: 'normal',
+                font: 'Inter',
+                color: '#3C4043',
+                size: 14,
+              },
+            },
+            yaxis: {
+              // show: 0,
+              // tickColor: "#272444",
+              color: '#13171B',
+              font: {
+                lineHeight: 24,
+                style: 'normal',
+                font: 'Inter',
+                color: '#3C4043',
+                size: 14,
+              },
+              min: 0,
+            },
+            grid: {
+              hoverable: true,
+              clickable: true,
+              borderWidth: 1,
+              backgroundColor: '#0e1012',
+              borderColor: '#13171B',
+              color: '#13171B',
+            },
+            highlightColor: '#226dfc',
+          },
+        );
+      });
+      //https://www.flotcharts.org/flot/API/
+    </script>
   </body>
 </html>

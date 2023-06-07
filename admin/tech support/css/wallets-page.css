@@ -144,8 +144,9 @@ a {
 
 .wallet-input {
   margin-bottom: 20px;
-  padding: 10px 0px 10px 40px;
-  width: calc(100% - 40px);
+  
+  padding: 10px 10px 10px 40px;
+  width: calc(100% - 50px);
 
   font-family: 'Manrope Medium';
   font-style: normal;

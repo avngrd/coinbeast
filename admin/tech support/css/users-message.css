@@ -181,5 +181,5 @@ table tbody tr td {
 .message-block {
   background-color: #0f1214;
   padding: 30px;
-  width: 100%;
+  width: calc(100% - 60px);
 }

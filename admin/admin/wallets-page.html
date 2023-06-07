@@ -10,6 +10,11 @@
     <script src="/admin/admin/js/jquery.js"></script>
     <script src="/admin/admin/js/_modal.js"></script>
     <script src="/admin/admin/js/jquery.bpopup.min.js"></script>
+
+    <link rel="stylesheet" href="js/summernote-lite/summernote-lite.min.css" />
+    <link rel="stylesheet" href="js/summernote-lite/css/style.css" />
+    <script src="js/summernote-lite/summernote-lite.min.js"></script>
+    <script src="js/summernote-lite/summernote-ru-RU.js"></script>
     <title>Wallets</title>
   </head>
   <body>
@@ -506,7 +511,11 @@
             </div>
             <div class="terms-change__panel">
               <p class="terms-panel__title">Terms</p>
-              <div class="plugin-text">ПЛАГИН РЕДАКЦИИ ТЕКСТА</div>
+              <div class="wrapper-table">
+                <div class="message-block">
+                  <div class="summernoteExample">test</div>
+                </div>
+              </div>
               <div class="terms-buttons__wrapper">
                 <button class="save-terms__button">Save terms html</button>
                 <button class="save-cancel__button">Cancel</button>
@@ -518,5 +527,40 @@
     </main>
     <script src="/admin/admin/js/__copyInput.js"></script>
     <script src="script.js"></script>
+
+    <script>
+      function uploadImage(file, editor) {
+        data = new FormData();
+        data.append('file', file);
+
+        $.ajax({
+          data: data,
+          type: 'POST',
+          url: '/admin/summernote-file',
+          cache: false,
+          contentType: false,
+          processData: false,
+          success: function (url) {
+            console.log(url);
+            var html = editor.summernote('code');
+            editor.summernote('code', html + '<img src="' + url + '"/>');
+          },
+        });
+      }
+
+      if ($('.summernoteExample').length) {
+        $('.summernoteExample').summernote({
+          placeholder: 'Наберите текст...',
+          height: 300,
+          lang: 'ru-RU',
+          tabsize: 2,
+          callbacks: {
+            onImageUpload: function (files) {
+              uploadImage(files[0], $(this));
+            },
+          },
+        });
+      }
+    </script>
   </body>
 </html>

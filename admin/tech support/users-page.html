@@ -7,8 +7,12 @@
     <link rel="stylesheet" href="/admin/tech support/css/users-page.css" />
     <link rel="stylesheet" href="/admin/tech support/css/panel-header.css" />
     <link rel="stylesheet" href="/css/fonts.css" />
-    <script src="/js/jquery.js"></script>
+    <script src="js/jquery.js"></script>
     <title>Users</title>
+
+    <script src="js/select2/select2.full.min.js"></script>
+    <link rel="stylesheet" href="js/select2/select2.min.css">
+    <link rel="stylesheet" href="js/select2/select2_filter.css">
   </head>
   <body>
     <main>
@@ -451,52 +455,22 @@
                       />
                     </svg>
                   </div>
-                  <div class="find-filter">
-                    Filter
-                    <svg
-                      width="12"
-                      height="8"
-                      viewBox="0 0 12 8"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M6.00003 0.580073C6.2151 0.580073 6.43013 0.662189 6.5941 0.826077L11.7538 5.98586C12.0821 6.31408 12.0821 6.84625 11.7538 7.17434C11.4257 7.50243 10.8937 7.50243 10.5654 7.17434L6.00003 2.60868L1.43461 7.17418C1.10639 7.50227 0.574383 7.50228 0.246316 7.17418C-0.0820704 6.84609 -0.0820704 6.31393 0.246316 5.9857L5.40596 0.825917C5.57001 0.662003 5.78505 0.580073 6.00003 0.580073Z"
-                        fill="#3C4043"
-                      />
-                    </svg>
-                    <div class="find-filter__menu">
-                      <ul class="filter-menu__list">
-                        <li class="filter-item">Online</li>
-                        <li class="filter-item">Verified</li>
-                        <li class="filter-item">VIP</li>
-                        <li class="filter-item">Premium</li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="find-filter__worker">
-                    Filter by workers
-                    <svg
-                      width="12"
-                      height="8"
-                      viewBox="0 0 12 8"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M6.00003 0.580073C6.2151 0.580073 6.43013 0.662189 6.5941 0.826077L11.7538 5.98586C12.0821 6.31408 12.0821 6.84625 11.7538 7.17434C11.4257 7.50243 10.8937 7.50243 10.5654 7.17434L6.00003 2.60868L1.43461 7.17418C1.10639 7.50227 0.574383 7.50228 0.246316 7.17418C-0.0820704 6.84609 -0.0820704 6.31393 0.246316 5.9857L5.40596 0.825917C5.57001 0.662003 5.78505 0.580073 6.00003 0.580073Z"
-                        fill="#3C4043"
-                      />
-                    </svg>
-                    <div class="find-worker__menu">
-                      <ul class="filter-worker__list">
-                        <li class="worker-item">Worker#1</li>
-                        <li class="worker-item">Worker#1</li>
-                        <li class="worker-item">Worker#1</li>
-                        <li class="worker-item">Worker#1</li>
-                      </ul>
-                    </div>
-                  </div>
+                  <select class="select2" data-minimum-results-for-search="50">
+                    <option selected>Filter</option>
+                    <option>Online</option>
+                    <option>Verified</option>
+                    <option>VIP</option>
+                    <option>Premium</option>
+                  </select>
+
+                  <select class="select2" data-minimum-results-for-search="50">
+                    <option selected>Filter by workers</option>
+                    <option>Worker#1</option>
+                    <option>Worker#1</option>
+                    <option>Worker#1</option>
+                    <option>Worker#1</option>
+                  </select>
+                  
                   <svg
                     class="refresh-svg"
                     width="24"
@@ -963,6 +937,17 @@
         </div>
       </section>
     </main>
+
+
+    <script>
+        $(document).ready(function() {
+            $('.select2').select2({
+                dropdownAutoWidth: !0,
+                width: "auto",
+            });
+        });
+    </script>
+
     <script src="script.js"></script>
   </body>
 </html>

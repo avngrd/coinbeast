@@ -8,7 +8,9 @@ html {
   padding: 0;
   overflow-x: hidden;
 }
-
+.flot-categories {
+  min-height: 230px;
+}
 a {
   color: #ffff;
   text-decoration: none;
@@ -140,17 +142,19 @@ ul {
 
 .promo-panel__wrapper {
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
+
 }
 
 .user-stats__block {
-  /* width: 100%; */
+  width: calc(50% - 10px);
+  margin-right: 20px;
   max-width: 761px;
   margin-bottom: 20px;
 }
 
 .money-stats-block {
+  width: calc(50% - 10px);
   max-width: 761px;
   margin-bottom: 20px;
 }
@@ -193,7 +197,48 @@ ul {
   .total-count {
     white-space: nowrap;
   }
+
+  .chart-title, .total-text{
+    font-size: 12px;
+  }
+  .chart-header div{
+    display: flex;
+    margin-right: auto;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .chart-count{
+    border: none;
+    padding: 0;
+  }
+
+  .chart-periods__list{
+    margin-right: auto;
+  }
+
+  .user-total__count{
+    flex-wrap: wrap;
+  }
+
+  .total-right{
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+
+  .flot-categories{
+    min-height:100px ;
+  }
 }
 
-@media (max-width: 880px) {
+@media (max-width: 1000px) {
+  .promo-panel__wrapper{
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .user-stats__block, .money-stats-block{
+    width: 100%;
+    max-width: none;
+    margin: 5px 0;
+  }
 }

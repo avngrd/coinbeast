@@ -110,6 +110,16 @@ a {
   border-top-right-radius: 10px;
 }
 
+table thead tr th {
+  padding: 6px 20px;
+}
+
+.wrapper-table2 {
+  padding: 0 30px;
+  width: calc(100% - 60px);
+  overflow: hidden;
+}
+
 .kyc-list {
   margin-bottom: 50px;
   display: grid;
@@ -210,8 +220,6 @@ table thead tr th {
 
 .user {
   min-width: 226px;
-  max-width: 100%;
-  padding-left: 40px;
 }
 
 .date {
@@ -243,6 +251,7 @@ table {
 .kyc-user__info {
   margin-top: 10px;
   padding: 5px 31px;
+  position: relative;
   /* display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -265,13 +274,6 @@ table {
   display: flex;
   align-items: center;
   position: relative;
-}
-
-.user-avatar {
-  padding: 10px;
-  border-radius: 50%;
-  background-color: #161a1d;
-  margin-right: 10px;
 }
 
 .status-network {
@@ -413,8 +415,25 @@ table {
   opacity: 0.7;
 }
 
+.kyc-user__info td:first-child {
+  display: flex;
+  align-items: center;
+  padding-right: 0;
+  padding-left: 30px;
+}
+
+.kyc-user__info .kyc-user__info--item:first-child {
+  padding-left: 0;
+}
+
+.user-avatar-wrapper {
+  margin-left: 30px;
+}
+
 .kyc-list__info {
   display: flex;
+  left: 0;
+  z-index: 1;
   flex-wrap: wrap;
   position: absolute;
   top: 70px;
@@ -422,7 +441,7 @@ table {
 
   width: calc(100% - 60px);
   background: #131618;
-  padding: 30px;
+  padding: 20px 30px;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
 }
@@ -432,7 +451,7 @@ table {
   position: relative;
   flex-direction: column;
   margin-right: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .item-info__title {
@@ -543,8 +562,9 @@ p.username {
   text-overflow: ellipsis;
 }
 
-table tbody tr td {
-  padding: 5px;
+table tbody tr td,
+table thead tr th {
+  padding: 10px;
 }
 
 @media (max-width: 840px) {

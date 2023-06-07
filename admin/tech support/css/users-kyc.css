@@ -192,7 +192,8 @@ table tbody tr td {
   display: flex;
   flex-direction: column;
   margin-right: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 .item-info__title {

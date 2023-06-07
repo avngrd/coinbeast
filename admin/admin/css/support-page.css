@@ -21,7 +21,9 @@ a {
 
 .users-panel {
   padding-top: 50px;
-  padding-left: 50px;
+  padding-left: 43px;
+  padding-right: 43px;
+  width: calc(100% - 86px);
   display: flex;
   flex-direction: column;
 }
@@ -36,6 +38,10 @@ a {
 
   background-color: #0e1012;
   border-radius: 10px;
+}
+
+.worker-menu.active ~ .worker-panel {
+  width: calc(100% - 60px);
 }
 
 .find-title {
@@ -150,20 +156,24 @@ a {
 
   background: #0e1012;
   border-radius: 10px;
+
+  width: 30%;
+  /* max-width: 345px; */
 }
 
 .user-avatar {
-  padding: 10px;
   border-radius: 50%;
   background-color: #282c2e;
   margin-right: 10px;
-  min-width: 23px;
-  min-height: 23px;
+  min-width: 42px;
+  min-height: 42px;
+  width: 42px;
+  height: 42px;
 }
 
 .message-chat {
   padding: 25px 30px;
-  width: calc(100% - 60px);
+  width: calc(70% - 60px);
   background: #0e1012;
   border-radius: 10px;
 }
@@ -173,6 +183,7 @@ a {
   flex-direction: row;
   align-items: center;
   margin-bottom: 2px;
+  margin-right: 20px;
 }
 
 .users-list__item {
@@ -205,8 +216,12 @@ a {
   transition: all 0.3s;
 }
 
+.user-messages .user-messages__left:last-child .user-message {
+  margin-bottom: 0;
+}
+
 .message-users__list {
-  max-height: calc(503px - 60px);
+  max-height: calc(100% - 20px);
   overflow-y: auto;
 }
 
@@ -239,25 +254,11 @@ a {
   flex-direction: row;
   margin-bottom: 20px;
   width: 100%;
+  max-height: 500px;
 }
 
-.network-status {
-  position: absolute;
-  width: 5px;
-  height: 5px;
-  top: 13px;
-  left: 53px;
-  border-radius: 50%;
-}
-
-.offline {
-  background: #ff6363;
-  border: 2px solid #0f1214;
-}
-
-.online {
-  background: #52ff00;
-  border: 2px solid #0f1214;
+.user-avatar-wrapper {
+  position: relative;
 }
 
 .messages-count--none {
@@ -267,14 +268,24 @@ a {
 .username {
   margin-left: 7px;
   margin-right: 11px;
-
   font-family: 'Manrope Bold';
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 19px;
-
   color: #ffffff;
+  /* width: 100%; */
+  max-width: 60%;
+  overflow: hidden;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.user-info__item {
+  width: 65%;
+  position: relative;
 }
 
 .user-mail {
@@ -285,6 +296,12 @@ a {
   font-size: 12px;
   line-height: 16px;
   transition: all 0.3s;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+  display: block;
 }
 
 .user-mail:hover {
@@ -292,8 +309,8 @@ a {
 }
 
 .messages-count {
-  margin-left: 89px;
-  padding: 6px;
+  margin-left: auto;
+  padding: 6px 8px;
 
   font-family: 'Manrope Medium';
   font-style: normal;
@@ -371,6 +388,8 @@ a {
   color: #ffffff;
   background: #0b0d0f;
   border-radius: 10px;
+
+  word-wrap: break-word;
 }
 
 .message-date {
@@ -394,8 +413,10 @@ a {
 }
 
 .user-messages__wrapper {
-  max-height: calc(512px - 50px - 64px);
+  max-height: calc(100% - 50px - 64px);
   overflow: auto;
+
+  margin: 10px 0;
 }
 
 .user-messages {
@@ -406,7 +427,6 @@ a {
   /* max-height: calc(503px - 60px); */
 
   justify-content: flex-end;
-  margin-bottom: 30px;
 }
 
 .user-message {
@@ -422,10 +442,13 @@ a {
   flex-direction: row;
 }
 
+.worker-panel {
+  width: calc(100% - 270px);
+}
+
 .message-text {
   margin-left: 10px;
   margin-right: 20px;
-  max-width: calc(100% - 30px);
 
   font-family: 'Manrope Medium';
   font-style: normal;
@@ -433,7 +456,13 @@ a {
   font-size: 12px;
   line-height: 16px;
 
+  word-wrap: break-word;
+  max-width: 100%;
+
   color: #ffffff;
+
+  word-wrap: break-word;
+  max-width: 50%;
 }
 
 .operation-list__item {
@@ -601,9 +630,9 @@ a {
   right: 15px;
   top: 15px;
 
-  font-family: 'SF Pro Display SemiBold';
+  font-family: 'Manrope Medium';
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 12px;
   line-height: 92.5%;
 
@@ -687,7 +716,8 @@ a {
 
 .template-text__input {
   padding: 9px 12px;
-  width: calc(100% - 24px);
+  padding-right: 65px;
+  width: calc(100% - 77px);
   margin-left: 14px;
 
   font-family: 'Manrope Medium';
@@ -764,6 +794,12 @@ a {
   border-radius: 10px;
 }
 
+.refresh-svg {
+}
+
+.svg-delete {
+}
+
 .template-title__wrapper {
   display: flex;
   justify-content: space-between;
@@ -794,9 +830,9 @@ a {
   align-items: center;
   margin-right: 10px;
 
-  font-family: 'SF Pro Display SemiBold';
+  font-family: 'Manrope Medium';
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 12px;
 
   color: #ffffff;
@@ -844,6 +880,12 @@ a {
 @media (max-width: 1000px) {
   .message-top {
     flex-direction: column;
+    max-height: none;
+    width: 100%;
+  }
+
+  .message-chat {
+    width: calc(100% - 60px);
   }
 
   .messages-count {
@@ -865,9 +907,29 @@ a {
     margin-left: 0px;
     width: calc(100% - 60px);
   }
+
+  .user-mail {
+    max-width: 110px;
+  }
+
+  .username {
+    max-width: 70px;
+  }
+
+  .message-users {
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 530px) {
+  .user-info__item {
+    width: 60%;
+  }
+
+  .message-wrapper {
+    width: calc(100% - 5px);
+  }
+
   .template-input__wrapper {
     flex-direction: column;
   }
@@ -962,13 +1024,21 @@ a {
 
   .users-list__item {
     padding: 10px;
+    width: calc(100% - 20px);
   }
 
   .network-status {
-    left: 43px;
+    right: 3px;
   }
 
   .user-avatar {
     margin-right: 0px;
+  }
+}
+@media (max-width: 840px) {
+  .users-panel {
+    padding-left: 10px;
+    padding-right: 10px;
+    width: calc(100% - 20px);
   }
 }

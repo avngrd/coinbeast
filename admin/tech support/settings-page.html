@@ -12,6 +12,9 @@
     <script src="/admin/tech support/js/_modal.js"></script>
     <script src="/admin/tech support/js/jquery.bpopup.min.js"></script>
     <title>Settings</title>
+
+    <script src="js/taggingJS/tagging.min.js"></script>
+    <link rel="stylesheet" href="js/taggingJS/tag-basic-style.css" />
   </head>
   <body>
     <main>
@@ -447,7 +450,7 @@
                     fill="#1B1D1F"
                   />
                 </svg>
-                <div data-tags-input-name="tag" id="tagBox" data-tags-limit="3"></div>
+                <div data-tags-input-name="tag" id="tagBox" data-placeholder="Add more users ..." data-tags-limit="3" class="tagBox">tag 1, tag 2</div>
               </div>
               <div class="telegram-group">
                 <svg
@@ -465,24 +468,21 @@
                     fill="#1B1D1F"
                   />
                 </svg>
-                <div data-tags-input-name="tag" id="tagBox2" data-tags-limit="3"></div>
+                <div data-tags-input-name="tag" id="tagBox2" data-placeholder="Add more group ..." data-tags-limit="3" class="tagBox"></div>
               </div>
             </div>
           </div>
         </div>
       </section>
     </main>
-    <script src="/admin/tech support/js/taggingJS/tagging.min.js"></script>
     <script>
-      $('#tagBox').tagging({
-        'tag-char': '',
-      });
-
-      $('#tagBox2').tagging({
-        'tag-char': '',
+      $('.tagBox').tagging({
+        "no-duplicate": true,
+        "no-duplicate-text": "Не должно быть повторений!",
+        // "placeholder": "test"
       });
     </script>
-    <script src="/admin/tech support/js/__copyInput.js"></script>
+    
     <script src="script.js"></script>
   </body>
 </html>

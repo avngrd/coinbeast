@@ -196,9 +196,20 @@ a {
   flex-direction: row;
 }
 
+.terms-buttons__wrapper {
+  margin-top: 20px;
+}
+
+.save-terms__button {
+  margin-bottom: 10px;
+}
+
 @media (max-width: 810px) {
   .wallets-wrapper {
     flex-direction: column;
+  }
+
+  .save-terms__button {
   }
 
   .wallets-panel {

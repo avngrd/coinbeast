@@ -261,24 +261,7 @@ a {
   position: relative;
 }
 
-.network-status {
-  position: absolute;
-  width: 5px;
-  height: 5px;
-  top: 2px;
-  right: 12px;
-  border-radius: 50%;
-}
 
-.offline {
-  background: #ff6363;
-  border: 2px solid #0f1214;
-}
-
-.online {
-  background: #52ff00;
-  border: 2px solid #0f1214;
-}
 
 .messages-count--none {
   display: none;
@@ -649,9 +632,9 @@ display: block;
   right: 15px;
   top: 15px;
 
-  font-family: 'SF Pro Display SemiBold';
+  font-family: 'Manrope Medium';
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 12px;
   line-height: 92.5%;
 
@@ -849,9 +832,9 @@ display: block;
   align-items: center;
   margin-right: 10px;
 
-  font-family: 'SF Pro Display SemiBold';
+  font-family: 'Manrope Medium';
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 12px;
 
   color: #ffffff;

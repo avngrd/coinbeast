@@ -161,7 +161,6 @@ table tbody tr td {
 }
 
 .link-svg {
-  margin-right: 30px;
   cursor: pointer;
   transition: all 0.3s;
 }

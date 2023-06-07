@@ -11,6 +11,10 @@
     <script src="/admin/tech support/js/_modal.js"></script>
     <script src="/admin/tech support/js/jquery.bpopup.min.js"></script>
     <title>Domains</title>
+
+    <script src="js/select2/select2.full.min.js"></script>
+    <link rel="stylesheet" href="js/select2/select2.min.css" />
+    <link rel="stylesheet" href="js/select2/select2_filter.css" />
   </head>
   <body>
     <main>
@@ -377,7 +381,12 @@
                     <stop offset="1" stop-color="#085BF8" />
                   </linearGradient>
                   <clipPath id="clip0_99_1091">
-                    <rect width="18" height="18" fill="white" transform="translate(9 8.99994)" />
+                    <rect
+                      width="18"
+                      height="18"
+                      fill="white"
+                      transform="translate(9 8.99994)"
+                    />
                   </clipPath>
                 </defs>
               </svg>
@@ -433,7 +442,9 @@
               <div class="domain-input__wrapper">
                 <input type="text" class="domain-input" placeholder="Domain" />
                 <div class="button-wrapper">
-                  <div class="info-message">wait, your domain is being configured</div>
+                  <div class="info-message">
+                    wait, your domain is being configured
+                  </div>
                   <button
                     class="add-domain__button"
                     onclick="modal(this)"
@@ -555,30 +566,17 @@
                             />
                           </svg>
                           <div class="domain-template__menu">
-                            <p class="template-chosen__item">
-                              Template #2
-                              <svg
-                                class="arrow-up"
-                                width="12"
-                                height="8"
-                                viewBox="0 0 12 8"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  d="M6.00003 0.580073C6.2151 0.580073 6.43013 0.662189 6.5941 0.826077L11.7538 5.98586C12.0821 6.31408 12.0821 6.84625 11.7538 7.17434C11.4257 7.50243 10.8937 7.50243 10.5654 7.17434L6.00003 2.60868L1.43461 7.17418C1.10639 7.50227 0.574383 7.50228 0.246316 7.17418C-0.0820704 6.84609 -0.0820704 6.31393 0.246316 5.9857L5.40596 0.825917C5.57001 0.662003 5.78505 0.580073 6.00003 0.580073Z"
-                                  fill="#3C4043"
-                                />
-                              </svg>
-                            </p>
-                            <ul class="domain-template__dropdown">
-                              <li class="template-dropdown__item">Template #1</li>
-                              <li class="template-dropdown__item">Template #2</li>
-                              <li class="template-dropdown__item">Template #3</li>
-                              <li class="template-dropdown__item">Template #4</li>
-                              <li class="template-dropdown__item">Template #5</li>
-                              <button class="apply-button">Apply</button>
-                            </ul>
+                            <select
+                              class="select2"
+                              data-minimum-results-for-search="50"
+                            >
+                              <option selected>Filter</option>
+                              <option>Online</option>
+                              <option>Verified</option>
+                              <option>VIP</option>
+                              <option>Premium</option>
+                            </select>
+                            <button class="apply-button">Apply</button>
                           </div>
                         </div>
                       </td>
@@ -848,6 +846,20 @@
                               fill="#3C4043"
                             />
                           </svg>
+
+                          <div class="domain-template__menu">
+                            <select
+                              class="select2"
+                              data-minimum-results-for-search="50"
+                            >
+                              <option selected>Template#1</option>
+                              <option>Template#2</option>
+                              <option>Template#3</option>
+                              <option>Template#4</option>
+                              <option>Template#5</option>
+                            </select>
+                            <button class="apply-button">Apply</button>
+                          </div>
                         </div>
                       </td>
                     </tr>
@@ -926,7 +938,32 @@
         </div>
       </div>
     </main>
-    <script src="/admin/tech support/js/__copyInput.js"></script>
+    <script src="js/__copyInput.js"></script>
     <script src="script.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".select2").select2({
+          dropdownAutoWidth: !0,
+          width: "100%",
+        });
+      });
+    </script>
+
+    <script>
+      $(".domain-menu").on("click", function () {
+        $(this).siblings(".domain-template__menu").slideDown();
+      });
+
+      $("body").on("click", function (e) {
+        var d = e.target;
+
+        if ($(d).closest(".domain-functions").length) {
+          return;
+        } else {
+          $(".domain-template__menu").slideUp();
+        }
+      });
+    </script>
   </body>
 </html>

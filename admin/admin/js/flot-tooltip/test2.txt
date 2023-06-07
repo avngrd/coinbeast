@@ -1,0 +1,129 @@
+$(document).ready(function() {
+            setGraph(
+                [
+                    [1, 1.09],
+                    [2, 1.15],
+                    [3, 1.21],
+                    [4, 1.27],
+                    [5, 1.38],
+                    [6, 1.40],
+                    [7, 1.54],
+                ],
+                [
+                    [1, "12-18"],
+                    [2, "12-29"],
+                    [3, "12-30"],
+                    [4, "12-31"],
+                    [5, "01-01"],
+                    [6, "01-02"],
+                    [7, "01-03"],
+                ]
+            );
+        });
+
+        function setGraph($dataArr, $ticksArr) {
+            console.log($dataArr);
+            $(".flot-chart")[0] &&
+                ($(".flot-chart").on(
+                        "plothover",
+                        function(e, t, a) {
+                            if (a && a["seriesIndex"] == 1) {
+                                var o = a.datapoint[0].toFixed(2),
+                                    i = a.datapoint[1].toFixed(2);
+                                $(".flot-tooltip")
+                                    .html(
+                                        `<ul><li><span>` + i + `%</span></li></ul>`
+
+                                    )
+                                    .css({
+                                        top: a.pageY + 5,
+                                        left: a.pageX + 5,
+                                    })
+                                    .show();
+                            } else $(".flot-tooltip").hide();
+                        }
+                    ),
+                    $('<div class="flot-tooltip"></div>').appendTo(
+                        "body"
+                    )),
+                $(".flot-curved-line")[0] &&
+                $.plot(
+                    $(".flot-curved-line"),
+                    [{
+                            data: $dataArr,
+                            color: "#44ff9d",
+                            lines: {
+                                show: 1,
+                                lineWidth: 2,
+                                fill: 1,
+                                fillColor: {
+                                    colors: ["#44ff9d01", "#44ff9d42"],
+                                },
+                            },
+                            curvedLines: {
+                                apply: true,
+                                tension: 2
+                            },
+                            points: {
+                                show: 0
+                            },
+                        },
+                        {
+                            data: $dataArr,
+                            color: "#ffff",
+                            points: {
+                                show: true, // видны ли изначально точки
+                                radius: 3,
+                            },
+
+                        },
+                    ], {
+                        series: {
+                            shadowSize: 3,
+                            curvedLines: {
+                                // apply: !0,
+                                // active: !0,
+                                active: true,
+                                //   monotonicFit: !0,
+                                // apply: true,
+                                // nrSplinePoints: 1000
+                                legacyOverride: 0,
+                            },
+                            points: {
+                                show: !1,
+                            },
+                        },
+
+                        xaxis: {
+                            // tickColor: "#272444",
+                            show: 0,
+                            font: {
+                                color: "#FFFFFF",
+                                size: 16,
+                            },
+                            position: "bottom",
+                            ticks: $ticksArr,
+                        },
+                        yaxis: {
+                            show: 0,
+                            // tickColor: "#272444",
+                            font: {
+                                lineHeight: 24,
+                                style: "normal",
+                                font: "Inter",
+                                color: "#FFFFFF",
+                                size: 16,
+                            },
+                            min: 1,
+                        },
+                        grid: {
+                            hoverable: true,
+                            clickable: true,
+                            borderWidth: 0,
+
+                            color: "rgba(120,120,120,0)",
+                        }
+
+                    }
+                );
+        }

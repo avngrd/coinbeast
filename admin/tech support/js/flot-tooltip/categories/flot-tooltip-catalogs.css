@@ -1,0 +1,24 @@
+.flot-tooltip::after {
+    position: absolute;
+  content: "";
+  background: #FFFFFF;
+  border-radius: 100%;
+  border: 3px solid rgb(255 255 255 / 31%);
+  height: 6px;
+  width: 6px;
+
+  -moz-background-clip: border;     
+    -webkit-background-clip: border;  
+    background-clip: border-box;
+
+    -moz-background-clip: padding;     
+    -webkit-background-clip: padding; 
+    background-clip: padding-box;
+
+    -moz-background-clip: content;     
+    -webkit-background-clip: content;  
+    background-clip: content-box;
+
+    bottom: -15px;
+    left: calc(50% - 5px);
+  }
